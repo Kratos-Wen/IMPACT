@@ -1,5 +1,7 @@
 # IMPACT
 
+Official implementation of "IMPACT: A Dataset for Multi-Granularity Human Procedural Action Understanding in Industrial Assembly".
+
 IMPACT provides the benchmark codebase for the IMPACT dataset and evaluation suite. The repository is organized first by task and then by method so that each benchmark setting exposes a consistent configuration and execution interface.
 
 The current public release covers Temporal Action Segmentation (TAS) with four reference implementations:
