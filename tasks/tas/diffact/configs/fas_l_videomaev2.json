@@ -1,0 +1,71 @@
+{
+  "naming": "IMPACT-FAS_L-videomaev2-S1",
+  "root_data_dir": "./dataset",
+  "dataset_name": "IMPACT",
+  "split_id": 1,
+  "sample_rate": 4,
+  "temporal_aug": true,
+  "encoder_params": {
+    "use_instance_norm": false,
+    "num_layers": 10,
+    "num_f_maps": 64,
+    "input_dim": 1408,
+    "kernel_size": 5,
+    "normal_dropout_rate": 0.5,
+    "channel_dropout_rate": 0.5,
+    "temporal_dropout_rate": 0.5,
+    "feature_layer_indices": [
+      5,
+      7,
+      9
+    ]
+  },
+  "decoder_params": {
+    "num_layers": 8,
+    "num_f_maps": 24,
+    "time_emb_dim": 512,
+    "kernel_size": 5,
+    "dropout_rate": 0.1
+  },
+  "diffusion_params": {
+    "timesteps": 1000,
+    "sampling_timesteps": 25,
+    "ddim_sampling_eta": 1.0,
+    "snr_scale": 1.0,
+    "cond_types": [
+      "full",
+      "zero",
+      "boundary05-",
+      "segment=2",
+      "segment=2"
+    ],
+    "detach_decoder": false
+  },
+  "loss_weights": {
+    "encoder_ce_loss": 0.5,
+    "encoder_mse_loss": 0.1,
+    "encoder_boundary_loss": 0.0,
+    "decoder_ce_loss": 0.5,
+    "decoder_mse_loss": 0.1,
+    "decoder_boundary_loss": 0.1
+  },
+  "batch_size": 16,
+  "learning_rate": 0.0003,
+  "weight_decay": 1e-06,
+  "num_epochs": 1500,
+  "log_freq": 100,
+  "class_weighting": true,
+  "set_sampling_seed": true,
+  "boundary_smooth": 10,
+  "soft_label": null,
+  "log_train_results": false,
+  "postprocess": {
+    "type": "purge",
+    "value": 3
+  },
+  "feature_type": "videomaev2",
+  "impact_label_mode": "FAS_L",
+  "impact_feature_type": "videomaev2",
+  "impact_split": 1,
+  "result_dir": "./outputs/tas/diffact"
+}
