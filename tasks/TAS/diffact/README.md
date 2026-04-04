@@ -1,29 +1,36 @@
-# DiffAct on IMPACT TAS
+# DiffAct for TAS
 
-This directory provides the IMPACT TAS configurations and launch scripts for `DiffAct`.
+This directory provides the released IMPACT `TAS` wrapper for `DiffAct`.
 
-Supported label protocols:
-- `CAS`
-- `FAS_L`
-- `FAS_R`
+## Path Convention
 
-Supported feature types:
-- `i3d`
-- `videomaev2`
+- dataset root: `dataset/TAS`
+- configs: `tasks/TAS/diffact/configs`
+- default outputs: `outputs/tas/diffact`
+- default logs: `logs/tas/diffact`
+- source snapshot: `third_party/diffact`
+- IMPACT-specific changes: `tasks/TAS/diffact/UPSTREAM_DIFF.md`
 
-## Train
+## Common Arguments
+
+- `TASK_MODE`: `CAS`, `FAS_L`, or `FAS_R`
+- `FEATURE_TYPE`: `videomaev2` or `i3d`
+- `GPU_LIST`: four comma-separated GPU ids for split-wise training
+- `RUN_TAG`: run identifier appended to generated configs and logs
+- `IMPACT_ROOT`: dataset override, default `dataset/TAS`
+- `OUTPUT_BASE`: output root for generated configs and result files
+- `LOG_BASE`: log directory override
+
+## Scripts
+
+- `scripts/train_splits.sh`: launches four split-wise train-and-test runs
+
+## Examples
 
 ```bash
 bash tasks/TAS/diffact/scripts/train_splits.sh CAS videomaev2 0,1,2,3 exp_tas_diffact
 ```
 
-`DiffAct` reports final test metrics as part of its train-and-test workflow. For this reason, the TAS release provides a single training entrypoint rather than a separate checkpoint evaluator.
+## Notes
 
-Default paths:
-- dataset root: `dataset/TAS/`
-- outputs: `outputs/tas/diffact/`
-- logs: `logs/tas/diffact/`
-
-Implementation provenance:
-- source snapshot: `third_party/diffact/`
-- repository-specific changes: `UPSTREAM_DIFF.md`
+- `DiffAct` reports final test metrics as part of the training workflow, so the public release does not expose a separate checkpoint evaluator.

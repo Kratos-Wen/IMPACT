@@ -1,32 +1,44 @@
-# LTContext on IMPACT PPR
+# LTContext for PPR
 
-This directory provides the IMPACT PPR configurations and launch scripts for `LTContext`.
+This directory provides the released IMPACT `PPR` wrapper for `LTContext`.
 
-Supported label protocols:
-- `PPR_L`
-- `PPR_R`
+## Path Convention
 
-Supported feature types:
-- `i3d`
-- `videomaev2`
+- dataset root: `dataset/PPR`
+- configs: `tasks/PPR/ltcontext/configs`
+- default outputs: `outputs/ppr/ltcontext`
+- default logs: `logs/ppr/ltcontext`
+- default evaluation outputs: `outputs/ppr/ltcontext_eval`
+- source snapshot: `third_party/ltcontext`
+- IMPACT-specific changes: `tasks/TAS/ltcontext/UPSTREAM_DIFF.md`
 
-## Train
+## Common Arguments
+
+- `TASK_MODE`: `PPR_L` or `PPR_R`
+- `FEATURE_TYPE`: `videomaev2` or `i3d`
+- `GPU_LIST`: four comma-separated GPU ids for split-wise training
+- `RUN_TAG`: run identifier appended to output folders
+- `IMPACT_ROOT`: dataset override, default `dataset/PPR`
+- `OUTPUT_BASE`, `LOG_BASE`, or `SAVE_ROOT`: optional runtime directory overrides
+- `SPLIT`: split id used by checkpoint evaluation
+- `GPU`: CUDA device used by evaluation
+- `CKPT_PATH`: checkpoint path, typically a `.pyth` file
+
+## Scripts
+
+- `scripts/train_splits.sh`: launches four split-wise training jobs
+- `scripts/eval_checkpoint.sh`: evaluates a single checkpoint on the requested split
+
+## Examples
 
 ```bash
 bash tasks/PPR/ltcontext/scripts/train_splits.sh PPR_L videomaev2 0,1,2,3 exp_ppr_ltcontext
 ```
 
-## Evaluate a Checkpoint
-
 ```bash
 bash tasks/PPR/ltcontext/scripts/eval_checkpoint.sh PPR_L videomaev2 1 0 /path/to/checkpoint.pyth
 ```
 
-Default paths:
-- dataset root: `dataset/PPR/`
-- outputs: `outputs/ppr/ltcontext/`
-- logs: `logs/ppr/ltcontext/`
+## Notes
 
-Implementation provenance:
-- source snapshot: `third_party/ltcontext/`
-- repository-specific changes: `tasks/TAS/ltcontext/UPSTREAM_DIFF.md`
+- Evaluation writes metrics to the requested save directory and disables prediction dumping by default.

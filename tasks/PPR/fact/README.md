@@ -1,32 +1,43 @@
-# FACT on IMPACT PPR
+# FACT for PPR
 
-This directory provides the IMPACT PPR configurations and launch scripts for `FACT`.
+This directory provides the released IMPACT `PPR` wrapper for `FACT`.
 
-Supported label protocols:
-- `PPR_L`
-- `PPR_R`
+## Path Convention
 
-Supported feature types:
-- `i3d`
-- `videomaev2`
+- dataset root: `dataset/PPR`
+- configs: `tasks/PPR/fact/configs`
+- default logs: `logs/ppr/fact`
+- default evaluation outputs: `outputs/ppr/fact_eval`
+- source snapshot: `third_party/fact`
+- IMPACT-specific changes: `tasks/TAS/fact/UPSTREAM_DIFF.md`
 
-## Train
+## Common Arguments
+
+- `TASK_MODE`: `PPR_L` or `PPR_R`
+- `FEATURE_TYPE`: `videomaev2` or `i3d`
+- `GPU_LIST`: four comma-separated GPU ids for split-wise training
+- `RUN_TAG`: run identifier appended to split markers
+- `IMPACT_ROOT`: dataset override, default `dataset/PPR`
+- `SPLIT`: split id used by checkpoint evaluation
+- `GPU`: CUDA device used by evaluation
+- `CKPT_PATH`: checkpoint path, typically a `network.iter-XXXXX.net` file
+- `LOG_BASE` or `SAVE_ROOT`: optional runtime directory overrides
+
+## Scripts
+
+- `scripts/train_splits.sh`: launches four split-wise training jobs
+- `scripts/eval_checkpoint.sh`: evaluates a single checkpoint on the requested split
+
+## Examples
 
 ```bash
 bash tasks/PPR/fact/scripts/train_splits.sh PPR_L videomaev2 0,1,2,3 exp_ppr_fact
 ```
 
-## Evaluate a Checkpoint
-
 ```bash
-bash tasks/PPR/fact/scripts/eval_checkpoint.sh PPR_L videomaev2 1 0 /path/to/network.iter-XXXXX.net
+bash tasks/PPR/fact/scripts/eval_checkpoint.sh PPR_L videomaev2 1 0 /path/to/network.iter-100000.net
 ```
 
-Default paths:
-- dataset root: `dataset/PPR/`
-- outputs: `outputs/ppr/fact/`
-- logs: `logs/ppr/fact/`
+## Notes
 
-Implementation provenance:
-- source snapshot: `third_party/fact/`
-- repository-specific changes: `tasks/TAS/fact/UPSTREAM_DIFF.md`
+- The evaluation wrapper calls `third_party/fact/src/eval_checkpoint.py` and stores metrics under the requested save root.

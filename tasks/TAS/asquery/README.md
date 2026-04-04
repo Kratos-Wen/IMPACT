@@ -1,35 +1,43 @@
-# ASQuery on IMPACT TAS
+# ASQuery for TAS
 
-This directory provides the IMPACT TAS configurations and launch scripts for `ASQuery`.
+This directory provides the released IMPACT `TAS` wrapper for `ASQuery`.
 
-Supported label protocols:
-- `CAS`
-- `FAS_L`
-- `FAS_R`
+## Path Convention
 
-Supported feature types:
-- `i3d`
-- `videomaev2`
+- dataset root: `dataset/TAS`
+- configs: `tasks/TAS/asquery/configs`
+- default logs: `logs/tas/asquery`
+- default evaluation logs: `logs/tas/asquery_eval`
+- source snapshot: `third_party/asquery`
+- IMPACT-specific changes: `tasks/TAS/asquery/UPSTREAM_DIFF.md`
 
-## Train
+## Common Arguments
+
+- `TASK_MODE`: `CAS`, `FAS_L`, or `FAS_R`
+- `FEATURE_TYPE`: `videomaev2` or `i3d`
+- `GPU_LIST`: four comma-separated GPU ids for split-wise training
+- `RUN_TAG`: run identifier appended to training outputs
+- `IMPACT_ROOT`: dataset override, default `dataset/TAS`
+- `SPLIT`: split id used by checkpoint evaluation
+- `GPU`: CUDA device used by evaluation
+- `CKPT_PATH`: checkpoint path passed to the upstream evaluator
+- `LOG_BASE` or `LOG_ROOT`: optional log directory override
+
+## Scripts
+
+- `scripts/train_splits.sh`: launches four split-wise training jobs
+- `scripts/eval_checkpoint.sh`: evaluates a checkpoint on the requested test split
+
+## Examples
 
 ```bash
 bash tasks/TAS/asquery/scripts/train_splits.sh CAS videomaev2 0,1,2,3 exp_tas_asquery
 ```
 
-## Evaluate a Checkpoint
-
 ```bash
-bash tasks/TAS/asquery/scripts/eval_checkpoint.sh CAS videomaev2 1 0 /path/to/ckpt_dir_or_file
+bash tasks/TAS/asquery/scripts/eval_checkpoint.sh CAS videomaev2 1 0 /path/to/checkpoint.pt
 ```
 
-The evaluation entrypoint generates a temporary evaluation config with `val_split` switched to `test`.
+## Notes
 
-Default paths:
-- dataset root: `dataset/TAS/`
-- outputs: `outputs/tas/asquery/`
-- logs: `logs/tas/asquery/`
-
-Implementation provenance:
-- source snapshot: `third_party/asquery/`
-- repository-specific changes: `UPSTREAM_DIFF.md`
+- The evaluation wrapper creates a temporary config with `val_split` rewritten to the requested `test` split.

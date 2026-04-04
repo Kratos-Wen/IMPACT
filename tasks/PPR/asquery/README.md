@@ -1,31 +1,43 @@
-# ASQuery on IMPACT PPR
+# ASQuery for PPR
 
-This directory provides the IMPACT PPR configurations and launch scripts for `ASQuery`.
+This directory provides the released IMPACT `PPR` wrapper for `ASQuery`.
 
-Supported label protocols:
-- `PPR_L`
-- `PPR_R`
+## Path Convention
 
-Supported feature types:
-- `i3d`
-- `videomaev2`
+- dataset root: `dataset/PPR`
+- configs: `tasks/PPR/asquery/configs`
+- default logs: `logs/ppr/asquery`
+- default evaluation logs: `logs/ppr/asquery_eval`
+- source snapshot: `third_party/asquery`
+- IMPACT-specific changes: `tasks/TAS/asquery/UPSTREAM_DIFF.md`
 
-## Train
+## Common Arguments
+
+- `TASK_MODE`: `PPR_L` or `PPR_R`
+- `FEATURE_TYPE`: `videomaev2` or `i3d`
+- `GPU_LIST`: four comma-separated GPU ids for split-wise training
+- `RUN_TAG`: run identifier appended to training outputs
+- `IMPACT_ROOT`: dataset override, default `dataset/PPR`
+- `SPLIT`: split id used by checkpoint evaluation
+- `GPU`: CUDA device used by evaluation
+- `CKPT_PATH`: checkpoint path passed to the upstream evaluator
+- `LOG_BASE` or `LOG_ROOT`: optional log directory override
+
+## Scripts
+
+- `scripts/train_splits.sh`: launches four split-wise training jobs
+- `scripts/eval_checkpoint.sh`: evaluates a checkpoint on the requested test split
+
+## Examples
 
 ```bash
 bash tasks/PPR/asquery/scripts/train_splits.sh PPR_L videomaev2 0,1,2,3 exp_ppr_asquery
 ```
 
-## Evaluate a Checkpoint
-
 ```bash
 bash tasks/PPR/asquery/scripts/eval_checkpoint.sh PPR_L videomaev2 1 0 /path/to/checkpoint.pt
 ```
 
-Default paths:
-- dataset root: `dataset/PPR/`
-- logs: `logs/ppr/asquery/`
+## Notes
 
-Implementation provenance:
-- source snapshot: `third_party/asquery/`
-- repository-specific changes: `tasks/TAS/asquery/UPSTREAM_DIFF.md`
+- The evaluation wrapper creates a temporary config with `val_split` rewritten to the requested `test` split.
