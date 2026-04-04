@@ -8,4 +8,4 @@ Current TAS sources:
 - `ASQuery`
 - `FACT`
 
-Each method directory under `tasks/tas/` provides the IMPACT-specific configurations and launch scripts used in this repository. Repository-specific changes relative to the upstream method release are summarized in the corresponding `UPSTREAM_DIFF.md` file.
+Each method directory under `tasks/TAS/` provides the IMPACT-specific configurations and launch scripts used in this repository. Repository-specific changes relative to the upstream method release are summarized in the corresponding `UPSTREAM_DIFF.md` file.
