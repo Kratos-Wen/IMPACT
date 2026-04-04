@@ -1,0 +1,17 @@
+# IMPACT ASR temporal-only model for frame-aligned 1408-dim features.
+
+# General input/output info
+frames: 65
+num_classes: 17
+img_size: 224
+spatial_frozen: False
+
+# Temporal Transformer
+temporal_type: transformer
+temporal_args:
+  dim: 1408
+  depth: 6
+  heads: 8
+  dim_head: 176
+  mlp_dim: 4096
+  dropout: 0.1

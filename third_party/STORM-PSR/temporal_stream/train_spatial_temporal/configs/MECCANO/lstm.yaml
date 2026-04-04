@@ -1,0 +1,5 @@
+# Temporal enc
+input_size: 128
+hidden_size: 512
+frames: 64
+num_classes: 17

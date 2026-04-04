@@ -2,10 +2,19 @@
 
 This directory contains the method implementations used by the IMPACT benchmark release.
 
-Current TAS sources:
+Bundled sources:
 - `LTContext`
 - `DiffAct`
 - `ASQuery`
 - `FACT`
+- `ASR-PSR-Experiment`
+- `STORM-PSR`
 
-Each method directory under `tasks/TAS/` provides the IMPACT-specific configurations and launch scripts used in this repository. Repository-specific changes relative to the upstream method release are summarized in the corresponding `UPSTREAM_DIFF.md` file.
+Task mapping:
+- `LTContext`, `DiffAct`, `ASQuery`, and `FACT` back the released `TAS`, `PPR`, and `ATR` wrappers
+- `ASR-PSR-Experiment` backs the released `ASR` wrappers and the indirect `PSR` pipelines
+- `STORM-PSR` backs the released direct `PSR` temporal-stream wrapper
+
+Repository-authored benchmark wrappers live under `tasks/`. Upstream licenses remain inside the corresponding source snapshots.
+
+For the TAS methods, repository-specific changes relative to upstream are summarized in the method-local `UPSTREAM_DIFF.md` files under `tasks/TAS/`.

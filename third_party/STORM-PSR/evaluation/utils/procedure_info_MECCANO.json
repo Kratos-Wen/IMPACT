@@ -1,0 +1,461 @@
+[
+    {
+        "id": 0,
+        "description": "Install left damping fork",
+        "install": true,
+        "state_idx": 0,
+        "expected_in_assy": true,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 1,
+        "description": "Incorrectly installed left damping fork",
+        "install": true,
+        "state_idx": 0,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 2,
+        "description": "Remove left damping fork",
+        "install": false,
+        "state_idx": 0,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 3,
+        "description": "Install right damping fork",
+        "install": true,
+        "state_idx": 1,
+        "expected_in_assy": true,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 4,
+        "description": "Incorrectly installed right damping fork",
+        "install": true,
+        "state_idx": 1,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 5,
+        "description": "Remove right damping fork",
+        "install": false,
+        "state_idx": 1,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 6,
+        "description": "Install left rear chassis",
+        "install": true,
+        "state_idx": 2,
+        "expected_in_assy": true,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 7,
+        "description": "Incorrectly installed left rear chassis",
+        "install": true,
+        "state_idx": 2,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 8,
+        "description": "Remove left rear chassis",
+        "install": false,
+        "state_idx": 2,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 9,
+        "description": "Install right rear chassis",
+        "install": true,
+        "state_idx": 3,
+        "expected_in_assy": true,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 10,
+        "description": "Incorrectly installed right rear chassis",
+        "install": true,
+        "state_idx": 3,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 11,
+        "description": "Remove right rear chassis",
+        "install": false,
+        "state_idx": 3,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 12,
+        "description": "Install left frame",
+        "install": true,
+        "state_idx": 4,
+        "expected_in_assy": true,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 13,
+        "description": "Incorrectly installed left frame",
+        "install": true,
+        "state_idx": 4,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 14,
+        "description": "Remove left frame",
+        "install": false,
+        "state_idx": 4,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 15,
+        "description": "Install right frame",
+        "install": true,
+        "state_idx": 5,
+        "expected_in_assy": true,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 16,
+        "description": "Incorrectly installed right frame",
+        "install": true,
+        "state_idx": 5,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 17,
+        "description": "Remove right frame",
+        "install": false,
+        "state_idx": 5,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 18,
+        "description": "Install left tail wing",
+        "install": true,
+        "state_idx": 6,
+        "expected_in_assy": true,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 19,
+        "description": "Incorrectly installed left tail wing",
+        "install": true,
+        "state_idx": 6,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 20,
+        "description": "Remove left tail wing",
+        "install": false,
+        "state_idx": 6,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 21,
+        "description": "Install right tail wing",
+        "install": true,
+        "state_idx": 7,
+        "expected_in_assy": true,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 22,
+        "description": "Incorrectly installed right tail wing",
+        "install": true,
+        "state_idx": 7,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 23,
+        "description": "Remove right tail wing",
+        "install": false,
+        "state_idx": 7,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 24,
+        "description": "Install headlamp",
+        "install": true,
+        "state_idx": 8,
+        "expected_in_assy": true,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 25,
+        "description": "Incorrectly installed headlamp",
+        "install": true,
+        "state_idx": 8,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 26,
+        "description": "Remove headlamp",
+        "install": false,
+        "state_idx": 8,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 27,
+        "description": "Install left handle",
+        "install": true,
+        "state_idx": 9,
+        "expected_in_assy": true,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 28,
+        "description": "Incorrectly installed left handle",
+        "install": true,
+        "state_idx": 9,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 29,
+        "description": "Remove left handle",
+        "install": false,
+        "state_idx": 9,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 30,
+        "description": "Install right handle",
+        "install": true,
+        "state_idx": 10,
+        "expected_in_assy": true,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 31,
+        "description": "Incorrectly installed right handle",
+        "install": true,
+        "state_idx": 10,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 32,
+        "description": "Remove right handle",
+        "install": false,
+        "state_idx": 10,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 33,
+        "description": "Install front wheel",
+        "install": true,
+        "state_idx": 11,
+        "expected_in_assy": true,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 34,
+        "description": "Incorrectly installed front wheel",
+        "install": true,
+        "state_idx": 11,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 35,
+        "description": "Remove front wheel",
+        "install": false,
+        "state_idx": 11,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 36,
+        "description": "Install rear wheel",
+        "install": true,
+        "state_idx": 12,
+        "expected_in_assy": true,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 37,
+        "description": "Incorrectly installed rear wheel",
+        "install": true,
+        "state_idx": 12,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 38,
+        "description": "Remove rear wheel",
+        "install": false,
+        "state_idx": 12,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 39,
+        "description": "Install swingarm",
+        "install": true,
+        "state_idx": 13,
+        "expected_in_assy": true,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 40,
+        "description": "Incorrectly installed swingarm",
+        "install": true,
+        "state_idx": 13,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 41,
+        "description": "Remove swingarm",
+        "install": false,
+        "state_idx": 13,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 42,
+        "description": "Install fuel tank",
+        "install": true,
+        "state_idx": 14,
+        "expected_in_assy": true,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 43,
+        "description": "Incorrectly installed fuel tank",
+        "install": true,
+        "state_idx": 14,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 44,
+        "description": "Remove fuel tank",
+        "install": false,
+        "state_idx": 14,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 45,
+        "description": "Install tail wings pin",
+        "install": true,
+        "state_idx": 15,
+        "expected_in_assy": true,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 46,
+        "description": "Incorrectly installed tail wings pin",
+        "install": true,
+        "state_idx": 15,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 47,
+        "description": "Remove tail wings pin",
+        "install": false,
+        "state_idx": 15,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 48,
+        "description": "Install drive shaft",
+        "install": true,
+        "state_idx": 16,
+        "expected_in_assy": true,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 49,
+        "description": "Incorrectly installed drive shaft",
+        "install": true,
+        "state_idx": 16,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    },
+    {
+        "id": 50,
+        "description": "Remove drive shaft",
+        "install": false,
+        "state_idx": 16,
+        "expected_in_assy": false,
+        "expected_before_subgoal": false,
+        "expected_in_main": false
+    }
+]

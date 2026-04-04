@@ -1,3 +1,17 @@
-# PPR
+# Procedural Phase Recognition
 
-This directory is reserved for the IMPACT Procedural Phase Recognition (PPR) release.
+This directory contains the IMPACT Procedural Phase Recognition benchmark release.
+
+Included reference implementations:
+- `ltcontext`
+- `diffact`
+- `asquery`
+- `fact`
+
+Benchmarks defined in the paper:
+- `PPR-L`
+- `PPR-R`
+
+Launcher mapping used in this repository:
+- `PPR_L` for `PPR-L`
+- `PPR_R` for `PPR-R`

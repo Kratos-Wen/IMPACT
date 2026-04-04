@@ -1,0 +1,15 @@
+# General input/ouput info
+frames: 16 # 32
+num_classes: 11 # Clip level, multi-label classification 
+img_size: 224
+spatial_frozen: False
+
+# Temporal Transformer
+temporal_type: transformer
+temporal_args:
+  dim: 384
+  depth: 6 # best at 9
+  heads: 8 # num of multi-head attention in 1 encoder block, best at 12
+  dim_head: 128
+  mlp_dim: 4096 #4096
+  dropout: 0.1

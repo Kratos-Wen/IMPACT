@@ -1,0 +1,619 @@
+{
+  "task": "ASR",
+  "version": "1.0",
+  "video_id": "20250429_1146_color",
+  "fps": 30.0,
+  "view_start": 0,
+  "view_end": 6858,
+  "meta_data": {
+    "fps": 30.0,
+    "resolution": {
+      "width": 1280,
+      "height": 720
+    },
+    "num_frames": 6859,
+    "view_start": 0,
+    "view_end": 6858,
+    "video_num_frames": 6859,
+    "workflow": "assemble",
+    "initial_state": 0,
+    "initial_state_label": "Not installed",
+    "model_type": "CG15-125BL"
+  },
+  "frame_count": 6859,
+  "workflow": "assemble",
+  "initial_state": 0,
+  "initial_state_vector": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "components": [
+    {
+      "id": 0,
+      "name": "anti_vibration_handle"
+    },
+    {
+      "id": 1,
+      "name": "gearbox_housing"
+    },
+    {
+      "id": 2,
+      "name": "drive_shaft"
+    },
+    {
+      "id": 3,
+      "name": "bevel_gear"
+    },
+    {
+      "id": 4,
+      "name": "adapter_plate"
+    },
+    {
+      "id": 5,
+      "name": "bearing_plate"
+    },
+    {
+      "id": 6,
+      "name": "screw_lever"
+    },
+    {
+      "id": 7,
+      "name": "screw_adaptor_topleft"
+    },
+    {
+      "id": 8,
+      "name": "screw_adaptor_lowright"
+    },
+    {
+      "id": 9,
+      "name": "bearing_screw_topleft"
+    },
+    {
+      "id": 10,
+      "name": "bearing_screw_lowright"
+    },
+    {
+      "id": 11,
+      "name": "M4_nut_plate_topleft"
+    },
+    {
+      "id": 12,
+      "name": "M4_nut_plate_lowright"
+    },
+    {
+      "id": 13,
+      "name": "spring"
+    },
+    {
+      "id": 14,
+      "name": "lever"
+    },
+    {
+      "id": 15,
+      "name": "washer"
+    },
+    {
+      "id": 16,
+      "name": "M6_nut"
+    }
+  ],
+  "state_sequence": [
+    {
+      "frame": 0,
+      "state": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "frame": 1203,
+      "state": [
+        0,
+        -1,
+        -1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "frame": 1561,
+      "state": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "frame": 2411,
+      "state": [
+        0,
+        1,
+        1,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "frame": 2703,
+      "state": [
+        0,
+        1,
+        1,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "frame": 2993,
+      "state": [
+        0,
+        1,
+        1,
+        1,
+        -1,
+        0,
+        0,
+        -1,
+        1,
+        0,
+        0,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "frame": 3299,
+      "state": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "frame": 3898,
+      "state": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        0,
+        1,
+        1,
+        0,
+        -1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "frame": 4448,
+      "state": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        0,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "frame": 4853,
+      "state": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        0,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "frame": 5007,
+      "state": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "frame": 5779,
+      "state": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        1
+      ]
+    },
+    {
+      "frame": 6259,
+      "state": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "frame": 6425,
+      "state": [
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "frame": 6812,
+      "state": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "state_changes": [
+    {
+      "frame": 1203,
+      "component_id": 1,
+      "state": -1
+    },
+    {
+      "frame": 1203,
+      "component_id": 16,
+      "state": -1
+    },
+    {
+      "frame": 1203,
+      "component_id": 2,
+      "state": -1
+    },
+    {
+      "frame": 1203,
+      "component_id": 3,
+      "state": -1
+    },
+    {
+      "frame": 1561,
+      "component_id": 1,
+      "state": 1
+    },
+    {
+      "frame": 1561,
+      "component_id": 16,
+      "state": 1
+    },
+    {
+      "frame": 1561,
+      "component_id": 2,
+      "state": 1
+    },
+    {
+      "frame": 1561,
+      "component_id": 3,
+      "state": 1
+    },
+    {
+      "frame": 2411,
+      "component_id": 12,
+      "state": -1
+    },
+    {
+      "frame": 2411,
+      "component_id": 4,
+      "state": -1
+    },
+    {
+      "frame": 2411,
+      "component_id": 8,
+      "state": -1
+    },
+    {
+      "frame": 2703,
+      "component_id": 12,
+      "state": 1
+    },
+    {
+      "frame": 2703,
+      "component_id": 8,
+      "state": 1
+    },
+    {
+      "frame": 2993,
+      "component_id": 11,
+      "state": -1
+    },
+    {
+      "frame": 2993,
+      "component_id": 7,
+      "state": -1
+    },
+    {
+      "frame": 3299,
+      "component_id": 11,
+      "state": 1
+    },
+    {
+      "frame": 3299,
+      "component_id": 4,
+      "state": 1
+    },
+    {
+      "frame": 3299,
+      "component_id": 7,
+      "state": 1
+    },
+    {
+      "frame": 3898,
+      "component_id": 10,
+      "state": -1
+    },
+    {
+      "frame": 3898,
+      "component_id": 5,
+      "state": -1
+    },
+    {
+      "frame": 4448,
+      "component_id": 9,
+      "state": -1
+    },
+    {
+      "frame": 4853,
+      "component_id": 9,
+      "state": 1
+    },
+    {
+      "frame": 5007,
+      "component_id": 10,
+      "state": 1
+    },
+    {
+      "frame": 5007,
+      "component_id": 5,
+      "state": 1
+    },
+    {
+      "frame": 5779,
+      "component_id": 13,
+      "state": -1
+    },
+    {
+      "frame": 5779,
+      "component_id": 14,
+      "state": -1
+    },
+    {
+      "frame": 5779,
+      "component_id": 15,
+      "state": -1
+    },
+    {
+      "frame": 5779,
+      "component_id": 6,
+      "state": -1
+    },
+    {
+      "frame": 6259,
+      "component_id": 13,
+      "state": 1
+    },
+    {
+      "frame": 6259,
+      "component_id": 14,
+      "state": 1
+    },
+    {
+      "frame": 6259,
+      "component_id": 15,
+      "state": 1
+    },
+    {
+      "frame": 6259,
+      "component_id": 6,
+      "state": 1
+    },
+    {
+      "frame": 6425,
+      "component_id": 0,
+      "state": -1
+    },
+    {
+      "frame": 6812,
+      "component_id": 0,
+      "state": 1
+    }
+  ]
+}

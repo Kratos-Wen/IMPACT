@@ -1,0 +1,17 @@
+# Full-VTN - ViT and Full Self Attention Transformer
+
+# General input/ouput info
+frames: 65 # 32
+num_classes: 11 # Clip level, multi-label classification 
+img_size: 224
+spatial_frozen: False
+
+# Temporal Transformer
+temporal_type: transformer
+temporal_args:
+  dim: 128 # Since the updated SimStateNet have 128 x 1 embedding dim, so also can intput dim here. 
+  depth: 6 # best at 9
+  heads: 8 # 
+  dim_head: 128
+  mlp_dim: 4096 #4096
+  dropout: 0.1

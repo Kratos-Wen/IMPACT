@@ -1,0 +1,25 @@
+{
+  "annotation_dir": "dataset/ASR/annotations",
+  "split_dir": "dataset/ASR/splits_front_only_v1",
+  "impact_split": "split1",
+  "splits": {
+    "train": {
+      "records": 64,
+      "states": 1023,
+      "events_no_error": 1106,
+      "events_with_errors": 1660
+    },
+    "val": {
+      "records": 10,
+      "states": 157,
+      "events_no_error": 170,
+      "events_with_errors": 256
+    },
+    "test": {
+      "records": 18,
+      "states": 277,
+      "events_no_error": 337,
+      "events_with_errors": 488
+    }
+  }
+}

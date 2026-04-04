@@ -20,3 +20,5 @@ third_party/ASQuery/logs/
 third_party/LTContext/experiments/
 third_party/LTContext/logs/
 third_party/LTContext/test_results/
+third_party/ASR-PSR-Experiment/models/
+third_party/ASR-PSR-Experiment/results/

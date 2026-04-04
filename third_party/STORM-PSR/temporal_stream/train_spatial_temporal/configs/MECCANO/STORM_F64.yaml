@@ -1,0 +1,24 @@
+# General input/ouput info
+frames: 64
+num_classes: 11 
+img_size: 224
+spatial_frozen: False
+ckpt_dir : None
+
+# Spatial Transformer
+spatial_args:
+  hidden: 384
+  channels: 3
+  second_head_input: 128
+  model: 'vit_small_patch16_224.augreg_in21k_ft_in1k'
+  weights_dir: 'YOUR OWN PT WEIGHTS DIR'
+
+# Temporal Transformer
+temporal_type: transformer
+temporal_args:
+  dim: 384
+  depth: 6
+  heads: 8
+  dim_head: 128
+  mlp_dim: 4096
+  dropout: 0.1
