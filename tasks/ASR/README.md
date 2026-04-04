@@ -2,14 +2,44 @@
 
 This directory contains the IMPACT Assembly State Recognition benchmark release.
 
-Included reference implementations:
-- `ms_tcn2`
-- `videomae_v2_head`
+## Path Convention
+
+- Run all commands from the repository root.
+- Repository-managed annotation root: `dataset/ASR/annotations/`
+- Repository-managed split root: `dataset/ASR/splits_front_only_v1/`
+- Repository-managed runtime root: `logs/asr/`
+- User-managed input: `FEATURE_DIR`
+
+## Common Arguments
+
+- `SPLIT_ID`: split index such as `1`
+- `FEATURE_DIR`: path to extracted front-view features
+- `CHECKPOINT_NAME`: checkpoint file name under the upstream model directory, for example `epoch-100.model`
 
 Current public protocol:
 - front-view bundle split `split1`
 
-Each method directory provides:
-- a benchmark-oriented training entrypoint
-- a benchmark-oriented evaluation entrypoint
-- method-specific usage notes for the released front-view protocol
+## Scripts
+
+| Method | Script | Purpose | Usage |
+| --- | --- | --- | --- |
+| `ms_tcn2` | `tasks/ASR/ms_tcn2/scripts/train_split.sh` | train one released split | `bash tasks/ASR/ms_tcn2/scripts/train_split.sh <SPLIT_ID> <FEATURE_DIR> [GPU] [NUM_EPOCHS] [BATCH_SIZE] [LR] [ANNOTATION_DIR] [SPLIT_DIR] [LOG_ROOT]` |
+| `ms_tcn2` | `tasks/ASR/ms_tcn2/scripts/eval_checkpoint.sh` | evaluate one checkpoint | `bash tasks/ASR/ms_tcn2/scripts/eval_checkpoint.sh <SPLIT_ID> <FEATURE_DIR> <CHECKPOINT_NAME> [GPU] [ANNOTATION_DIR] [SPLIT_DIR] [LOG_ROOT]` |
+| `videomae_v2_head` | `tasks/ASR/videomae_v2_head/scripts/train_split.sh` | train one released split | `bash tasks/ASR/videomae_v2_head/scripts/train_split.sh <SPLIT_ID> <FEATURE_DIR> [GPU] [NUM_EPOCHS] [BATCH_SIZE] [LR] [ANNOTATION_DIR] [SPLIT_DIR] [LOG_ROOT]` |
+| `videomae_v2_head` | `tasks/ASR/videomae_v2_head/scripts/eval_checkpoint.sh` | evaluate one checkpoint | `bash tasks/ASR/videomae_v2_head/scripts/eval_checkpoint.sh <SPLIT_ID> <FEATURE_DIR> <CHECKPOINT_NAME> [GPU] [ANNOTATION_DIR] [SPLIT_DIR] [LOG_ROOT]` |
+
+## Examples
+
+```bash
+bash tasks/ASR/ms_tcn2/scripts/train_split.sh 1 /path/to/IMPACT_i3d_front/features 0
+bash tasks/ASR/ms_tcn2/scripts/eval_checkpoint.sh 1 /path/to/IMPACT_i3d_front/features epoch-100.model 0
+
+bash tasks/ASR/videomae_v2_head/scripts/train_split.sh 1 /path/to/IMPACT_front/features 0
+bash tasks/ASR/videomae_v2_head/scripts/eval_checkpoint.sh 1 /path/to/IMPACT_front/features epoch-100.model 0
+```
+
+## Notes
+
+- The public release currently targets the front-view protocol only.
+- Evaluation uses `CHECKPOINT_NAME`, not an absolute checkpoint path, because the upstream evaluator resolves checkpoints from its own model directory.
+- Method-local `README.md` files document method-specific defaults.
