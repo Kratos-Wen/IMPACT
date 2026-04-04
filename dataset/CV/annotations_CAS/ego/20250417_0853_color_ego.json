@@ -1,0 +1,426 @@
+{
+  "video_id": "20250417_0853_color_ego_sync_clipped",
+  "view": "ego",
+  "view_start": 0,
+  "view_end": 4808,
+  "segments": [
+    {
+      "id": 0,
+      "label": "retrieve_rotor_assembly",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 0,
+      "f_end": 40
+    },
+    {
+      "id": 1,
+      "label": "retrieve_gearbox_housing",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 41,
+      "f_end": 66
+    },
+    {
+      "id": 2,
+      "label": "retrieve_rotor_assembly",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 67,
+      "f_end": 101
+    },
+    {
+      "id": 3,
+      "label": "null",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 102,
+      "f_end": 162
+    },
+    {
+      "id": 4,
+      "label": "install_rotor_assembly",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 163,
+      "f_end": 338
+    },
+    {
+      "id": 5,
+      "label": "retrieve_rotor_assembly",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 339,
+      "f_end": 386
+    },
+    {
+      "id": 6,
+      "label": "install_rotor_assembly",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 387,
+      "f_end": 710
+    },
+    {
+      "id": 7,
+      "label": "null",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 711,
+      "f_end": 726
+    },
+    {
+      "id": 8,
+      "label": "remove_rotor_assembly",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 727,
+      "f_end": 786
+    },
+    {
+      "id": 9,
+      "label": "install_rotor_assembly",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 787,
+      "f_end": 928
+    },
+    {
+      "id": 10,
+      "label": "remove_rotor_assembly",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 929,
+      "f_end": 983
+    },
+    {
+      "id": 11,
+      "label": "null",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 984,
+      "f_end": 1039
+    },
+    {
+      "id": 12,
+      "label": "install_rotor_assembly",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 1040,
+      "f_end": 1273
+    },
+    {
+      "id": 13,
+      "label": "remove_rotor_assembly",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 1274,
+      "f_end": 1298
+    },
+    {
+      "id": 14,
+      "label": "install_rotor_assembly",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 1298,
+      "f_end": 1625
+    },
+    {
+      "id": 15,
+      "label": "store_tool",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 1626,
+      "f_end": 1648
+    },
+    {
+      "id": 16,
+      "label": "retrieve_adapter_plate",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 1649,
+      "f_end": 1695
+    },
+    {
+      "id": 17,
+      "label": "null",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 1696,
+      "f_end": 1749
+    },
+    {
+      "id": 18,
+      "label": "attach_adapter_plate",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 1749,
+      "f_end": 1800
+    },
+    {
+      "id": 19,
+      "label": "retrieve_adapter_plate",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 1801,
+      "f_end": 1883
+    },
+    {
+      "id": 20,
+      "label": "attach_adapter_plate",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 1884,
+      "f_end": 2202
+    },
+    {
+      "id": 21,
+      "label": "retrieve_adapter_plate",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 2203,
+      "f_end": 2302
+    },
+    {
+      "id": 22,
+      "label": "attach_adapter_plate",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 2303,
+      "f_end": 2685
+    },
+    {
+      "id": 23,
+      "label": "null",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 2686,
+      "f_end": 2701
+    },
+    {
+      "id": 24,
+      "label": "store_tool",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 2702,
+      "f_end": 2728
+    },
+    {
+      "id": 25,
+      "label": "retrieve_bearing_plate_assembly",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 2729,
+      "f_end": 2753
+    },
+    {
+      "id": 26,
+      "label": "insert_bearing_plate_assembly",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 2754,
+      "f_end": 2802
+    },
+    {
+      "id": 27,
+      "label": "retrieve_bearing_plate_assembly",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 2802,
+      "f_end": 2847
+    },
+    {
+      "id": 28,
+      "label": "null",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 2847,
+      "f_end": 2881
+    },
+    {
+      "id": 29,
+      "label": "insert_bearing_plate_assembly",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 2882,
+      "f_end": 3716
+    },
+    {
+      "id": 30,
+      "label": "null",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 3717,
+      "f_end": 3732
+    },
+    {
+      "id": 31,
+      "label": "retrieve_locking_lever_assembly",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 3733,
+      "f_end": 3920
+    },
+    {
+      "id": 32,
+      "label": "null",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 3921,
+      "f_end": 4008
+    },
+    {
+      "id": 33,
+      "label": "install_locking_lever_assembly",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 4009,
+      "f_end": 4567
+    },
+    {
+      "id": 34,
+      "label": "null",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 4568,
+      "f_end": 4584
+    },
+    {
+      "id": 35,
+      "label": "retrieve_anti_vibration_handle",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 4585,
+      "f_end": 4610
+    },
+    {
+      "id": 36,
+      "label": "screw_on_anti_vibration_handle",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 4611,
+      "f_end": 4758
+    },
+    {
+      "id": 37,
+      "label": "finish_angle_grinder_assembly",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 4759,
+      "f_end": 4774
+    },
+    {
+      "id": 38,
+      "label": "store_tool",
+      "has_anomaly": false,
+      "meta_activity": "none",
+      "f_start": 4775,
+      "f_end": 4806
+    }
+  ],
+  "labels": [
+    {
+      "id": 1,
+      "name": "start_angle_grinder_assembly"
+    },
+    {
+      "id": 2,
+      "name": "unscrew_anti_vibration_handle"
+    },
+    {
+      "id": 3,
+      "name": "store_anti_vibration_handle"
+    },
+    {
+      "id": 4,
+      "name": "remove_locking_lever_assembly"
+    },
+    {
+      "id": 5,
+      "name": "store_locking_lever_assembly"
+    },
+    {
+      "id": 6,
+      "name": "extract_bearing_plate_assembly"
+    },
+    {
+      "id": 7,
+      "name": "store_bearing_plate_assembly"
+    },
+    {
+      "id": 8,
+      "name": "detach_adapter_plate"
+    },
+    {
+      "id": 9,
+      "name": "remove_rotor_assembly"
+    },
+    {
+      "id": 10,
+      "name": "store_rotor_assembly"
+    },
+    {
+      "id": 11,
+      "name": "store_gearbox_housing"
+    },
+    {
+      "id": 12,
+      "name": "store_adapter_plate"
+    },
+    {
+      "id": 0,
+      "name": "null"
+    },
+    {
+      "id": 13,
+      "name": "retrieve_gearbox_housing"
+    },
+    {
+      "id": 14,
+      "name": "retrieve_rotor_assembly"
+    },
+    {
+      "id": 15,
+      "name": "install_rotor_assembly"
+    },
+    {
+      "id": 16,
+      "name": "attach_adapter_plate"
+    },
+    {
+      "id": 17,
+      "name": "retrieve_adapter_plate"
+    },
+    {
+      "id": 18,
+      "name": "retrieve_anti_vibration_handle"
+    },
+    {
+      "id": 19,
+      "name": "retrieve_bearing_plate_assembly"
+    },
+    {
+      "id": 20,
+      "name": "insert_bearing_plate_assembly"
+    },
+    {
+      "id": 21,
+      "name": "retrieve_locking_lever_assembly"
+    },
+    {
+      "id": 22,
+      "name": "install_locking_lever_assembly"
+    },
+    {
+      "id": 23,
+      "name": "screw_on_anti_vibration_handle"
+    },
+    {
+      "id": 24,
+      "name": "store_tool"
+    },
+    {
+      "id": 25,
+      "name": "finish_angle_grinder_assembly"
+    }
+  ]
+}

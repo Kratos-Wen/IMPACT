@@ -27,5 +27,5 @@ Default paths:
 - logs: `logs/ppr/asquery/`
 
 Implementation provenance:
-- source snapshot: `third_party/ASQuery/`
+- source snapshot: `third_party/asquery/`
 - repository-specific changes: `tasks/TAS/asquery/UPSTREAM_DIFF.md`

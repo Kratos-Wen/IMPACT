@@ -28,5 +28,5 @@ Default paths:
 - logs: `logs/ppr/fact/`
 
 Implementation provenance:
-- source snapshot: `third_party/FACT/`
+- source snapshot: `third_party/fact/`
 - repository-specific changes: `tasks/TAS/fact/UPSTREAM_DIFF.md`

@@ -23,7 +23,7 @@ bash tasks/TAS/fact/scripts/train_splits.sh CAS videomaev2 0,1,2,3 exp_tas_fact
 bash tasks/TAS/fact/scripts/eval_checkpoint.sh CAS videomaev2 1 0 /path/to/network.iter-XXXXX.net
 ```
 
-The TAS evaluation entrypoint uses `third_party/FACT/src/eval_checkpoint.py` to score a single checkpoint on the requested split.
+The TAS evaluation entrypoint uses `third_party/fact/src/eval_checkpoint.py` to score a single checkpoint on the requested split.
 
 Default paths:
 - dataset root: `dataset/TAS/`
@@ -31,5 +31,5 @@ Default paths:
 - logs: `logs/tas/fact/`
 
 Implementation provenance:
-- source snapshot: `third_party/FACT/`
+- source snapshot: `third_party/fact/`
 - repository-specific changes: `UPSTREAM_DIFF.md`

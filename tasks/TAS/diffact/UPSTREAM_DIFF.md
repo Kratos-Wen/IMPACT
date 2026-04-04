@@ -1,6 +1,6 @@
 # DiffAct: Repository-Specific Modifications
 
-The source snapshot used for this release is located in `third_party/DiffAct/`.
+The source snapshot used for this release is located in `third_party/diffact/`.
 
 Relative to the upstream `DiffAct` release, the IMPACT benchmark version introduces the following method-side changes:
 - `main.py`: IMPACT root, split, label-mode, and feature-type overrides

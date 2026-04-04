@@ -53,7 +53,7 @@ for idx in 0 1 2 3; do
   log_path="$RUN_LOG_BASE/split${split}.log"
 
   (
-    cd "$ROOT_DIR/third_party/FACT"
+    cd "$ROOT_DIR/third_party/fact"
     CUDA_VISIBLE_DEVICES="$gpu" PYTHONUNBUFFERED=1 \
       python3 -m src.train \
         --cfg "$CFG_PATH" \

@@ -28,5 +28,5 @@ Default paths:
 - logs: `logs/ppr/ltcontext/`
 
 Implementation provenance:
-- source snapshot: `third_party/LTContext/`
+- source snapshot: `third_party/ltcontext/`
 - repository-specific changes: `tasks/TAS/ltcontext/UPSTREAM_DIFF.md`

@@ -17,7 +17,7 @@ bash tasks/ATR/fact/scripts/train_splits.sh ATR_L videomaev2 0,1,2,3 exp_atr_fac
 ```
 
 Release note:
-- the bundled `third_party/FACT/src/eval_checkpoint.py` explicitly excludes ATR
+- the bundled `third_party/fact/src/eval_checkpoint.py` explicitly excludes ATR
 - the public release therefore exposes the stable ATR training entrypoint only, which already reports ATR validation metrics during training
 
 Default paths:
@@ -25,5 +25,5 @@ Default paths:
 - logs: `logs/atr/fact/`
 
 Implementation provenance:
-- source snapshot: `third_party/FACT/`
+- source snapshot: `third_party/fact/`
 - repository-specific changes: `tasks/TAS/fact/UPSTREAM_DIFF.md`

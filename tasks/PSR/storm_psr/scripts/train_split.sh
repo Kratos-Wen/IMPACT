@@ -19,7 +19,7 @@ LOG_PATH="${LOG_ROOT%/}/${RUN_NAME}.train.log"
 
 mkdir -p "$LOG_ROOT" "$CKPT_ROOT"
 
-cd "$ROOT_DIR/third_party/STORM-PSR/temporal_stream/train_spatial_temporal"
+cd "$ROOT_DIR/third_party/storm_psr/temporal_stream/train_spatial_temporal"
 CUDA_VISIBLE_DEVICES="$GPU" PYTHONUNBUFFERED=1 \
   python train.py \
     --data_dir "$FEATURE_DIR" \

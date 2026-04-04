@@ -8,6 +8,7 @@ Included task assets:
 - `PSR/`: STORM-style step labels, component names, and `procedure_info_IMPACT.json`
 - `PPR/`: mappings, official splits, and frame-level labels for `PPR-L` and `PPR-R`
 - `ATR/`: mappings, official splits, frame-level labels, anomaly masks, and segment manifests for `ATR-L` and `ATR-R`
+- `CV/`: synchronized CAS annotations and official split bundles for `CV-TA`, `CV-SMR`, and `CV-SMC`
 
 Implementation mapping:
 - `CAS` corresponds to `TAS-S`
@@ -21,6 +22,7 @@ Implementation mapping:
 Current protocol scope:
 - `ASR/` and `PSR/` currently release the front-view protocol assets used by the benchmark wrappers in `tasks/ASR/` and `tasks/PSR/`
 - `PPR/` and `ATR/` reuse the same task families as `TAS`, but expose task-specific mappings, splits, and labels
+- `CV/` exposes the shared cross-view assets used by `tasks/CV-TA/` and `tasks/CV-SM/`
 
 The repository does not include:
 - raw videos
@@ -33,6 +35,8 @@ Task defaults used by the public scripts:
 - `tasks/PSR/` uses `dataset/ASR/` and `dataset/PSR/`
 - `tasks/PPR/` uses `dataset/PPR/`
 - `tasks/ATR/` uses `dataset/ATR/`
+- `tasks/CV-TA/` uses `dataset/CV/`
+- `tasks/CV-SM/` uses `dataset/CV/`
 
 Licensing:
 - dataset assets in this directory are covered by [LICENSE-DATA](../LICENSE-DATA), unless otherwise noted

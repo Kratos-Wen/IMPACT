@@ -8,5 +8,7 @@ Current release:
 - `PSR/`: `MS-TCN++ -> PSR`, `VideoMAE v2+Head -> PSR`, `STORM-PSR`
 - `PPR/`: `LTContext`, `DiffAct`, `ASQuery`, `FACT`
 - `ATR/`: `LTContext`, `FACT`
+- `CV-TA/`: `cosine_knn`
+- `CV-SM/`: `retrieval`, `classification`
 
 Task directories use the paper abbreviations in uppercase. Method directories use lowercase or snake_case names to keep script paths stable.

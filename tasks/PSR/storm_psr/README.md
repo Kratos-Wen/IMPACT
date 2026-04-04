@@ -30,4 +30,4 @@ Notes:
 - `dataset/PSR/labels_front_only_v1/procedure_info_IMPACT.json` is the released procedure metadata used by the evaluator
 
 Implementation provenance:
-- source snapshot: `third_party/STORM-PSR/`
+- source snapshot: `third_party/storm_psr/`

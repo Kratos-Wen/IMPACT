@@ -20,7 +20,7 @@ LOG_PATH="$SAVE_DIR/eval.log"
 
 mkdir -p "$SAVE_DIR"
 
-cd "$ROOT_DIR/third_party/FACT"
+cd "$ROOT_DIR/third_party/fact"
 CUDA_VISIBLE_DEVICES="$GPU" PYTHONUNBUFFERED=1 \
   python3 -m src.eval_checkpoint \
     --cfg "$CFG_PATH" \

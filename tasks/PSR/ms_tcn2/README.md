@@ -32,4 +32,4 @@ Defaults:
 - learned graph: `outputs/psr/ms_tcn2/procedure_graph_split1.json`
 
 Implementation provenance:
-- source snapshot: `third_party/ASR-PSR-Experiment/`
+- source snapshot: `third_party/asr_psr_experiment/`

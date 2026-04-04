@@ -55,7 +55,7 @@ for idx in 0 1 2 3; do
   (
     cd "$ROOT_DIR"
     CUDA_VISIBLE_DEVICES="$gpu" PYTHONUNBUFFERED=1 \
-      python "$ROOT_DIR/third_party/ASQuery/main.py" \
+      python "$ROOT_DIR/third_party/asquery/main.py" \
         "$CFG_PATH" \
         --impact-root "$IMPACT_ROOT" \
         --impact-label-mode "$TASK_MODE" \

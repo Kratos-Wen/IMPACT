@@ -1,6 +1,6 @@
 # LTContext: Repository-Specific Modifications
 
-The source snapshot used for this release is located in `third_party/LTContext/`.
+The source snapshot used for this release is located in `third_party/ltcontext/`.
 
 Relative to the upstream `LTContext` release, the IMPACT benchmark version introduces the following method-side changes:
 - `run_net.py`: IMPACT task switches, feature-type switches, and split override support

@@ -1,0 +1,149 @@
+root: E:\CHAS
+total_items: 560
+unique_items: 560
+duplicates: 0
+output_layout: merged
+target_ratio: train=0.8000 val=0.1000 test=0.1000
+trainval_pool_ratio: 0.9000
+val_within_trainval: 0.1111
+model_split_mode: list
+model_b_list: C:\Users\charl\Downloads\validation\model_B.txt (exists=True)
+model_b_entries: 19 (invalid=0, expanded_minutes=57)
+
+cross_subject: train=448 val=56 test=56
+subject_exclusive: train=466 val=58 test=36
+model_split: train=413 val=52 test=95
+ego_exclusive: train=398 val=50 test=112
+
+LABEL_DISTRIBUTION weight=count
+overall_total_weight: 21995
+overall_unlabeled_items: 0
+
+cross_subject:
+  train: total_weight=17163 unlabeled_items=0 max_abs_diff=0.0036 avg_abs_diff=0.0010
+  val: total_weight=2625 unlabeled_items=0 max_abs_diff=0.0132 avg_abs_diff=0.0038
+  test: total_weight=2207 unlabeled_items=0 max_abs_diff=0.0192 avg_abs_diff=0.0072
+  label_ratios:
+    - attach_adapter_plate: train=0.0586 val=0.0625 test=0.0412 overall=0.0573
+    - detach_adapter_plate: train=0.0551 val=0.0587 test=0.0720 overall=0.0572
+    - extract_bearing_plate_assembly: train=0.0459 val=0.0484 test=0.0598 overall=0.0476
+    - finish_angle_grinder_assembly: train=0.0121 val=0.0061 test=0.0086 overall=0.0110
+    - insert_bearing_plate_assembly: train=0.0427 val=0.0564 test=0.0322 overall=0.0433
+    - install_locking_lever_assembly: train=0.0230 val=0.0229 test=0.0181 overall=0.0225
+    - install_rotor_assembly: train=0.0480 val=0.0590 test=0.0281 overall=0.0473
+    - null: train=0.2554 val=0.2606 test=0.2714 overall=0.2576
+    - remove_locking_lever_assembly: train=0.0230 val=0.0217 test=0.0340 overall=0.0239
+    - remove_rotor_assembly: train=0.0518 val=0.0686 test=0.0675 overall=0.0554
+    - retrieve_adapter_plate: train=0.0510 val=0.0415 test=0.0349 overall=0.0482
+    - retrieve_anti_vibration_handle: train=0.0123 val=0.0091 test=0.0086 overall=0.0115
+    - retrieve_bearing_plate_assembly: train=0.0337 val=0.0331 test=0.0249 overall=0.0328
+    - retrieve_gearbox_housing: train=0.0122 val=0.0107 test=0.0091 overall=0.0117
+    - retrieve_locking_lever_assembly: train=0.0194 val=0.0171 test=0.0195 overall=0.0191
+    - retrieve_rotor_assembly: train=0.0327 val=0.0274 test=0.0245 overall=0.0313
+    - screw_on_anti_vibration_handle: train=0.0140 val=0.0107 test=0.0091 overall=0.0131
+    - start_angle_grinder_assembly: train=0.0131 val=0.0107 test=0.0163 overall=0.0131
+    - store_adapter_plate: train=0.0332 val=0.0335 test=0.0408 overall=0.0340
+    - store_anti_vibration_handle: train=0.0133 val=0.0107 test=0.0163 overall=0.0133
+    - store_bearing_plate_assembly: train=0.0299 val=0.0278 test=0.0344 overall=0.0301
+    - store_gearbox_housing: train=0.0120 val=0.0080 test=0.0113 overall=0.0115
+    - store_locking_lever_assembly: train=0.0166 val=0.0152 test=0.0208 overall=0.0169
+    - store_rotor_assembly: train=0.0259 val=0.0213 test=0.0322 overall=0.0260
+    - store_tool: train=0.0509 val=0.0465 test=0.0471 overall=0.0500
+    - unscrew_anti_vibration_handle: train=0.0143 val=0.0118 test=0.0172 overall=0.0143
+
+subject_exclusive:
+  train: total_weight=17898 unlabeled_items=0 max_abs_diff=0.0030 avg_abs_diff=0.0008
+  val: total_weight=2714 unlabeled_items=0 max_abs_diff=0.0135 avg_abs_diff=0.0044
+  test: total_weight=1383 unlabeled_items=0 max_abs_diff=0.0410 avg_abs_diff=0.0059
+  label_ratios:
+    - attach_adapter_plate: train=0.0563 val=0.0648 test=0.0557 overall=0.0573
+    - detach_adapter_plate: train=0.0567 val=0.0626 test=0.0535 overall=0.0572
+    - extract_bearing_plate_assembly: train=0.0467 val=0.0531 test=0.0484 overall=0.0476
+    - finish_angle_grinder_assembly: train=0.0117 val=0.0066 test=0.0108 overall=0.0110
+    - insert_bearing_plate_assembly: train=0.0415 val=0.0567 test=0.0405 overall=0.0433
+    - install_locking_lever_assembly: train=0.0232 val=0.0199 test=0.0181 overall=0.0225
+    - install_rotor_assembly: train=0.0468 val=0.0590 test=0.0318 overall=0.0473
+    - null: train=0.2547 val=0.2564 test=0.2986 overall=0.2576
+    - remove_locking_lever_assembly: train=0.0238 val=0.0221 test=0.0289 overall=0.0239
+    - remove_rotor_assembly: train=0.0543 val=0.0667 test=0.0470 overall=0.0554
+    - retrieve_adapter_plate: train=0.0491 val=0.0409 test=0.0521 overall=0.0482
+    - retrieve_anti_vibration_handle: train=0.0120 val=0.0088 test=0.0116 overall=0.0115
+    - retrieve_bearing_plate_assembly: train=0.0319 val=0.0346 test=0.0405 overall=0.0328
+    - retrieve_gearbox_housing: train=0.0118 val=0.0107 test=0.0116 overall=0.0117
+    - retrieve_locking_lever_assembly: train=0.0195 val=0.0177 test=0.0174 overall=0.0191
+    - retrieve_rotor_assembly: train=0.0324 val=0.0280 test=0.0231 overall=0.0313
+    - screw_on_anti_vibration_handle: train=0.0134 val=0.0107 test=0.0145 overall=0.0131
+    - start_angle_grinder_assembly: train=0.0134 val=0.0107 test=0.0145 overall=0.0131
+    - store_adapter_plate: train=0.0344 val=0.0302 test=0.0354 overall=0.0340
+    - store_anti_vibration_handle: train=0.0136 val=0.0107 test=0.0145 overall=0.0133
+    - store_bearing_plate_assembly: train=0.0303 val=0.0258 test=0.0362 overall=0.0301
+    - store_gearbox_housing: train=0.0125 val=0.0074 test=0.0058 overall=0.0115
+    - store_locking_lever_assembly: train=0.0169 val=0.0151 test=0.0202 overall=0.0169
+    - store_rotor_assembly: train=0.0268 val=0.0217 test=0.0231 overall=0.0260
+    - store_tool: train=0.0520 val=0.0472 test=0.0289 overall=0.0500
+    - unscrew_anti_vibration_handle: train=0.0145 val=0.0118 test=0.0174 overall=0.0143
+
+model_split:
+  train: total_weight=15774 unlabeled_items=0 max_abs_diff=0.0141 avg_abs_diff=0.0028
+  val: total_weight=2374 unlabeled_items=0 max_abs_diff=0.0119 avg_abs_diff=0.0033
+  test: total_weight=3847 unlabeled_items=0 max_abs_diff=0.0566 avg_abs_diff=0.0108
+  label_ratios:
+    - attach_adapter_plate: train=0.0570 val=0.0594 test=0.0572 overall=0.0573
+    - detach_adapter_plate: train=0.0575 val=0.0590 test=0.0551 overall=0.0572
+    - extract_bearing_plate_assembly: train=0.0424 val=0.0556 test=0.0637 overall=0.0476
+    - finish_angle_grinder_assembly: train=0.0113 val=0.0080 test=0.0117 overall=0.0110
+    - insert_bearing_plate_assembly: train=0.0391 val=0.0552 test=0.0533 overall=0.0433
+    - install_locking_lever_assembly: train=0.0275 val=0.0257 test=0.0000 overall=0.0225
+    - install_rotor_assembly: train=0.0391 val=0.0434 test=0.0834 overall=0.0473
+    - null: train=0.2435 val=0.2599 test=0.3143 overall=0.2576
+    - remove_locking_lever_assembly: train=0.0283 val=0.0270 test=0.0039 overall=0.0239
+    - remove_rotor_assembly: train=0.0525 val=0.0594 test=0.0647 overall=0.0554
+    - retrieve_adapter_plate: train=0.0534 val=0.0438 test=0.0299 overall=0.0482
+    - retrieve_anti_vibration_handle: train=0.0120 val=0.0084 test=0.0117 overall=0.0115
+    - retrieve_bearing_plate_assembly: train=0.0316 val=0.0350 test=0.0364 overall=0.0328
+    - retrieve_gearbox_housing: train=0.0124 val=0.0093 test=0.0104 overall=0.0117
+    - retrieve_locking_lever_assembly: train=0.0235 val=0.0215 test=0.0000 overall=0.0191
+    - retrieve_rotor_assembly: train=0.0321 val=0.0278 test=0.0299 overall=0.0313
+    - screw_on_anti_vibration_handle: train=0.0132 val=0.0105 test=0.0143 overall=0.0131
+    - start_angle_grinder_assembly: train=0.0137 val=0.0114 test=0.0117 overall=0.0131
+    - store_adapter_plate: train=0.0377 val=0.0320 test=0.0198 overall=0.0340
+    - store_anti_vibration_handle: train=0.0137 val=0.0114 test=0.0130 overall=0.0133
+    - store_bearing_plate_assembly: train=0.0297 val=0.0249 test=0.0351 overall=0.0301
+    - store_gearbox_housing: train=0.0118 val=0.0067 test=0.0130 overall=0.0115
+    - store_locking_lever_assembly: train=0.0208 val=0.0181 test=0.0000 overall=0.0169
+    - store_rotor_assembly: train=0.0288 val=0.0240 test=0.0156 overall=0.0260
+    - store_tool: train=0.0529 val=0.0501 test=0.0377 overall=0.0500
+    - unscrew_anti_vibration_handle: train=0.0146 val=0.0126 test=0.0143 overall=0.0143
+
+ego_exclusive:
+  train: total_weight=15236 unlabeled_items=0 max_abs_diff=0.0021 avg_abs_diff=0.0006
+  val: total_weight=2336 unlabeled_items=0 max_abs_diff=0.0153 avg_abs_diff=0.0039
+  test: total_weight=4423 unlabeled_items=0 max_abs_diff=0.0033 avg_abs_diff=0.0005
+  label_ratios:
+    - attach_adapter_plate: train=0.0568 val=0.0599 test=0.0577 overall=0.0573
+    - detach_adapter_plate: train=0.0574 val=0.0565 test=0.0572 overall=0.0572
+    - extract_bearing_plate_assembly: train=0.0471 val=0.0501 test=0.0477 overall=0.0476
+    - finish_angle_grinder_assembly: train=0.0117 val=0.0068 test=0.0109 overall=0.0110
+    - insert_bearing_plate_assembly: train=0.0412 val=0.0574 test=0.0432 overall=0.0433
+    - install_locking_lever_assembly: train=0.0225 val=0.0218 test=0.0226 overall=0.0225
+    - install_rotor_assembly: train=0.0459 val=0.0548 test=0.0482 overall=0.0473
+    - null: train=0.2556 val=0.2650 test=0.2609 overall=0.2576
+    - remove_locking_lever_assembly: train=0.0242 val=0.0223 test=0.0240 overall=0.0239
+    - remove_rotor_assembly: train=0.0540 val=0.0706 test=0.0522 overall=0.0554
+    - retrieve_adapter_plate: train=0.0494 val=0.0407 test=0.0484 overall=0.0482
+    - retrieve_anti_vibration_handle: train=0.0119 val=0.0090 test=0.0118 overall=0.0115
+    - retrieve_bearing_plate_assembly: train=0.0326 val=0.0342 test=0.0326 overall=0.0328
+    - retrieve_gearbox_housing: train=0.0118 val=0.0107 test=0.0118 overall=0.0117
+    - retrieve_locking_lever_assembly: train=0.0194 val=0.0171 test=0.0194 overall=0.0191
+    - retrieve_rotor_assembly: train=0.0319 val=0.0265 test=0.0317 overall=0.0313
+    - screw_on_anti_vibration_handle: train=0.0135 val=0.0107 test=0.0133 overall=0.0131
+    - start_angle_grinder_assembly: train=0.0135 val=0.0107 test=0.0129 overall=0.0131
+    - store_adapter_plate: train=0.0343 val=0.0325 test=0.0335 overall=0.0340
+    - store_anti_vibration_handle: train=0.0138 val=0.0107 test=0.0131 overall=0.0133
+    - store_bearing_plate_assembly: train=0.0306 val=0.0274 test=0.0298 overall=0.0301
+    - store_gearbox_housing: train=0.0121 val=0.0077 test=0.0111 overall=0.0115
+    - store_locking_lever_assembly: train=0.0171 val=0.0158 test=0.0165 overall=0.0169
+    - store_rotor_assembly: train=0.0267 val=0.0223 test=0.0253 overall=0.0260
+    - store_tool: train=0.0504 val=0.0467 test=0.0502 overall=0.0500
+    - unscrew_anti_vibration_handle: train=0.0147 val=0.0120 test=0.0142 overall=0.0143
+

@@ -1,6 +1,6 @@
 # FACT: Repository-Specific Modifications
 
-The source snapshot used for this release is located in `third_party/FACT/`.
+The source snapshot used for this release is located in `third_party/fact/`.
 
 Relative to the upstream `FACT` release, the IMPACT benchmark version introduces the following method-side changes:
 - `src/train.py`: IMPACT-aware training, validation, and metric-based model selection

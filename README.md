@@ -10,6 +10,8 @@ The current public release covers all benchmark tasks defined in the paper:
 - `PSR`: Procedure Step Recognition
 - `PPR`: Procedural Phase Recognition
 - `ATR`: Anomaly Type Recognition
+- `CV-TA`: Cross-View Temporal Alignment
+- `CV-SM`: Cross-View Semantic Matching
 
 Included in this release:
 - task protocol assets under `dataset/`
@@ -32,13 +34,17 @@ IMPACT/
 │   ├── ASR/
 │   ├── PSR/
 │   ├── PPR/
-│   └── ATR/
+│   ├── ATR/
+│   └── CV/
 ├── tasks/
 │   ├── TAS/
 │   ├── ASR/
 │   ├── PSR/
 │   ├── PPR/
-│   └── ATR/
+│   ├── ATR/
+│   ├── CV-TA/
+│   └── CV-SM/
+├── tools/
 ├── third_party/
 └── docs/
 ```
@@ -72,6 +78,18 @@ Runtime `logs/` and `outputs/` directories are not shipped in the repository tre
 - paper protocols: `ATR-L`, `ATR-R`
 - launcher keys: `ATR_L`, `ATR_R`
 - `FACT` is released with the stable training entrypoint; the standalone checkpoint scorer is intentionally not exposed for ATR because the bundled helper does not support it
+
+`CV-TA`
+- reference implementation: `cosine_knn`
+- paper protocols: `local`, `global`, `exo2ego`
+- public assets: synchronized CAS annotations and split bundles under `dataset/CV/`
+- default feature lookup: `features/cv/{videomaev2,i3d,mvitv2}`
+
+`CV-SM`
+- reference implementations: `retrieval` (`CV-SMR`), `classification` (`CV-SMC`)
+- paper protocols: `CV-SMR`, `CV-SMC`
+- public assets: synchronized CAS annotations and split bundles under `dataset/CV/`
+- default feature lookup: `features/cv/{videomaev2,i3d,mvitv2}`
 
 ## Licensing
 

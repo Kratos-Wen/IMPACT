@@ -25,5 +25,5 @@ Default paths:
 - logs: `logs/tas/diffact/`
 
 Implementation provenance:
-- source snapshot: `third_party/DiffAct/`
+- source snapshot: `third_party/diffact/`
 - repository-specific changes: `UPSTREAM_DIFF.md`

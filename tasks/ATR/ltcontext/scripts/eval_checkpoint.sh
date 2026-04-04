@@ -22,7 +22,7 @@ mkdir -p "$SAVE_DIR"
 
 cd "$ROOT_DIR"
 CUDA_VISIBLE_DEVICES="$GPU" PYTHONUNBUFFERED=1 \
-  python "$ROOT_DIR/third_party/LTContext/run_net.py" \
+  python "$ROOT_DIR/third_party/ltcontext/run_net.py" \
     --cfg "$CFG_PATH" \
     --impact-root "$IMPACT_ROOT" \
     --impact-label-mode "$TASK_MODE" \

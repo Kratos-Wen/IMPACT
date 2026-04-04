@@ -19,9 +19,9 @@ bash tasks/ASR/videomae_v2_head/scripts/eval_checkpoint.sh 1 /path/to/IMPACT_fro
 ```
 
 Notes:
-- the evaluation script expects a checkpoint name inside `third_party/ASR-PSR-Experiment/models/videomae/split_1/`
+- the evaluation script expects a checkpoint name inside `third_party/asr_psr_experiment/models/videomae/split_1/`
 - the released wrapper uses `dataset/ASR/annotations/` and `dataset/ASR/splits_front_only_v1/` by default
 - runtime artifacts created by the upstream code remain excluded from version control
 
 Implementation provenance:
-- source snapshot: `third_party/ASR-PSR-Experiment/`
+- source snapshot: `third_party/asr_psr_experiment/`

@@ -74,7 +74,7 @@ PY
   (
     cd "$ROOT_DIR"
     CUDA_VISIBLE_DEVICES="$gpu" PYTHONUNBUFFERED=1 \
-      python "$ROOT_DIR/third_party/DiffAct/main.py" \
+      python "$ROOT_DIR/third_party/diffact/main.py" \
         --config "$gen_cfg" \
         --impact-root "$IMPACT_ROOT" \
         --impact-label-mode "$TASK_MODE" \

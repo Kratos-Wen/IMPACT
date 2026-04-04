@@ -3,17 +3,17 @@
 This directory contains the method implementations used by the IMPACT benchmark release.
 
 Bundled sources:
-- `LTContext`
-- `DiffAct`
-- `ASQuery`
-- `FACT`
-- `ASR-PSR-Experiment`
-- `STORM-PSR`
+- `ltcontext`
+- `diffact`
+- `asquery`
+- `fact`
+- `asr_psr_experiment`
+- `storm_psr`
 
 Task mapping:
-- `LTContext`, `DiffAct`, `ASQuery`, and `FACT` back the released `TAS`, `PPR`, and `ATR` wrappers
-- `ASR-PSR-Experiment` backs the released `ASR` wrappers and the indirect `PSR` pipelines
-- `STORM-PSR` backs the released direct `PSR` temporal-stream wrapper
+- `ltcontext`, `diffact`, `asquery`, and `fact` back the released `TAS`, `PPR`, and `ATR` wrappers
+- `asr_psr_experiment` backs the released `ASR` wrappers and the indirect `PSR` pipelines
+- `storm_psr` backs the released direct `PSR` temporal-stream wrapper
 
 Repository-authored benchmark wrappers live under `tasks/`. Upstream licenses remain inside the corresponding source snapshots.
 

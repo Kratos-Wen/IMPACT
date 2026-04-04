@@ -24,7 +24,7 @@ perl -0pi -e "s/val_split: \\['[^']+', '\\d+'\\]/val_split: ['test', '${SPLIT}']
 
 cd "$ROOT_DIR"
 CUDA_VISIBLE_DEVICES="$GPU" PYTHONUNBUFFERED=1 \
-  python "$ROOT_DIR/third_party/ASQuery/eval.py" \
+  python "$ROOT_DIR/third_party/asquery/eval.py" \
     "$TMP_CFG" \
     "$CKPT_PATH" \
   > "$LOG_PATH" 2>&1

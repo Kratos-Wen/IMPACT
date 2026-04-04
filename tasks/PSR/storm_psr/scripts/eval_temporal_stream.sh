@@ -15,7 +15,7 @@ LOG_PATH="${LOG_ROOT%/}/${RUN_NAME}.${SUBSET}.eval.log"
 
 mkdir -p "$LOG_ROOT"
 
-cd "$ROOT_DIR/third_party/STORM-PSR/evaluation"
+cd "$ROOT_DIR/third_party/storm_psr/evaluation"
 PYTHONUNBUFFERED=1 \
   python evaluate_TemporalStream.py \
     --run_path "$LOG_ROOT/$RUN_NAME" \

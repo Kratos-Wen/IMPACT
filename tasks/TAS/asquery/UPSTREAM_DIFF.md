@@ -1,6 +1,6 @@
 # ASQuery: Repository-Specific Modifications
 
-The source snapshot used for this release is located in `third_party/ASQuery/`.
+The source snapshot used for this release is located in `third_party/asquery/`.
 
 Relative to the upstream `ASQuery` release, the IMPACT benchmark version introduces the following method-side changes:
 - `main.py`: IMPACT root, split, label-mode, and feature-type overrides

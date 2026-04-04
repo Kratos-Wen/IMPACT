@@ -40,4 +40,4 @@ bash tasks/ATR/fact/scripts/train_splits.sh ATR_R videomaev2 0,1,2,3 atr_fact
 ## Notes
 
 - `ltcontext` exposes train and standalone checkpoint evaluation entrypoints.
-- `fact` exposes the stable training entrypoint only. The bundled `third_party/FACT/src/eval_checkpoint.py` explicitly excludes ATR scoring, so no standalone ATR evaluation wrapper is released here.
+- `fact` exposes the stable training entrypoint only. The bundled `third_party/fact/src/eval_checkpoint.py` explicitly excludes ATR scoring, so no standalone ATR evaluation wrapper is released here.
