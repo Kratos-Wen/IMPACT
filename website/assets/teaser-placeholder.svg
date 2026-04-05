@@ -1,26 +1,34 @@
-<svg width="1280" height="900" viewBox="0 0 1280 900" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1280" height="900" fill="#161B21"/>
-  <rect x="54" y="52" width="1172" height="796" rx="36" fill="#1E252E" stroke="#39424D" stroke-width="2"/>
-  <rect x="104" y="108" width="300" height="226" rx="20" fill="#262F3A"/>
-  <rect x="490" y="108" width="300" height="226" rx="20" fill="#262F3A"/>
-  <rect x="876" y="108" width="300" height="226" rx="20" fill="#262F3A"/>
-  <rect x="104" y="390" width="300" height="226" rx="20" fill="#262F3A"/>
-  <rect x="490" y="390" width="686" height="226" rx="20" fill="#262F3A"/>
-  <rect x="104" y="674" width="1072" height="90" rx="18" fill="#202833"/>
-  <rect x="134" y="700" width="274" height="38" rx="19" fill="#D78B3D"/>
-  <rect x="430" y="700" width="198" height="38" rx="19" fill="#3C4856"/>
-  <rect x="652" y="700" width="198" height="38" rx="19" fill="#3C4856"/>
-  <rect x="874" y="700" width="274" height="38" rx="19" fill="#3C4856"/>
-  <path d="M188 242C223.333 205.333 261.333 187 302 187C342.667 187 380.667 205.333 416 242" stroke="#F0C58B" stroke-width="10" stroke-linecap="round"/>
-  <path d="M574 242C609.333 205.333 647.333 187 688 187C728.667 187 766.667 205.333 802 242" stroke="#F0C58B" stroke-width="10" stroke-linecap="round"/>
-  <path d="M960 242C995.333 205.333 1033.33 187 1074 187C1114.67 187 1152.67 205.333 1188 242" stroke="#F0C58B" stroke-width="10" stroke-linecap="round"/>
-  <rect x="152" y="156" width="204" height="24" rx="12" fill="#3C4856"/>
-  <rect x="538" y="156" width="204" height="24" rx="12" fill="#3C4856"/>
-  <rect x="924" y="156" width="204" height="24" rx="12" fill="#3C4856"/>
-  <rect x="152" y="438" width="204" height="24" rx="12" fill="#3C4856"/>
-  <rect x="538" y="438" width="344" height="24" rx="12" fill="#3C4856"/>
-  <rect x="538" y="490" width="520" height="18" rx="9" fill="#4E5D6F"/>
-  <rect x="538" y="526" width="410" height="18" rx="9" fill="#4E5D6F"/>
-  <text x="112" y="96" fill="#F3EFE5" font-family="IBM Plex Sans, sans-serif" font-size="28" font-weight="600">Teaser Placeholder</text>
-  <text x="112" y="650" fill="#C4BBA8" font-family="IBM Plex Sans, sans-serif" font-size="24">Replace with multi-view synchronization, bimanual labels, and task overlays.</text>
+<svg width="1440" height="820" viewBox="0 0 1440 820" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1440" height="820" rx="32" fill="#F6F1E8"/>
+  <rect x="54" y="54" width="1332" height="712" rx="24" fill="#FFFFFF" stroke="#E4DCCD" stroke-width="2"/>
+  <rect x="104" y="110" width="250" height="170" rx="18" fill="#EEF2F0"/>
+  <rect x="386" y="110" width="250" height="170" rx="18" fill="#F7E8DA"/>
+  <rect x="668" y="110" width="250" height="170" rx="18" fill="#EEF2F0"/>
+  <rect x="950" y="110" width="250" height="170" rx="18" fill="#F7E8DA"/>
+  <rect x="104" y="320" width="512" height="232" rx="20" fill="#FAF6EF" stroke="#E4DCCD" stroke-width="2"/>
+  <rect x="648" y="320" width="552" height="232" rx="20" fill="#FAF6EF" stroke="#E4DCCD" stroke-width="2"/>
+  <rect x="104" y="588" width="1096" height="96" rx="18" fill="#FAF6EF" stroke="#E4DCCD" stroke-width="2"/>
+  <rect x="132" y="614" width="218" height="42" rx="21" fill="#C96A2B"/>
+  <rect x="370" y="614" width="184" height="42" rx="21" fill="#E2EDE6"/>
+  <rect x="574" y="614" width="184" height="42" rx="21" fill="#E2EDE6"/>
+  <rect x="778" y="614" width="184" height="42" rx="21" fill="#E2EDE6"/>
+  <rect x="982" y="614" width="184" height="42" rx="21" fill="#E2EDE6"/>
+  <path d="M164 212C203.333 171.333 244.667 151 288 151C331.333 151 372.667 171.333 412 212" stroke="#496B54" stroke-width="10" stroke-linecap="round"/>
+  <path d="M446 212C485.333 171.333 526.667 151 570 151C613.333 151 654.667 171.333 694 212" stroke="#C96A2B" stroke-width="10" stroke-linecap="round"/>
+  <path d="M728 212C767.333 171.333 808.667 151 852 151C895.333 151 936.667 171.333 976 212" stroke="#496B54" stroke-width="10" stroke-linecap="round"/>
+  <path d="M1010 212C1049.33 171.333 1090.67 151 1134 151C1177.33 151 1218.67 171.333 1258 212" stroke="#C96A2B" stroke-width="10" stroke-linecap="round"/>
+  <rect x="138" y="138" width="124" height="16" rx="8" fill="#C8D6CC"/>
+  <rect x="420" y="138" width="124" height="16" rx="8" fill="#E7C6B0"/>
+  <rect x="702" y="138" width="124" height="16" rx="8" fill="#C8D6CC"/>
+  <rect x="984" y="138" width="124" height="16" rx="8" fill="#E7C6B0"/>
+  <rect x="140" y="354" width="172" height="18" rx="9" fill="#C8D6CC"/>
+  <rect x="140" y="390" width="438" height="14" rx="7" fill="#E5DCCF"/>
+  <rect x="140" y="420" width="402" height="14" rx="7" fill="#E5DCCF"/>
+  <rect x="140" y="450" width="298" height="14" rx="7" fill="#E5DCCF"/>
+  <rect x="684" y="354" width="190" height="18" rx="9" fill="#E7C6B0"/>
+  <rect x="684" y="390" width="474" height="14" rx="7" fill="#E5DCCF"/>
+  <rect x="684" y="420" width="432" height="14" rx="7" fill="#E5DCCF"/>
+  <rect x="684" y="450" width="326" height="14" rx="7" fill="#E5DCCF"/>
+  <text x="104" y="98" fill="#1F2320" font-family="Manrope, sans-serif" font-size="28" font-weight="700">Teaser Placeholder</text>
+  <text x="104" y="742" fill="#6A6F69" font-family="Manrope, sans-serif" font-size="24">Replace with synchronized views, timeline labels, and benchmark overlays.</text>
 </svg>
