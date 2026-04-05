@@ -1,10 +1,19 @@
 # IMPACT
 
-Official implementation of "IMPACT: A Dataset for Multi-Granularity Human Procedural Action Understanding in Industrial Assembly".
+Official repository for "IMPACT: A Dataset for Multi-Granularity Human Procedural Action Understanding in Industrial Assembly".
 
-Project page: `https://kratos-wen.github.io/IMPACT/`
+<p align="center">
+  <a href="https://kratos-wen.github.io/IMPACT/"><strong>Project Page</strong></a>
+  ·
+  <a href="https://github.com/Kratos-Wen/IMPACT/tree/main/tasks"><strong>Benchmark Tasks</strong></a>
+  ·
+  <a href="https://github.com/Kratos-Wen/IMPACT/tree/main/dataset"><strong>Protocol Assets</strong></a>
+</p>
 
-IMPACT provides the benchmark codebase for the IMPACT dataset and evaluation suite. The repository is organized first by task and then by method so that each benchmark setting exposes a consistent configuration and execution interface.
+> [!IMPORTANT]
+> Start with the [IMPACT Project Page](https://kratos-wen.github.io/IMPACT/) for the dataset overview, visual examples, benchmark coverage, and release status.
+
+This repository hosts the benchmark codebase, protocol assets, method snapshots, and website source for IMPACT. The release is organized first by task and then by method so that each benchmark setting exposes a consistent configuration and execution interface.
 
 The paper benchmark is organized around the following task families:
 - `TAS`: Temporal Action Segmentation
@@ -19,13 +28,13 @@ The paper benchmark is organized around the following task families:
 
 The current code release provides runnable benchmark wrappers for `TAS`, `ASR`, `PSR`, `PPR`, `ATR`, `CV-TA`, `CV-SM`, and `AF-S`. `AF-L` is reserved in the repository structure and documented, but its runnable baselines are not released yet.
 
-Included in this release:
+This release includes:
 - task protocol assets under `dataset/`
 - IMPACT-specific benchmark wrappers under `tasks/`
 - method source snapshots under `third_party/`
 - project-site source under `website/`
 
-Not included in this release:
+This release does not include:
 - raw videos
 - extracted features
 - pretrained checkpoints
@@ -124,4 +133,4 @@ If a file or subdirectory provides a more specific license notice, that notice t
 
 ## Project Site
 
-The project-site source lives under `website/`. The landing page is published at `https://kratos-wen.github.io/IMPACT/`.
+The project-site source lives under `website/`. The public landing page is published at `https://kratos-wen.github.io/IMPACT/`.

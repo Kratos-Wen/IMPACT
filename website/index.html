@@ -6,7 +6,7 @@
     <title>IMPACT | Industrial Procedural Understanding Benchmark</title>
     <meta
       name="description"
-      content="IMPACT is a synchronized five-view RGB-D benchmark for industrial procedural understanding under partial observability, multi-route execution, and anomaly-recovery."
+      content="IMPACT is a synchronized five-view RGB-D dataset and benchmark for industrial procedural understanding under viewpoint shift, partial observability, multi-route execution, and anomaly recovery."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,7 +40,7 @@
 
       <main id="top" class="page-main">
         <section class="hero reveal">
-          <p class="hero-kicker">ACM MM 2026 · dataset platform</p>
+          <p class="hero-kicker">ACM MM 2026 · dataset and benchmark</p>
           <h1>
             IMPACT: A Multi-view Industrial Assembly Benchmark<br />
             for Fine-grained Action Understanding, Procedural Reasoning, and Error Analysis
@@ -76,10 +76,10 @@
           <p class="hero-subtitle">
             A synchronized five-view RGB-D dataset and benchmark for industrial
             assembly under viewpoint shift, partial observability, multi-route
-            execution, and anomaly-recovery.
+            execution, and anomaly recovery.
           </p>
           <p class="hero-meta">
-            Detailed protocols, released baselines, and evaluation scripts are
+            Benchmark code, task protocols, and released baselines are
             maintained in the GitHub repository.
           </p>
           <div class="hero-actions">
@@ -116,7 +116,7 @@
             <h2>Assembly Task and Recording Setup</h2>
             <p>
               IMPACT is collected around real angle grinder assembly and
-              disassembly with synchronized ego-exo RGB-D, gaze, audio, and
+              disassembly with synchronized ego and exo RGB-D, gaze, audio, and
               cognitive metadata.
             </p>
           </div>
@@ -174,7 +174,7 @@
             <h2>Dataset Overview</h2>
             <p>
               IMPACT comprises 112 trials from 13 participants and 39.5 hours
-              of synchronized industrial assembly recordings.
+              of synchronized industrial assembly data.
             </p>
           </div>
           <figure class="figure-card figure-card-full figure-card-centered figure-card-statistics">
@@ -186,33 +186,33 @@
           <div class="snapshot-grid">
             <article class="snapshot-card">
               <span class="snapshot-label">Assembly object</span>
-              <h3>Two angle grinder configurations</h3>
+              <h3>Two physical product configurations</h3>
               <p>
-                Two commercial configurations provide a natural
-                cross-configuration generalization axis.
+                Two angle grinder configurations provide a natural
+                cross-configuration generalization setting.
               </p>
             </article>
             <article class="snapshot-card">
               <span class="snapshot-label">Execution structure</span>
-              <h3>Multi-route procedural execution</h3>
+              <h3>Partial-order procedural execution</h3>
               <p>
-                Valid trajectories are governed by a partial-order graph rather
-                than a single rigid sequence.
+                Valid trajectories follow a prerequisite graph rather than a
+                single rigid sequence.
               </p>
             </article>
             <article class="snapshot-card">
               <span class="snapshot-label">Supervision</span>
-              <h3>Anomaly-recovery and compliance aware</h3>
+              <h3>Anomaly and compliance supervision</h3>
               <p>
-                Explicit anomaly-recovery supervision is paired with compliance
+                Explicit anomaly recovery supervision is paired with compliance
                 phases and a six-category anomaly taxonomy.
               </p>
             </article>
             <article class="snapshot-card">
               <span class="snapshot-label">Human metadata</span>
-              <h3>Cognitive load at trial level</h3>
+              <h3>Trial-level cognitive workload</h3>
               <p>
-                Each trial is paired with NASA-TLX cognitive load measurement.
+                Each trial is paired with NASA-TLX workload measurement.
               </p>
             </article>
           </div>
@@ -220,10 +220,10 @@
 
         <section id="tasks" class="section reveal">
           <div class="section-head">
-            <h2>Supported Tasks</h2>
+            <h2>Benchmark Tasks</h2>
             <p>
-              IMPACT is organized into four benchmark families, all instantiated
-              on shared recordings.
+              IMPACT is organized into four benchmark families, all defined on
+              the same synchronized recordings.
             </p>
           </div>
           <div class="figure-grid figure-grid-tasks">
@@ -258,8 +258,8 @@
           <div class="section-head">
             <h2>Download</h2>
             <p>
-              The current public release focuses on lightweight benchmark assets
-              and code. Large media artifacts remain outside the repository.
+              The public repository ships protocol assets and benchmark code.
+              Large media artifacts are distributed separately.
             </p>
           </div>
           <div class="table-panel">
@@ -275,7 +275,7 @@
                 <tr>
                   <td>Protocol Assets</td>
                   <td><span class="status status-live">Released</span></td>
-                  <td>Official splits, mappings, labels, and procedure metadata in the repository.</td>
+                  <td>Official splits, mappings, labels, and procedure metadata.</td>
                 </tr>
                 <tr>
                   <td>Starter Code</td>
@@ -285,17 +285,17 @@
                 <tr>
                   <td>Mini Sample Pack</td>
                   <td><span class="status">Placeholder</span></td>
-                  <td>Small subset for quick-start demos.</td>
+                  <td>Lightweight subset for quick-start demos.</td>
                 </tr>
                 <tr>
                   <td>Raw Media</td>
                   <td><span class="status">Placeholder</span></td>
-                  <td>Full RGB-D video release and access workflow.</td>
+                  <td>Full RGB-D media release and access workflow.</td>
                 </tr>
                 <tr>
                   <td>Pre-extracted Features</td>
                   <td><span class="status">Placeholder</span></td>
-                  <td>Backbone-specific public features.</td>
+                  <td>Public feature packs for supported backbones.</td>
                 </tr>
               </tbody>
             </table>
@@ -306,8 +306,8 @@
           <div class="section-head">
             <h2>Annotation Schema</h2>
             <p>
-              Multi-granularity supervision links interaction dynamics,
-              procedural structure, compliance, and state evolution.
+              Aligned supervision spans interaction dynamics, procedural
+              structure, compliance, and state evolution.
             </p>
           </div>
           <div class="figure-grid figure-grid-annotation">
@@ -348,8 +348,8 @@
           <div class="section-head">
             <h2>Benchmark</h2>
             <p>
-              The benchmark repository groups released methods by task family and
-              keeps detailed protocols in the task-specific pages.
+              Released methods are organized by task family, with detailed
+              protocols maintained in the task-specific pages.
             </p>
           </div>
           <div class="benchmark-grid">
@@ -357,8 +357,8 @@
               <h3>Released coverage</h3>
               <ul>
                 <li><code>TAS</code>, <code>CV</code>, <code>AF-S</code>, <code>ASR</code>, <code>PSR</code>, <code>PPR</code>, and <code>ATR</code> are released.</li>
-                <li><code>AF-L</code> is reserved and documented for later release.</li>
-                <li>Detailed model lists and launch commands live in the repository.</li>
+                <li><code>AF-L</code> is reserved in the release structure and documented for later release.</li>
+                <li>Detailed model lists and launch commands are maintained in the repository.</li>
               </ul>
             </article>
             <article class="panel">
@@ -371,7 +371,7 @@
             </article>
             <article class="panel panel-placeholder">
               <h3>Leaderboard</h3>
-              <p>Leaderboard URL and submission policy will be added after the benchmark release is finalized.</p>
+              <p>Leaderboard links and submission policy will be added when the public benchmark release is finalized.</p>
             </article>
           </div>
         </section>
@@ -380,7 +380,7 @@
           <div class="section-head">
             <h2>Resources</h2>
             <p>
-              The repository remains the operational layer for reproducible
+              The repository is the operational layer for reproducible
               benchmarking and protocol inspection.
             </p>
           </div>
@@ -411,7 +411,7 @@
           <div class="two-column-grid">
             <article class="panel">
               <h3>Paper &amp; Citation</h3>
-              <p>Paper PDF and citation links will be attached here when the public release is finalized.</p>
+              <p>Paper PDF and citation links will be added here when the public release is finalized.</p>
               <pre><code>@inproceedings{impact2026,
   title     = {IMPACT: A Dataset for Multi-Granularity Human Procedural Action Understanding in Industrial Assembly},
   author    = {TBD},
@@ -431,8 +431,8 @@
               <h3>Acknowledgements</h3>
               <p>
                 We gratefully acknowledge Lei Qi, Weitong Kong, Chen Zhang,
-                Haiwen Sun, and Yuwei Hu for their valuable support in the
-                data collection and annotation process of the IMPACT dataset.
+                Haiwen Sun, and Yuwei Hu for their valuable support throughout
+                the data collection and annotation process for IMPACT.
               </p>
             </article>
           </div>
@@ -441,8 +441,8 @@
 
       <footer class="site-footer">
         <p>
-          IMPACT is a unified platform for industrial procedural understanding
-          under multi-view and partial-observability settings.
+          IMPACT is a unified benchmark for industrial procedural understanding
+          under multi-view partial observability.
         </p>
         <a href="https://github.com/Kratos-Wen/IMPACT">GitHub Repository</a>
       </footer>
