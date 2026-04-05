@@ -10,5 +10,6 @@ Current release:
 - `ATR/`: `LTContext`, `FACT`
 - `CV-TA/`: `Cosine kNN`
 - `CV-SM/`: `CV-SMR`, `CV-SMC`
+- `AF-S/`: `AVT`, `ScalAnt`, `Qwen3VL-8B`
 
 Task directories use the paper abbreviations in uppercase. Method directories use lowercase or snake_case names to keep script paths stable.

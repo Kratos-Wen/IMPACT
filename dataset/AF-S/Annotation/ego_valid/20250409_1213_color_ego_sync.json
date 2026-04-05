@@ -1,0 +1,3520 @@
+{
+  "video_id": "20250409_1213_color_ego_sync",
+  "view": "Ego",
+  "meta_data": {
+    "fps": 25.0,
+    "resolution": {
+      "width": 1920,
+      "height": 1080
+    },
+    "num_frames": 8490,
+    "view_start": 0,
+    "view_end": 8489
+  },
+  "view_start": 0,
+  "view_end": 8489,
+  "anomaly_types": [
+    {
+      "id": 0,
+      "name": "error_temporal"
+    },
+    {
+      "id": 1,
+      "name": "error_spatial"
+    },
+    {
+      "id": 2,
+      "name": "error_handling"
+    },
+    {
+      "id": 3,
+      "name": "error_wrong_part"
+    },
+    {
+      "id": 4,
+      "name": "error_wrong_tool"
+    },
+    {
+      "id": 5,
+      "name": "error_procedural"
+    }
+  ],
+  "verbs": [
+    {
+      "id": 0,
+      "name": "adjust"
+    },
+    {
+      "id": 1,
+      "name": "align"
+    },
+    {
+      "id": 2,
+      "name": "attach"
+    },
+    {
+      "id": 3,
+      "name": "detach"
+    },
+    {
+      "id": 4,
+      "name": "dismount"
+    },
+    {
+      "id": 5,
+      "name": "extract"
+    },
+    {
+      "id": 6,
+      "name": "flip"
+    },
+    {
+      "id": 7,
+      "name": "hand_spin"
+    },
+    {
+      "id": 8,
+      "name": "hand_loosen"
+    },
+    {
+      "id": 9,
+      "name": "hand_tighten"
+    },
+    {
+      "id": 10,
+      "name": "hold"
+    },
+    {
+      "id": 11,
+      "name": "insert"
+    },
+    {
+      "id": 12,
+      "name": "loosen"
+    },
+    {
+      "id": 13,
+      "name": "mount"
+    },
+    {
+      "id": 14,
+      "name": "pick_up"
+    },
+    {
+      "id": 15,
+      "name": "place"
+    },
+    {
+      "id": 16,
+      "name": "remove"
+    },
+    {
+      "id": 17,
+      "name": "seat"
+    },
+    {
+      "id": 18,
+      "name": "store"
+    },
+    {
+      "id": 19,
+      "name": "thread"
+    },
+    {
+      "id": 20,
+      "name": "tighten"
+    },
+    {
+      "id": 21,
+      "name": "transfer"
+    }
+  ],
+  "nouns": [
+    {
+      "id": 0,
+      "name": "M6_nut"
+    },
+    {
+      "id": 1,
+      "name": "adapter_plate"
+    },
+    {
+      "id": 2,
+      "name": "anti_vibration_handle"
+    },
+    {
+      "id": 3,
+      "name": "bearing_plate"
+    },
+    {
+      "id": 4,
+      "name": "bevel_gear"
+    },
+    {
+      "id": 5,
+      "name": "combination_wrench"
+    },
+    {
+      "id": 6,
+      "name": "drive_shaft"
+    },
+    {
+      "id": 7,
+      "name": "flat_head_screwdriver"
+    },
+    {
+      "id": 8,
+      "name": "gearbox_housing"
+    },
+    {
+      "id": 9,
+      "name": "gearbox_housing_drive_shaft"
+    },
+    {
+      "id": 10,
+      "name": "lever"
+    },
+    {
+      "id": 11,
+      "name": "M4_nut"
+    },
+    {
+      "id": 12,
+      "name": "phillips_screwdriver"
+    },
+    {
+      "id": 13,
+      "name": "screw"
+    },
+    {
+      "id": 14,
+      "name": "spin_drive_shaft"
+    },
+    {
+      "id": 15,
+      "name": "spring"
+    },
+    {
+      "id": 16,
+      "name": "tool"
+    },
+    {
+      "id": 17,
+      "name": "torx_screwdriver"
+    },
+    {
+      "id": 18,
+      "name": "washer"
+    }
+  ],
+  "action_labels": [
+    {
+      "id": 0,
+      "name": "null"
+    },
+    {
+      "id": 1,
+      "name": "pick_up_gearbox_housing"
+    },
+    {
+      "id": 2,
+      "name": "pick_up_gearbox_housing_drive_shaft"
+    },
+    {
+      "id": 3,
+      "name": "pick_up_drive_shaft"
+    },
+    {
+      "id": 4,
+      "name": "pick_up_bevel_gear"
+    },
+    {
+      "id": 5,
+      "name": "pick_up_adapter_plate"
+    },
+    {
+      "id": 6,
+      "name": "pick_up_bearing_plate"
+    },
+    {
+      "id": 7,
+      "name": "pick_up_screw"
+    },
+    {
+      "id": 8,
+      "name": "pick_up_M6_nut"
+    },
+    {
+      "id": 9,
+      "name": "pick_up_M4_nut"
+    },
+    {
+      "id": 10,
+      "name": "pick_up_spring"
+    },
+    {
+      "id": 11,
+      "name": "pick_up_lever"
+    },
+    {
+      "id": 12,
+      "name": "pick_up_washer"
+    },
+    {
+      "id": 13,
+      "name": "pick_up_anti_vibration_handle"
+    },
+    {
+      "id": 14,
+      "name": "pick_up_flat_head_screwdriver"
+    },
+    {
+      "id": 15,
+      "name": "pick_up_combination_wrench"
+    },
+    {
+      "id": 16,
+      "name": "pick_up_phillips_screwdriver"
+    },
+    {
+      "id": 17,
+      "name": "pick_up_torx_screwdriver"
+    },
+    {
+      "id": 18,
+      "name": "place_gearbox_housing"
+    },
+    {
+      "id": 19,
+      "name": "place_gearbox_housing_drive_shaft"
+    },
+    {
+      "id": 20,
+      "name": "place_drive_shaft"
+    },
+    {
+      "id": 21,
+      "name": "place_bevel_gear"
+    },
+    {
+      "id": 22,
+      "name": "place_adapter_plate"
+    },
+    {
+      "id": 23,
+      "name": "place_bearing_plate"
+    },
+    {
+      "id": 24,
+      "name": "place_screw"
+    },
+    {
+      "id": 25,
+      "name": "place_M6_nut"
+    },
+    {
+      "id": 26,
+      "name": "place_M4_nut"
+    },
+    {
+      "id": 27,
+      "name": "place_spring"
+    },
+    {
+      "id": 28,
+      "name": "place_lever"
+    },
+    {
+      "id": 29,
+      "name": "place_washer"
+    },
+    {
+      "id": 30,
+      "name": "place_anti_vibration_handle"
+    },
+    {
+      "id": 31,
+      "name": "place_flat_head_screwdriver"
+    },
+    {
+      "id": 32,
+      "name": "place_combination_wrench"
+    },
+    {
+      "id": 33,
+      "name": "place_phillips_screwdriver"
+    },
+    {
+      "id": 34,
+      "name": "place_torx_screwdriver"
+    },
+    {
+      "id": 35,
+      "name": "mount_adapter_plate"
+    },
+    {
+      "id": 36,
+      "name": "mount_anti_vibration_handle"
+    },
+    {
+      "id": 37,
+      "name": "insert_bevel_gear"
+    },
+    {
+      "id": 38,
+      "name": "insert_drive_shaft"
+    },
+    {
+      "id": 39,
+      "name": "insert_screw"
+    },
+    {
+      "id": 40,
+      "name": "attach_spring"
+    },
+    {
+      "id": 41,
+      "name": "attach_lever"
+    },
+    {
+      "id": 42,
+      "name": "seat_bearing_plate"
+    },
+    {
+      "id": 43,
+      "name": "dismount_gearbox_housing"
+    },
+    {
+      "id": 44,
+      "name": "dismount_adapter_plate"
+    },
+    {
+      "id": 45,
+      "name": "dismount_anti_vibration_handle"
+    },
+    {
+      "id": 46,
+      "name": "extract_drive_shaft"
+    },
+    {
+      "id": 47,
+      "name": "extract_bevel_gear"
+    },
+    {
+      "id": 48,
+      "name": "extract_bearing_plate"
+    },
+    {
+      "id": 49,
+      "name": "detach_spring"
+    },
+    {
+      "id": 50,
+      "name": "detach_lever"
+    },
+    {
+      "id": 51,
+      "name": "insert_M6_nut"
+    },
+    {
+      "id": 52,
+      "name": "thread_M4_nut"
+    },
+    {
+      "id": 53,
+      "name": "thread_M6_nut"
+    },
+    {
+      "id": 54,
+      "name": "hand_tighten_M4_nut"
+    },
+    {
+      "id": 55,
+      "name": "tighten_M4_nut"
+    },
+    {
+      "id": 56,
+      "name": "hand_tighten_M6_nut"
+    },
+    {
+      "id": 57,
+      "name": "tighten_M6_nut"
+    },
+    {
+      "id": 58,
+      "name": "hand_tighten_screw"
+    },
+    {
+      "id": 59,
+      "name": "tighten_screw"
+    },
+    {
+      "id": 60,
+      "name": "hand_tighten_anti_vibration_handle"
+    },
+    {
+      "id": 61,
+      "name": "hand_loosen_M4_nut"
+    },
+    {
+      "id": 62,
+      "name": "hand_loosen_M6_nut"
+    },
+    {
+      "id": 63,
+      "name": "loosen_M4_nut"
+    },
+    {
+      "id": 64,
+      "name": "loosen_M6_nut"
+    },
+    {
+      "id": 65,
+      "name": "hand_loosen_screw"
+    },
+    {
+      "id": 66,
+      "name": "loosen_screw"
+    },
+    {
+      "id": 67,
+      "name": "hand_loosen_anti_vibration_handle"
+    },
+    {
+      "id": 68,
+      "name": "remove_screw"
+    },
+    {
+      "id": 69,
+      "name": "remove_washer"
+    },
+    {
+      "id": 70,
+      "name": "remove_M4_nut"
+    },
+    {
+      "id": 71,
+      "name": "remove_M6_nut"
+    },
+    {
+      "id": 72,
+      "name": "adjust_drive_shaft"
+    },
+    {
+      "id": 73,
+      "name": "adjust_bearing_plate"
+    },
+    {
+      "id": 74,
+      "name": "align_lever"
+    },
+    {
+      "id": 75,
+      "name": "adjust_anti_vibration_handle"
+    },
+    {
+      "id": 76,
+      "name": "align_M6_nut"
+    },
+    {
+      "id": 77,
+      "name": "align_M4_nut"
+    },
+    {
+      "id": 78,
+      "name": "align_screw"
+    },
+    {
+      "id": 79,
+      "name": "adjust_phillips_screwdriver"
+    },
+    {
+      "id": 80,
+      "name": "attach_screw"
+    },
+    {
+      "id": 81,
+      "name": "align_tool"
+    },
+    {
+      "id": 82,
+      "name": "transfer_gearbox_housing"
+    },
+    {
+      "id": 83,
+      "name": "transfer_gearbox_housing_drive_shaft"
+    },
+    {
+      "id": 84,
+      "name": "transfer_drive_shaft"
+    },
+    {
+      "id": 85,
+      "name": "transfer_bevel_gear"
+    },
+    {
+      "id": 86,
+      "name": "transfer_adapter_plate"
+    },
+    {
+      "id": 87,
+      "name": "transfer_bearing_plate"
+    },
+    {
+      "id": 88,
+      "name": "transfer_screw"
+    },
+    {
+      "id": 89,
+      "name": "transfer_M4_nut"
+    },
+    {
+      "id": 90,
+      "name": "transfer_spring"
+    },
+    {
+      "id": 91,
+      "name": "transfer_lever"
+    },
+    {
+      "id": 92,
+      "name": "transfer_washer"
+    },
+    {
+      "id": 93,
+      "name": "transfer_anti_vibration_handle"
+    },
+    {
+      "id": 94,
+      "name": "transfer_flat_head_screwdriver"
+    },
+    {
+      "id": 95,
+      "name": "transfer_combination_wrench"
+    },
+    {
+      "id": 96,
+      "name": "transfer_phillips_screwdriver"
+    },
+    {
+      "id": 97,
+      "name": "transfer_torx_screwdriver"
+    },
+    {
+      "id": 98,
+      "name": "hold_gearbox_housing"
+    },
+    {
+      "id": 99,
+      "name": "hold_gearbox_housing_drive_shaft"
+    },
+    {
+      "id": 100,
+      "name": "hold_drive_shaft"
+    },
+    {
+      "id": 101,
+      "name": "hold_bevel_gear"
+    },
+    {
+      "id": 102,
+      "name": "hold_adapter_plate"
+    },
+    {
+      "id": 103,
+      "name": "hold_bearing_plate"
+    },
+    {
+      "id": 104,
+      "name": "hold_screw"
+    },
+    {
+      "id": 105,
+      "name": "hold_M6_nut"
+    },
+    {
+      "id": 106,
+      "name": "hold_M4_nut"
+    },
+    {
+      "id": 107,
+      "name": "hold_spring"
+    },
+    {
+      "id": 108,
+      "name": "hold_lever"
+    },
+    {
+      "id": 109,
+      "name": "hold_washer"
+    },
+    {
+      "id": 110,
+      "name": "hold_anti_vibration_handle"
+    },
+    {
+      "id": 111,
+      "name": "hold_flat_head_screwdriver"
+    },
+    {
+      "id": 112,
+      "name": "hold_combination_wrench"
+    },
+    {
+      "id": 113,
+      "name": "hold_phillips_screwdriver"
+    },
+    {
+      "id": 114,
+      "name": "hold_torx_screwdriver"
+    },
+    {
+      "id": 115,
+      "name": "store_gearbox_housing"
+    },
+    {
+      "id": 116,
+      "name": "store_gearbox_housing_drive_shaft"
+    },
+    {
+      "id": 117,
+      "name": "store_drive_shaft"
+    },
+    {
+      "id": 118,
+      "name": "store_bevel_gear"
+    },
+    {
+      "id": 119,
+      "name": "store_adapter_plate"
+    },
+    {
+      "id": 120,
+      "name": "store_bearing_plate"
+    },
+    {
+      "id": 121,
+      "name": "store_screw"
+    },
+    {
+      "id": 122,
+      "name": "store_M6_nut"
+    },
+    {
+      "id": 123,
+      "name": "store_M4_nut"
+    },
+    {
+      "id": 124,
+      "name": "store_spring"
+    },
+    {
+      "id": 125,
+      "name": "store_lever"
+    },
+    {
+      "id": 126,
+      "name": "store_washer"
+    },
+    {
+      "id": 127,
+      "name": "store_anti_vibration_handle"
+    },
+    {
+      "id": 128,
+      "name": "store_flat_head_screwdriver"
+    },
+    {
+      "id": 129,
+      "name": "store_combination_wrench"
+    },
+    {
+      "id": 130,
+      "name": "store_phillips_screwdriver"
+    },
+    {
+      "id": 131,
+      "name": "store_torx_screwdriver"
+    },
+    {
+      "id": 132,
+      "name": "flip_gearbox_housing"
+    },
+    {
+      "id": 133,
+      "name": "flip_gearbox_housing_drive_shaft"
+    },
+    {
+      "id": 134,
+      "name": "flip_adapter_plate"
+    },
+    {
+      "id": 135,
+      "name": "flip_bearing_plate"
+    },
+    {
+      "id": 136,
+      "name": "flip_lever"
+    },
+    {
+      "id": 137,
+      "name": "hand_spin_drive_shaft"
+    }
+  ],
+  "segments": [
+    {
+      "action_label": 0,
+      "verb": -1,
+      "noun": -1,
+      "start_frame": 0,
+      "end_frame": 28,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 82,
+      "verb": 21,
+      "noun": 8,
+      "start_frame": 29,
+      "end_frame": 69,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 0,
+      "verb": -1,
+      "noun": -1,
+      "start_frame": 70,
+      "end_frame": 107,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 98,
+      "verb": 10,
+      "noun": 8,
+      "start_frame": 108,
+      "end_frame": 258,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 0,
+      "verb": -1,
+      "noun": -1,
+      "start_frame": 259,
+      "end_frame": 300,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 98,
+      "verb": 10,
+      "noun": 8,
+      "start_frame": 301,
+      "end_frame": 937,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 99,
+      "verb": 10,
+      "noun": 9,
+      "start_frame": 938,
+      "end_frame": 1084,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 137,
+      "verb": 7,
+      "noun": 6,
+      "start_frame": 1085,
+      "end_frame": 1115,
+      "phase": "anomaly",
+      "anomaly_type": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 0,
+      "verb": -1,
+      "noun": -1,
+      "start_frame": 1116,
+      "end_frame": 1292,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 99,
+      "verb": 10,
+      "noun": 9,
+      "start_frame": 1293,
+      "end_frame": 1632,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 0,
+      "verb": -1,
+      "noun": -1,
+      "start_frame": 1633,
+      "end_frame": 1699,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 99,
+      "verb": 10,
+      "noun": 9,
+      "start_frame": 1700,
+      "end_frame": 1829,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 83,
+      "verb": 21,
+      "noun": 9,
+      "start_frame": 1830,
+      "end_frame": 1851,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 137,
+      "verb": 7,
+      "noun": 6,
+      "start_frame": 1852,
+      "end_frame": 1961,
+      "phase": "anomaly",
+      "anomaly_type": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 99,
+      "verb": 10,
+      "noun": 9,
+      "start_frame": 1962,
+      "end_frame": 2406,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 133,
+      "verb": 6,
+      "noun": 9,
+      "start_frame": 2407,
+      "end_frame": 2443,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 99,
+      "verb": 10,
+      "noun": 9,
+      "start_frame": 2444,
+      "end_frame": 2601,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 133,
+      "verb": 6,
+      "noun": 9,
+      "start_frame": 2602,
+      "end_frame": 2677,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 99,
+      "verb": 10,
+      "noun": 9,
+      "start_frame": 2678,
+      "end_frame": 3252,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 133,
+      "verb": 6,
+      "noun": 9,
+      "start_frame": 3253,
+      "end_frame": 3519,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 99,
+      "verb": 10,
+      "noun": 9,
+      "start_frame": 3520,
+      "end_frame": 3659,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 133,
+      "verb": 6,
+      "noun": 9,
+      "start_frame": 3660,
+      "end_frame": 3680,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 99,
+      "verb": 10,
+      "noun": 9,
+      "start_frame": 3681,
+      "end_frame": 4482,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 133,
+      "verb": 6,
+      "noun": 9,
+      "start_frame": 4483,
+      "end_frame": 4522,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 99,
+      "verb": 10,
+      "noun": 9,
+      "start_frame": 4523,
+      "end_frame": 4586,
+      "phase": "anomaly",
+      "anomaly_type": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 6,
+      "verb": 14,
+      "noun": 3,
+      "start_frame": 4587,
+      "end_frame": 4627,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 87,
+      "verb": 21,
+      "noun": 3,
+      "start_frame": 4628,
+      "end_frame": 4650,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 73,
+      "verb": 0,
+      "noun": 3,
+      "start_frame": 4651,
+      "end_frame": 4677,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 99,
+      "verb": 10,
+      "noun": 9,
+      "start_frame": 4678,
+      "end_frame": 4733,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 7,
+      "verb": 14,
+      "noun": 13,
+      "start_frame": 4734,
+      "end_frame": 4770,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 0,
+      "verb": -1,
+      "noun": -1,
+      "start_frame": 4771,
+      "end_frame": 4806,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 7,
+      "verb": 14,
+      "noun": 13,
+      "start_frame": 4807,
+      "end_frame": 4816,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 88,
+      "verb": 21,
+      "noun": 13,
+      "start_frame": 4817,
+      "end_frame": 4924,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 99,
+      "verb": 10,
+      "noun": 9,
+      "start_frame": 4925,
+      "end_frame": 5798,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 0,
+      "verb": -1,
+      "noun": -1,
+      "start_frame": 5799,
+      "end_frame": 5822,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 99,
+      "verb": 10,
+      "noun": 9,
+      "start_frame": 5823,
+      "end_frame": 6581,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 0,
+      "verb": -1,
+      "noun": -1,
+      "start_frame": 6582,
+      "end_frame": 6611,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 90,
+      "verb": 21,
+      "noun": 15,
+      "start_frame": 6612,
+      "end_frame": 6674,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 99,
+      "verb": 10,
+      "noun": 9,
+      "start_frame": 6675,
+      "end_frame": 6853,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 0,
+      "verb": -1,
+      "noun": -1,
+      "start_frame": 6854,
+      "end_frame": 6931,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 39,
+      "verb": 11,
+      "noun": 13,
+      "start_frame": 6932,
+      "end_frame": 7003,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 0,
+      "verb": -1,
+      "noun": -1,
+      "start_frame": 7004,
+      "end_frame": 7046,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 99,
+      "verb": 10,
+      "noun": 9,
+      "start_frame": 7047,
+      "end_frame": 7179,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 0,
+      "verb": -1,
+      "noun": -1,
+      "start_frame": 7180,
+      "end_frame": 7398,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 99,
+      "verb": 10,
+      "noun": 9,
+      "start_frame": 7399,
+      "end_frame": 7487,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 83,
+      "verb": 21,
+      "noun": 9,
+      "start_frame": 7488,
+      "end_frame": 7501,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 133,
+      "verb": 6,
+      "noun": 9,
+      "start_frame": 7502,
+      "end_frame": 7551,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 0,
+      "verb": -1,
+      "noun": -1,
+      "start_frame": 7552,
+      "end_frame": 7632,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 99,
+      "verb": 10,
+      "noun": 9,
+      "start_frame": 7633,
+      "end_frame": 7681,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 91,
+      "verb": 21,
+      "noun": 10,
+      "start_frame": 7682,
+      "end_frame": 7701,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 108,
+      "verb": 10,
+      "noun": 10,
+      "start_frame": 7702,
+      "end_frame": 7951,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 74,
+      "verb": 1,
+      "noun": 10,
+      "start_frame": 7952,
+      "end_frame": 7964,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 41,
+      "verb": 2,
+      "noun": 10,
+      "start_frame": 7965,
+      "end_frame": 8044,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 99,
+      "verb": 10,
+      "noun": 9,
+      "start_frame": 8045,
+      "end_frame": 8357,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 59,
+      "verb": 20,
+      "noun": 13,
+      "start_frame": 8358,
+      "end_frame": 8396,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 99,
+      "verb": 10,
+      "noun": 9,
+      "start_frame": 8397,
+      "end_frame": 8444,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 0,
+      "verb": -1,
+      "noun": -1,
+      "start_frame": 8445,
+      "end_frame": 8489,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "left"
+    },
+    {
+      "action_label": 1,
+      "verb": 14,
+      "noun": 8,
+      "start_frame": 0,
+      "end_frame": 27,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 82,
+      "verb": 21,
+      "noun": 8,
+      "start_frame": 28,
+      "end_frame": 67,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 3,
+      "verb": 14,
+      "noun": 6,
+      "start_frame": 68,
+      "end_frame": 115,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 72,
+      "verb": 0,
+      "noun": 6,
+      "start_frame": 116,
+      "end_frame": 156,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 38,
+      "verb": 11,
+      "noun": 6,
+      "start_frame": 157,
+      "end_frame": 194,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 0,
+      "verb": -1,
+      "noun": -1,
+      "start_frame": 195,
+      "end_frame": 213,
+      "phase": "anomaly",
+      "anomaly_type": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 4,
+      "verb": 14,
+      "noun": 4,
+      "start_frame": 214,
+      "end_frame": 295,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 101,
+      "verb": 10,
+      "noun": 4,
+      "start_frame": 296,
+      "end_frame": 327,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 37,
+      "verb": 11,
+      "noun": 4,
+      "start_frame": 328,
+      "end_frame": 775,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 98,
+      "verb": 10,
+      "noun": 8,
+      "start_frame": 776,
+      "end_frame": 834,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 3,
+      "verb": 14,
+      "noun": 6,
+      "start_frame": 835,
+      "end_frame": 886,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 72,
+      "verb": 0,
+      "noun": 6,
+      "start_frame": 887,
+      "end_frame": 899,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 38,
+      "verb": 11,
+      "noun": 6,
+      "start_frame": 900,
+      "end_frame": 940,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 99,
+      "verb": 10,
+      "noun": 9,
+      "start_frame": 941,
+      "end_frame": 1117,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 82,
+      "verb": 21,
+      "noun": 8,
+      "start_frame": 1118,
+      "end_frame": 1148,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 0,
+      "verb": -1,
+      "noun": -1,
+      "start_frame": 1149,
+      "end_frame": 1179,
+      "phase": "anomaly",
+      "anomaly_type": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 8,
+      "verb": 14,
+      "noun": 0,
+      "start_frame": 1180,
+      "end_frame": 1291,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 53,
+      "verb": 19,
+      "noun": 0,
+      "start_frame": 1292,
+      "end_frame": 1632,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 0,
+      "verb": -1,
+      "noun": -1,
+      "start_frame": 1633,
+      "end_frame": 1695,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 53,
+      "verb": 19,
+      "noun": 0,
+      "start_frame": 1696,
+      "end_frame": 1829,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 83,
+      "verb": 21,
+      "noun": 9,
+      "start_frame": 1830,
+      "end_frame": 1857,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 99,
+      "verb": 10,
+      "noun": 9,
+      "start_frame": 1858,
+      "end_frame": 1982,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 137,
+      "verb": 7,
+      "noun": 6,
+      "start_frame": 1983,
+      "end_frame": 2049,
+      "phase": "anomaly",
+      "anomaly_type": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 15,
+      "verb": 14,
+      "noun": 5,
+      "start_frame": 2050,
+      "end_frame": 2097,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 76,
+      "verb": 1,
+      "noun": 0,
+      "start_frame": 2098,
+      "end_frame": 2173,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 57,
+      "verb": 20,
+      "noun": 0,
+      "start_frame": 2174,
+      "end_frame": 2228,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 137,
+      "verb": 7,
+      "noun": 6,
+      "start_frame": 2229,
+      "end_frame": 2361,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 129,
+      "verb": 18,
+      "noun": 5,
+      "start_frame": 2362,
+      "end_frame": 2404,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 133,
+      "verb": 6,
+      "noun": 9,
+      "start_frame": 2405,
+      "end_frame": 2445,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 5,
+      "verb": 14,
+      "noun": 1,
+      "start_frame": 2446,
+      "end_frame": 2508,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 35,
+      "verb": 13,
+      "noun": 1,
+      "start_frame": 2509,
+      "end_frame": 2603,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 133,
+      "verb": 6,
+      "noun": 9,
+      "start_frame": 2604,
+      "end_frame": 2679,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 7,
+      "verb": 14,
+      "noun": 13,
+      "start_frame": 2680,
+      "end_frame": 2728,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 39,
+      "verb": 11,
+      "noun": 13,
+      "start_frame": 2729,
+      "end_frame": 2854,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 7,
+      "verb": 14,
+      "noun": 13,
+      "start_frame": 2855,
+      "end_frame": 2899,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 39,
+      "verb": 11,
+      "noun": 13,
+      "start_frame": 2900,
+      "end_frame": 2933,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 83,
+      "verb": 21,
+      "noun": 9,
+      "start_frame": 2934,
+      "end_frame": 2980,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 9,
+      "verb": 14,
+      "noun": 11,
+      "start_frame": 2981,
+      "end_frame": 3021,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 52,
+      "verb": 19,
+      "noun": 11,
+      "start_frame": 3022,
+      "end_frame": 3253,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 133,
+      "verb": 6,
+      "noun": 9,
+      "start_frame": 3254,
+      "end_frame": 3313,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 54,
+      "verb": 9,
+      "noun": 11,
+      "start_frame": 3314,
+      "end_frame": 3341,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 0,
+      "verb": -1,
+      "noun": -1,
+      "start_frame": 3342,
+      "end_frame": 3400,
+      "phase": "recovery",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 54,
+      "verb": 9,
+      "noun": 11,
+      "start_frame": 3401,
+      "end_frame": 3423,
+      "phase": "anomaly",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 0,
+      "verb": -1,
+      "noun": -1,
+      "start_frame": 3424,
+      "end_frame": 3520,
+      "phase": "anomaly",
+      "anomaly_type": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 39,
+      "verb": 11,
+      "noun": 13,
+      "start_frame": 3521,
+      "end_frame": 3616,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 0,
+      "verb": -1,
+      "noun": -1,
+      "start_frame": 3617,
+      "end_frame": 3642,
+      "phase": "anomaly",
+      "anomaly_type": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 9,
+      "verb": 14,
+      "noun": 11,
+      "start_frame": 3643,
+      "end_frame": 3665,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 52,
+      "verb": 19,
+      "noun": 11,
+      "start_frame": 3666,
+      "end_frame": 3801,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 54,
+      "verb": 9,
+      "noun": 11,
+      "start_frame": 3802,
+      "end_frame": 3992,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 7,
+      "verb": 14,
+      "noun": 13,
+      "start_frame": 3993,
+      "end_frame": 4045,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 39,
+      "verb": 11,
+      "noun": 13,
+      "start_frame": 4046,
+      "end_frame": 4130,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 9,
+      "verb": 14,
+      "noun": 11,
+      "start_frame": 4131,
+      "end_frame": 4170,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 52,
+      "verb": 19,
+      "noun": 11,
+      "start_frame": 4171,
+      "end_frame": 4260,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 54,
+      "verb": 9,
+      "noun": 11,
+      "start_frame": 4261,
+      "end_frame": 4487,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 0,
+      "verb": -1,
+      "noun": -1,
+      "start_frame": 4488,
+      "end_frame": 4630,
+      "phase": "anomaly",
+      "anomaly_type": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 87,
+      "verb": 21,
+      "noun": 3,
+      "start_frame": 4631,
+      "end_frame": 4661,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 73,
+      "verb": 0,
+      "noun": 3,
+      "start_frame": 4662,
+      "end_frame": 4701,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 42,
+      "verb": 17,
+      "noun": 3,
+      "start_frame": 4702,
+      "end_frame": 4744,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 0,
+      "verb": -1,
+      "noun": -1,
+      "start_frame": 4745,
+      "end_frame": 4799,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 88,
+      "verb": 21,
+      "noun": 13,
+      "start_frame": 4800,
+      "end_frame": 4842,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 39,
+      "verb": 11,
+      "noun": 13,
+      "start_frame": 4843,
+      "end_frame": 4945,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 17,
+      "verb": 14,
+      "noun": 17,
+      "start_frame": 4946,
+      "end_frame": 5018,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 78,
+      "verb": 1,
+      "noun": 13,
+      "start_frame": 5019,
+      "end_frame": 5045,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 59,
+      "verb": 20,
+      "noun": 13,
+      "start_frame": 5046,
+      "end_frame": 5782,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 0,
+      "verb": -1,
+      "noun": -1,
+      "start_frame": 5783,
+      "end_frame": 5952,
+      "phase": "anomaly",
+      "anomaly_type": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 88,
+      "verb": 21,
+      "noun": 13,
+      "start_frame": 5953,
+      "end_frame": 6003,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 39,
+      "verb": 11,
+      "noun": 13,
+      "start_frame": 6004,
+      "end_frame": 6113,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 0,
+      "verb": -1,
+      "noun": -1,
+      "start_frame": 6114,
+      "end_frame": 6194,
+      "phase": "anomaly",
+      "anomaly_type": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 11,
+      "verb": 14,
+      "noun": 10,
+      "start_frame": 6195,
+      "end_frame": 6249,
+      "phase": "anomaly",
+      "anomaly_type": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 74,
+      "verb": 1,
+      "noun": 10,
+      "start_frame": 6250,
+      "end_frame": 6271,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 41,
+      "verb": 2,
+      "noun": 10,
+      "start_frame": 6272,
+      "end_frame": 6358,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 39,
+      "verb": 11,
+      "noun": 13,
+      "start_frame": 6359,
+      "end_frame": 6420,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 58,
+      "verb": 9,
+      "noun": 13,
+      "start_frame": 6421,
+      "end_frame": 6515,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 10,
+      "verb": 14,
+      "noun": 15,
+      "start_frame": 6516,
+      "end_frame": 6541,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 40,
+      "verb": 2,
+      "noun": 15,
+      "start_frame": 6542,
+      "end_frame": 6584,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 0,
+      "verb": -1,
+      "noun": -1,
+      "start_frame": 6585,
+      "end_frame": 6622,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 19,
+      "verb": 15,
+      "noun": 9,
+      "start_frame": 6623,
+      "end_frame": 6660,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 9,
+      "verb": 14,
+      "noun": 11,
+      "start_frame": 6661,
+      "end_frame": 6685,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 52,
+      "verb": 19,
+      "noun": 11,
+      "start_frame": 6686,
+      "end_frame": 6841,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 0,
+      "verb": -1,
+      "noun": -1,
+      "start_frame": 6842,
+      "end_frame": 6941,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 99,
+      "verb": 10,
+      "noun": 9,
+      "start_frame": 6942,
+      "end_frame": 7013,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 0,
+      "verb": -1,
+      "noun": -1,
+      "start_frame": 7014,
+      "end_frame": 7062,
+      "phase": "recovery",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 50,
+      "verb": 3,
+      "noun": 10,
+      "start_frame": 7063,
+      "end_frame": 7174,
+      "phase": "anomaly",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 28,
+      "verb": 15,
+      "noun": 10,
+      "start_frame": 7175,
+      "end_frame": 7201,
+      "phase": "anomaly",
+      "anomaly_type": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 0,
+      "verb": -1,
+      "noun": -1,
+      "start_frame": 7202,
+      "end_frame": 7399,
+      "phase": "recovery",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 83,
+      "verb": 21,
+      "noun": 9,
+      "start_frame": 7400,
+      "end_frame": 7417,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 11,
+      "verb": 14,
+      "noun": 10,
+      "start_frame": 7418,
+      "end_frame": 7442,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 108,
+      "verb": 10,
+      "noun": 10,
+      "start_frame": 7443,
+      "end_frame": 7481,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 28,
+      "verb": 15,
+      "noun": 10,
+      "start_frame": 7482,
+      "end_frame": 7497,
+      "phase": "anomaly",
+      "anomaly_type": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 83,
+      "verb": 21,
+      "noun": 9,
+      "start_frame": 7498,
+      "end_frame": 7512,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 133,
+      "verb": 6,
+      "noun": 9,
+      "start_frame": 7513,
+      "end_frame": 7560,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 0,
+      "verb": -1,
+      "noun": -1,
+      "start_frame": 7561,
+      "end_frame": 7642,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 83,
+      "verb": 21,
+      "noun": 9,
+      "start_frame": 7643,
+      "end_frame": 7662,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 11,
+      "verb": 14,
+      "noun": 10,
+      "start_frame": 7663,
+      "end_frame": 7690,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 91,
+      "verb": 21,
+      "noun": 10,
+      "start_frame": 7691,
+      "end_frame": 7716,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 10,
+      "verb": 14,
+      "noun": 15,
+      "start_frame": 7717,
+      "end_frame": 7759,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 40,
+      "verb": 2,
+      "noun": 15,
+      "start_frame": 7760,
+      "end_frame": 7827,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 12,
+      "verb": 14,
+      "noun": 18,
+      "start_frame": 7828,
+      "end_frame": 7857,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 29,
+      "verb": 15,
+      "noun": 18,
+      "start_frame": 7858,
+      "end_frame": 7958,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 74,
+      "verb": 1,
+      "noun": 10,
+      "start_frame": 7959,
+      "end_frame": 7975,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 41,
+      "verb": 2,
+      "noun": 10,
+      "start_frame": 7976,
+      "end_frame": 8056,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 17,
+      "verb": 14,
+      "noun": 17,
+      "start_frame": 8057,
+      "end_frame": 8080,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 78,
+      "verb": 1,
+      "noun": 13,
+      "start_frame": 8081,
+      "end_frame": 8109,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 59,
+      "verb": 20,
+      "noun": 13,
+      "start_frame": 8110,
+      "end_frame": 8450,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    },
+    {
+      "action_label": 131,
+      "verb": 18,
+      "noun": 17,
+      "start_frame": 8451,
+      "end_frame": 8489,
+      "phase": "normal",
+      "anomaly_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entity": "right"
+    }
+  ]
+}

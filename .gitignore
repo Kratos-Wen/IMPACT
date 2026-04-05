@@ -21,5 +21,9 @@ third_party/asquery/logs/
 third_party/ltcontext/experiments/
 third_party/ltcontext/logs/
 third_party/ltcontext/test_results/
-third_party/asr_psr_experiment/models/
-third_party/asr_psr_experiment/results/
+third_party/ms_tcn2/models/
+third_party/ms_tcn2/results/
+third_party/videomae_v2_head/models/
+third_party/videomae_v2_head/results/
+third_party/avt/outputs/
+third_party/scalant/outputs/

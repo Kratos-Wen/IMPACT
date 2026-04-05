@@ -7,7 +7,7 @@ This directory provides the released IMPACT `ASR` wrapper for `VideoMAE v2+Head`
 - dataset root: `dataset/ASR`
 - split assets: `dataset/ASR/splits_front_only_v1`
 - default logs: `logs/asr/videomae_v2_head`
-- source snapshot: `third_party/asr_psr_experiment`
+- source snapshot: `third_party/videomae_v2_head`
 
 ## Common Arguments
 

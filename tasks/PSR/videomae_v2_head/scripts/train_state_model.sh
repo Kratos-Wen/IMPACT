@@ -19,7 +19,7 @@ LOG_PATH="${LOG_BASE%/}/train_${IMPACT_SPLIT}.log"
 
 mkdir -p "$LOG_BASE"
 
-cd "$ROOT_DIR/third_party/asr_psr_experiment"
+cd "$ROOT_DIR/third_party/videomae_v2_head"
 CUDA_VISIBLE_DEVICES="$GPU" PYTHONUNBUFFERED=1 \
   python main.py \
     --action train \

@@ -7,13 +7,19 @@ Bundled sources:
 - `diffact`
 - `asquery`
 - `fact`
-- `asr_psr_experiment`
+- `ms_tcn2`
+- `videomae_v2_head`
 - `storm_psr`
+- `avt`
+- `scalant`
+- `qwen3_vl_8b`
 
 Task mapping:
 - `ltcontext`, `diffact`, `asquery`, and `fact` back the released `TAS`, `PPR`, and `ATR` wrappers
-- `asr_psr_experiment` backs the released `ASR` wrappers and the indirect `PSR` pipelines
+- `ms_tcn2` backs the released `ASR` and indirect `PSR` wrappers for `MS-TCN++`
+- `videomae_v2_head` backs the released `ASR` and indirect `PSR` wrappers for `VideoMAE v2+Head`
 - `storm_psr` backs the released direct `PSR` temporal-stream wrapper
+- `avt`, `scalant`, and `qwen3_vl_8b` back the released `AF-S` wrappers
 
 Repository-authored benchmark wrappers live under `tasks/`. Upstream licenses remain inside the corresponding source snapshots.
 

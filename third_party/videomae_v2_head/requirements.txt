@@ -1,0 +1,8 @@
+google-genai
+torch
+torchvision
+numpy
+imageio
+opencv-python
+imageio-ffmpeg
+Levenshtein

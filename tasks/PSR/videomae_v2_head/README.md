@@ -9,7 +9,7 @@ This directory provides the released indirect `VideoMAE v2+Head -> PSR` pipeline
 - alias map: `tasks/PSR/videomae_v2_head/configs/component_alias.json`
 - default procedure graph: `outputs/psr/videomae_v2_head/procedure_graph_split1.json`
 - default logs: `logs/psr/videomae_v2_head`
-- source snapshot: `third_party/asr_psr_experiment`
+- source snapshot: `third_party/videomae_v2_head`
 
 ## Common Arguments
 

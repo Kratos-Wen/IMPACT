@@ -16,7 +16,7 @@ LOG_PATH="${LOG_BASE%/}/learn_graph_${IMPACT_SPLIT}.log"
 
 mkdir -p "$LOG_BASE" "$(dirname "$OUTPUT_PATH")"
 
-cd "$ROOT_DIR/third_party/asr_psr_experiment"
+cd "$ROOT_DIR/third_party/videomae_v2_head"
 PYTHONUNBUFFERED=1 \
   python learn_procedure_graph.py \
     --out "$OUTPUT_PATH" \

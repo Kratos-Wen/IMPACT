@@ -37,6 +37,7 @@ This directory contains the IMPACT Procedure Step Recognition benchmark release.
 | `STORM-PSR` | `tasks/PSR/storm_psr/scripts/train_split.sh` | train the temporal stream | `bash tasks/PSR/storm_psr/scripts/train_split.sh <SPLIT_ID> <FEATURE_DIR> [GPU] [RUN_NAME] [LABEL_DIR] [SPLIT_DIR] [LOG_ROOT] [CKPT_ROOT] [CFG_PATH]` |
 | `STORM-PSR` | `tasks/PSR/storm_psr/scripts/test_split.sh` | run temporal-stream inference | `bash tasks/PSR/storm_psr/scripts/test_split.sh <SPLIT_ID> <RUN_NAME> [CHECKPOINT_NAME] [SUBSET] <FEATURE_DIR> [GPU] [LABEL_DIR] [SPLIT_DIR] [LOG_ROOT]` |
 | `STORM-PSR` | `tasks/PSR/storm_psr/scripts/eval_temporal_stream.sh` | evaluate the temporal stream outputs | `bash tasks/PSR/storm_psr/scripts/eval_temporal_stream.sh <RUN_NAME> [CHECKPOINT_NAME] [SUBSET] <VIDEO_DIR> [LABEL_DIR] [LOG_ROOT] [PROCEDURE_INFO]` |
+| `Gemini 3.1 Pro` | `tasks/PSR/gemini_3_1_pro/scripts/learn_graph.sh` | regenerate the released procedure graph | `bash tasks/PSR/gemini_3_1_pro/scripts/learn_graph.sh [ANNOTATION_DIR] [OUTPUT_PATH] [ALIAS_MAP]` |
 | `Gemini 3.1 Pro` | `tasks/PSR/gemini_3_1_pro/scripts/run_batch_inference.sh` | run the released batch prompting pipeline | `GEMINI_API_KEY=... bash tasks/PSR/gemini_3_1_pro/scripts/run_batch_inference.sh <VIDEO_DIR> [ASR_JSON_DIR] [RUN_TAG] [MODEL_NAME] [OUTPUT_ROOT] [LOG_ROOT]` |
 | `Gemini 3.1 Pro` | `tasks/PSR/gemini_3_1_pro/scripts/eval_predictions.sh` | evaluate saved prediction JSON files | `bash tasks/PSR/gemini_3_1_pro/scripts/eval_predictions.sh <PRED_DIR> [BUNDLE_SPLIT] [GT_DIR] [PROCEDURE_GRAPH] [COMPONENT_ALIAS]` |
 
@@ -55,6 +56,7 @@ bash tasks/PSR/storm_psr/scripts/train_split.sh 1 /path/to/IMPACT_front/features
 bash tasks/PSR/storm_psr/scripts/test_split.sh 1 impact_storm_split1 best_model test /path/to/IMPACT_front/features 0
 bash tasks/PSR/storm_psr/scripts/eval_temporal_stream.sh impact_storm_split1 best_model test /path/to/videos
 
+bash tasks/PSR/gemini_3_1_pro/scripts/learn_graph.sh
 GEMINI_API_KEY=... bash tasks/PSR/gemini_3_1_pro/scripts/run_batch_inference.sh /path/to/videos
 bash tasks/PSR/gemini_3_1_pro/scripts/eval_predictions.sh outputs/psr/gemini_3_1_pro/<run_tag>/predictions test
 ```

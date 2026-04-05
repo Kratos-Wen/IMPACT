@@ -19,7 +19,7 @@ LOG_PATH="${LOG_BASE%/}/eval_${IMPACT_SPLIT}_$(basename "$CHECKPOINT_NAME").log"
 
 mkdir -p "$LOG_BASE"
 
-cd "$ROOT_DIR/third_party/asr_psr_experiment"
+cd "$ROOT_DIR/third_party/ms_tcn2"
 CUDA_VISIBLE_DEVICES="$GPU" PYTHONUNBUFFERED=1 \
   python eval.py \
     --dataset IMPACT \

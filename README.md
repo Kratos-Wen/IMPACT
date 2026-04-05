@@ -4,7 +4,7 @@ Official implementation of "IMPACT: A Dataset for Multi-Granularity Human Proced
 
 IMPACT provides the benchmark codebase for the IMPACT dataset and evaluation suite. The repository is organized first by task and then by method so that each benchmark setting exposes a consistent configuration and execution interface.
 
-The current public release covers all benchmark tasks defined in the paper:
+The current public release covers the following released benchmark tasks:
 - `TAS`: Temporal Action Segmentation
 - `ASR`: Assembly State Recognition
 - `PSR`: Procedure Step Recognition
@@ -12,6 +12,9 @@ The current public release covers all benchmark tasks defined in the paper:
 - `ATR`: Anomaly Type Recognition
 - `CV-TA`: Cross-View Temporal Alignment
 - `CV-SM`: Cross-View Semantic Matching
+- `AF-S`: Short-term Action Anticipation
+
+`AF-L` will be released separately with its dedicated forecasting baselines.
 
 Included in this release:
 - task protocol assets under `dataset/`
@@ -35,7 +38,8 @@ IMPACT/
 │   ├── PSR/
 │   ├── PPR/
 │   ├── ATR/
-│   └── CV/
+│   ├── CV/
+│   └── AF-S/
 ├── tasks/
 │   ├── TAS/
 │   ├── ASR/
@@ -43,7 +47,8 @@ IMPACT/
 │   ├── PPR/
 │   ├── ATR/
 │   ├── CV-TA/
-│   └── CV-SM/
+│   ├── CV-SM/
+│   └── AF-S/
 ├── third_party/
 └── docs/
 ```
@@ -89,6 +94,13 @@ Runtime `logs/` and `outputs/` directories are not shipped in the repository tre
 - paper protocols: `CV-SMR`, `CV-SMC`
 - public assets: synchronized CAS annotations and split bundles under `dataset/CV/`
 - default feature lookup: `features/cv/{videomaev2,i3d,mvitv2}`
+
+`AF-S`
+- reference implementations: `AVT`, `ScalAnt`, `Qwen3VL-8B`
+- paper protocol: `AF-S`
+- current public split assets: `split1`
+- supervised baselines expect external feature roots; `Qwen3VL-8B` expects raw videos
+- `AF-L` is not included in this release
 
 ## Licensing
 

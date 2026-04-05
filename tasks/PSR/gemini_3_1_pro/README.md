@@ -17,15 +17,21 @@ This directory provides the released IMPACT `PSR` wrapper for `Gemini 3.1 Pro`.
 - `ASR_JSON_DIR`: defaults to `dataset/ASR/annotations` and provides the released component metadata and key query times
 - `RUN_TAG`: run identifier used to separate outputs and logs
 - `MODEL_NAME`: Gemini model name, default `gemini-3.1-pro-preview`
+- `BASE_FPS`: sampling fps outside the dense key-transition windows, default `0.5`
 - `PRED_DIR`: directory containing saved Gemini prediction JSON files
 - `BUNDLE_SPLIT`: evaluation split, usually `test`
 
 ## Scripts
 
+- `scripts/learn_graph.sh`: regenerates the released procedure graph from ASR annotations
 - `scripts/run_batch_inference.sh`: runs the released batch prompting pipeline and writes prediction JSON files
 - `scripts/eval_predictions.sh`: evaluates saved prediction JSON files as PSR
 
 ## Examples
+
+```bash
+bash tasks/PSR/gemini_3_1_pro/scripts/learn_graph.sh
+```
 
 ```bash
 GEMINI_API_KEY=... \
@@ -40,6 +46,7 @@ bash tasks/PSR/gemini_3_1_pro/scripts/eval_predictions.sh \
 ## Notes
 
 - The released prompting pipeline jointly predicts `states_over_time` and completed step lists; the PSR evaluator uses the completed-step output.
+- The prompt is release-appropriate for `PSR`: it constrains the step vocabulary, conditions on the released procedure graph, and asks for cumulative completed-step lists at the official query times.
 - Raw videos are not distributed in this repository, so inference requires an external `VIDEO_DIR`.
 - Inference requires the `GEMINI_API_KEY` environment variable.
 - Inference also requires Python packages `google-genai`, `moviepy`, and `Pillow`.

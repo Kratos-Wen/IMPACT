@@ -347,10 +347,13 @@ def run_one_video(
     jpeg_quality: int,
     temperature: float,
     max_frames: int,
+    base_fps: float,
     api_key: str,
 ) -> Dict[str, Any]:
     if max_frames < 0:
         raise ValueError("--max_frames must be >= 0 (0 means no frame cap)")
+    if base_fps <= 0:
+        raise ValueError("--base_fps must be > 0")
 
     # Load ASR
     with open(asr_json_path, "r", encoding="utf-8") as f:
@@ -393,7 +396,7 @@ def run_one_video(
         duration_s=duration_s,
         key_half_window_s=0.5,
         key_fps=10.0,
-        base_fps=1.0,
+        base_fps=base_fps,
     )
 
     # cap frames only when requested: keep all KEY frames, subsample BASE if needed
@@ -592,6 +595,8 @@ def main():
     ap.add_argument("--temperature", type=float, default=0.0)
     ap.add_argument("--max_frames", type=int, default=0,
                     help="Max sampled frames; 0 means no cap (default: 0).")
+    ap.add_argument("--base_fps", type=float, default=0.5,
+                    help="Sampling fps outside key-transition windows (default: 0.5).")
     args = ap.parse_args()
 
     api_key = os.environ.get("GEMINI_API_KEY", "")
@@ -617,6 +622,7 @@ def main():
             jpeg_quality=args.jpeg_quality,
             temperature=args.temperature,
             max_frames=args.max_frames,
+            base_fps=args.base_fps,
             api_key=api_key,
         )
         return
@@ -659,6 +665,7 @@ def main():
                 jpeg_quality=args.jpeg_quality,
                 temperature=args.temperature,
                 max_frames=args.max_frames,
+                base_fps=args.base_fps,
                 api_key=api_key,
             )
             ok += 1

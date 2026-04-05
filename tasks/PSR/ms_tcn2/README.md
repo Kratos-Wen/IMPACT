@@ -9,7 +9,7 @@ This directory provides the released indirect `MS-TCN++ -> PSR` pipeline for IMP
 - alias map: `tasks/PSR/ms_tcn2/configs/component_alias.json`
 - default procedure graph: `outputs/psr/ms_tcn2/procedure_graph_split1.json`
 - default logs: `logs/psr/ms_tcn2`
-- source snapshot: `third_party/asr_psr_experiment`
+- source snapshot: `third_party/ms_tcn2`
 
 ## Common Arguments
 

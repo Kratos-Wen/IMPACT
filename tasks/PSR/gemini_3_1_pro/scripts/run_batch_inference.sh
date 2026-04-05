@@ -12,6 +12,7 @@ LOG_ROOT="${6:-$ROOT_DIR/logs/psr/gemini_3_1_pro/${RUN_TAG}}"
 VIDEO_GLOB="${VIDEO_GLOB:-*.mp4}"
 MAX_FRAMES="${MAX_FRAMES:-0}"
 TEMPERATURE="${TEMPERATURE:-0.0}"
+BASE_FPS="${BASE_FPS:-0.5}"
 
 if [[ -z "${GEMINI_API_KEY:-}" ]]; then
   echo "GEMINI_API_KEY is required." >&2
@@ -37,6 +38,7 @@ raise SystemExit("Missing Python packages: " + ", ".join(missing) if missing els
   --model "${MODEL_NAME}" \
   --video_glob "${VIDEO_GLOB}" \
   --max_frames "${MAX_FRAMES}" \
+  --base_fps "${BASE_FPS}" \
   --temperature "${TEMPERATURE}" \
   > "${LOG_ROOT}/inference.log" 2>&1
 

@@ -1,0 +1,23 @@
+{
+  "model_name": "sca",
+  "hidden_dim": 1024,
+  "dropout": 0.1,
+  "sca_d_model": 1024,
+  "sca_n_heads": 8,
+  "sca_ffn_dim": 4096,
+  "sca_enc_layers": 4,
+  "sca_dec_layers": 4,
+  "sca_n_queries": 1,
+  "sca_dropout": 0.1,
+  "sca_mamba_d_state": 16,
+  "sca_mamba_d_conv": 4,
+  "sca_long_memory_ratio": 0.8,
+  "sca_use_clam": true,
+  "sca_num_clusters": 10,
+  "sca_clam_layers": 1,
+  "sca_clam_gate_state": true,
+  "sca_clam_expand_k": 0.5,
+  "sca_clam_use_scan": false,
+  "monitor_metric": "val/future_action_overall_mean_top5_recall",
+  "monitor_mode": "max"
+}

@@ -7,7 +7,7 @@ This directory provides the released IMPACT `ASR` wrapper for `MS-TCN++`.
 - dataset root: `dataset/ASR`
 - split assets: `dataset/ASR/splits_front_only_v1`
 - default logs: `logs/asr/ms_tcn2`
-- source snapshot: `third_party/asr_psr_experiment`
+- source snapshot: `third_party/ms_tcn2`
 
 ## Common Arguments
 

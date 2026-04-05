@@ -1,0 +1,19 @@
+{
+  "model_name": "avt",
+  "target_fps": 1.0,
+  "feature_dim": null,
+  "hidden_dim": 2048,
+  "num_actions": null,
+  "num_verbs": null,
+  "num_nouns": null,
+  "dropout": 0.1,
+  "avt_nhead": 4,
+  "avt_n_layer": 6,
+  "history_loss_weight": 1.0,
+  "future_loss_weight": 1.0,
+  "action_ignore_index": -100,
+  "verb_ignore_index": -1,
+  "noun_ignore_index": -1,
+  "monitor_metric": "val/future_action_overall_mean_top5_recall",
+  "monitor_mode": "max"
+}

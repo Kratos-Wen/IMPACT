@@ -8,7 +8,7 @@ from pathlib import Path
 import numpy as np
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
-HELPER_ROOT = REPO_ROOT / "third_party" / "asr_psr_experiment"
+HELPER_ROOT = REPO_ROOT / "third_party" / "ms_tcn2"
 DEFAULT_PRED_DIR = REPO_ROOT / "outputs" / "asr" / "gemini_3_1_pro" / "predictions"
 DEFAULT_SPLIT_DIR = REPO_ROOT / "dataset" / "ASR" / "splits_front_only_v1"
 DEFAULT_ANNOTATION_DIR = REPO_ROOT / "dataset" / "ASR" / "annotations"
