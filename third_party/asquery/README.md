@@ -1,4 +1,11 @@
 # ASQuery: A Query-Based Model For Action Segmentation
+
+> IMPACT note:
+> - this directory bundles the upstream `ASQuery` snapshot used by the IMPACT release
+> - for runnable IMPACT commands, use `tasks/TAS/asquery/` and `tasks/PPR/asquery/`
+> - upstream repository: `https://github.com/zlngan/ASQuery`
+> - the bundled upstream snapshot does not include a `LICENSE` file; downstream redistributors should verify the upstream licensing status before reuse beyond this benchmark release
+
 ## Introduction
 This repository provides a PyTorch implementation of the paper "ASQuery: A Query-Based Model For Action Segmentation". 
 

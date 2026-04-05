@@ -1,0 +1,26 @@
+<svg width="1280" height="900" viewBox="0 0 1280 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="900" fill="#161B21"/>
+  <rect x="54" y="52" width="1172" height="796" rx="36" fill="#1E252E" stroke="#39424D" stroke-width="2"/>
+  <rect x="104" y="108" width="300" height="226" rx="20" fill="#262F3A"/>
+  <rect x="490" y="108" width="300" height="226" rx="20" fill="#262F3A"/>
+  <rect x="876" y="108" width="300" height="226" rx="20" fill="#262F3A"/>
+  <rect x="104" y="390" width="300" height="226" rx="20" fill="#262F3A"/>
+  <rect x="490" y="390" width="686" height="226" rx="20" fill="#262F3A"/>
+  <rect x="104" y="674" width="1072" height="90" rx="18" fill="#202833"/>
+  <rect x="134" y="700" width="274" height="38" rx="19" fill="#D78B3D"/>
+  <rect x="430" y="700" width="198" height="38" rx="19" fill="#3C4856"/>
+  <rect x="652" y="700" width="198" height="38" rx="19" fill="#3C4856"/>
+  <rect x="874" y="700" width="274" height="38" rx="19" fill="#3C4856"/>
+  <path d="M188 242C223.333 205.333 261.333 187 302 187C342.667 187 380.667 205.333 416 242" stroke="#F0C58B" stroke-width="10" stroke-linecap="round"/>
+  <path d="M574 242C609.333 205.333 647.333 187 688 187C728.667 187 766.667 205.333 802 242" stroke="#F0C58B" stroke-width="10" stroke-linecap="round"/>
+  <path d="M960 242C995.333 205.333 1033.33 187 1074 187C1114.67 187 1152.67 205.333 1188 242" stroke="#F0C58B" stroke-width="10" stroke-linecap="round"/>
+  <rect x="152" y="156" width="204" height="24" rx="12" fill="#3C4856"/>
+  <rect x="538" y="156" width="204" height="24" rx="12" fill="#3C4856"/>
+  <rect x="924" y="156" width="204" height="24" rx="12" fill="#3C4856"/>
+  <rect x="152" y="438" width="204" height="24" rx="12" fill="#3C4856"/>
+  <rect x="538" y="438" width="344" height="24" rx="12" fill="#3C4856"/>
+  <rect x="538" y="490" width="520" height="18" rx="9" fill="#4E5D6F"/>
+  <rect x="538" y="526" width="410" height="18" rx="9" fill="#4E5D6F"/>
+  <text x="112" y="96" fill="#F3EFE5" font-family="IBM Plex Sans, sans-serif" font-size="28" font-weight="600">Teaser Placeholder</text>
+  <text x="112" y="650" fill="#C4BBA8" font-family="IBM Plex Sans, sans-serif" font-size="24">Replace with multi-view synchronization, bimanual labels, and task overlays.</text>
+</svg>

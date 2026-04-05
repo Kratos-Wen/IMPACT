@@ -21,6 +21,7 @@ Included in this release:
 - task protocol assets under `dataset/`
 - IMPACT-specific benchmark wrappers under `tasks/`
 - method source snapshots under `third_party/`
+- project-site source under `website/`
 
 Not included in this release:
 - raw videos
@@ -33,6 +34,7 @@ Not included in this release:
 
 ```text
 IMPACT/
+├── .github/
 ├── dataset/
 │   ├── TAS/
 │   ├── ASR/
@@ -53,6 +55,7 @@ IMPACT/
 │   ├── AF-S/
 │   └── AF-L/
 ├── third_party/
+├── website/
 └── docs/
 ```
 
@@ -113,6 +116,10 @@ Runtime `logs/` and `outputs/` directories are not shipped in the repository tre
 This repository uses a split license structure:
 - [LICENSE](LICENSE) covers repository-authored code, scripts, and configuration files, unless otherwise noted
 - [LICENSE-DATA](LICENSE-DATA) covers dataset assets in `dataset/` and repository-authored documentation, including this `README.md`, files under `docs/`, and Markdown documentation under `tasks/`, unless otherwise noted
-- `third_party/` retains the bundled upstream licenses of the corresponding methods
+- `third_party/` uses per-directory provenance and license notices: bundled upstream licenses are retained where available, and IMPACT-maintained method snapshots document their external references in the corresponding `README.md`
 
 If a file or subdirectory provides a more specific license notice, that notice takes precedence.
+
+## Project Site
+
+The project-site source lives under `website/`. After GitHub Pages is enabled for this repository, the landing page can be published at `https://kratos-wen.github.io/IMPACT/`.

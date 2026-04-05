@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMPACT | Industrial Procedural Understanding Benchmark</title>
+    <meta
+      name="description"
+      content="IMPACT is a task-driven benchmark platform for multi-view industrial procedural understanding, spanning action segmentation, cross-view understanding, forecasting, procedural reasoning, and error analysis."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="#top">
+          <span class="brand-mark">IMPACT</span>
+          <span class="brand-subtitle">Industrial procedural benchmark</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#why">Why</a>
+          <a href="#tasks">Tasks</a>
+          <a href="#download">Download</a>
+          <a href="#benchmark">Benchmark</a>
+          <a href="#starter-code">Code</a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero reveal">
+          <div class="hero-copy">
+            <p class="eyebrow">ACM MM 2026 dataset platform</p>
+            <h1>
+              A multi-view industrial assembly benchmark for perception,
+              reasoning, forecasting, and error analysis.
+            </h1>
+            <p class="hero-text">
+              IMPACT is a task-driven benchmark platform for multi-granularity
+              human procedural action understanding under industrial complexity,
+              partial observability, and cross-view variability.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="https://github.com/Kratos-Wen/IMPACT">Code</a>
+              <a class="button button-secondary" href="#download">Download</a>
+              <a class="button button-secondary" href="#benchmark">Benchmark</a>
+              <a class="button button-secondary" href="#placeholders">Paper</a>
+            </div>
+            <ul class="hero-metrics" aria-label="Quick facts">
+              <li>
+                <span class="metric-value">9</span>
+                <span class="metric-label">task tracks</span>
+              </li>
+              <li>
+                <span class="metric-value">8</span>
+                <span class="metric-label">released wrappers</span>
+              </li>
+              <li>
+                <span class="metric-value">Ego + 4 Exo</span>
+                <span class="metric-label">view setup</span>
+              </li>
+              <li>
+                <span class="metric-value">TBD</span>
+                <span class="metric-label">paper stats</span>
+              </li>
+            </ul>
+          </div>
+          <div class="hero-panel">
+            <div class="media-card">
+              <img
+                src="./assets/teaser-placeholder.svg"
+                alt="Placeholder teaser panel for IMPACT multi-view industrial assembly benchmark."
+              />
+              <div class="media-meta">
+                <span class="pill">Teaser placeholder</span>
+                <span class="pill pill-muted">Replace with release video or GIF</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="why" class="section reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Why IMPACT</p>
+            <h2>Industrial procedural understanding needs task structure, not just clips.</h2>
+          </div>
+          <div class="two-column-grid">
+            <article class="content-card">
+              <h3>Why existing datasets fall short</h3>
+              <ul class="feature-list">
+                <li>Weak procedural structure and limited recovery modeling.</li>
+                <li>Insufficient support for bimanual reasoning under partial observability.</li>
+                <li>Little separation between perception, reasoning, and forecasting failure modes.</li>
+                <li>Limited industrial realism for assembly-centric evaluation.</li>
+              </ul>
+            </article>
+            <article class="content-card accent-card">
+              <h3>What IMPACT enables</h3>
+              <ul class="feature-list">
+                <li>Step-level and bimanual atomic annotations across a unified task space.</li>
+                <li>Cross-view temporal alignment and semantic matching under synchronized multi-view capture.</li>
+                <li>Short-term anticipation, long-horizon forecasting, and procedure reasoning under one benchmark.</li>
+                <li>Error analysis through compliance-phase and anomaly-type recognition.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Dataset Snapshot</p>
+            <h2>Designed as a benchmark platform, not just a download archive.</h2>
+          </div>
+          <div class="snapshot-grid">
+            <article class="snapshot-card">
+              <span class="snapshot-label">Scale</span>
+              <h3>TBD</h3>
+              <p>Fill in videos, hours, and frame statistics after the final release audit.</p>
+            </article>
+            <article class="snapshot-card">
+              <span class="snapshot-label">Views</span>
+              <h3>Ego + 4 exocentric cameras</h3>
+              <p>Supports cross-view alignment, semantic matching, and partial-observability analysis.</p>
+            </article>
+            <article class="snapshot-card">
+              <span class="snapshot-label">Granularity</span>
+              <h3>Step-level + bimanual atomic</h3>
+              <p>`TAS-S` captures procedure steps, while `TAS-BL` and `TAS-BR` expose hand-specific atomic actions.</p>
+            </article>
+            <article class="snapshot-card">
+              <span class="snapshot-label">Release Scope</span>
+              <h3>Protocol assets + benchmark wrappers</h3>
+              <p>Current public release covers evaluation assets and task wrappers. Raw media and features remain external.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="tasks" class="section reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Supported Tasks</p>
+            <h2>Five benchmark groups align perception, reasoning, and forecasting.</h2>
+          </div>
+          <div class="task-grid">
+            <article class="task-card">
+              <h3>Temporal Understanding</h3>
+              <p class="task-tags">TAS-S · TAS-BL · TAS-BR</p>
+              <p>Dense temporal modeling with step-level and bimanual atomic labels.</p>
+            </article>
+            <article class="task-card">
+              <h3>Cross-view Understanding</h3>
+              <p class="task-tags">CV-TA · CV-SMR · CV-SMC</p>
+              <p>Alignment and semantic retrieval across synchronized multi-view assembly videos.</p>
+            </article>
+            <article class="task-card">
+              <h3>Action Forecasting</h3>
+              <p class="task-tags">AF-S · AF-L</p>
+              <p>Short-term anticipation is released now. Long-horizon forecasting is reserved and documented.</p>
+            </article>
+            <article class="task-card">
+              <h3>State &amp; Reasoning</h3>
+              <p class="task-tags">ASR · PSR</p>
+              <p>Assembly-state recognition and procedure-step reasoning on graph-constrained task structure.</p>
+            </article>
+            <article class="task-card">
+              <h3>Error Understanding</h3>
+              <p class="task-tags">PPR-L · PPR-R · ATR-L · ATR-R</p>
+              <p>Phase and anomaly modeling for compliance reasoning and failure diagnosis.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Visualization</p>
+            <h2>Use visual evidence to communicate the benchmark quickly.</h2>
+          </div>
+          <div class="placeholder-grid">
+            <article class="placeholder-card">
+              <span class="placeholder-state">Placeholder</span>
+              <h3>Multi-view synchronized montage</h3>
+              <p>Replace with a five-view synchronized clip highlighting partial observability.</p>
+            </article>
+            <article class="placeholder-card">
+              <span class="placeholder-state">Placeholder</span>
+              <h3>Bimanual timeline</h3>
+              <p>Replace with a left-hand and right-hand label visualization spanning `TAS-BL` and `TAS-BR`.</p>
+            </article>
+            <article class="placeholder-card">
+              <span class="placeholder-state">Placeholder</span>
+              <h3>Error case gallery</h3>
+              <p>Replace with compliance-phase and anomaly examples showing recovery and failure states.</p>
+            </article>
+            <article class="placeholder-card">
+              <span class="placeholder-state">Placeholder</span>
+              <h3>Forecasting roll-out</h3>
+              <p>Replace with short-term anticipation and long-horizon forecasting examples after AF-L release.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="download" class="section reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Download</p>
+            <h2>Release artifacts by tier, and make incomplete items explicit.</h2>
+          </div>
+          <div class="download-layout">
+            <div class="download-table-wrap">
+              <table class="download-table">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Status</th>
+                    <th>Content</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Protocol Assets</td>
+                    <td>Released</td>
+                    <td>Official annotations, splits, mappings, and procedure metadata in the repository.</td>
+                  </tr>
+                  <tr>
+                    <td>Mini Pack</td>
+                    <td>Placeholder</td>
+                    <td>Sample videos or features for quick-start demos.</td>
+                  </tr>
+                  <tr>
+                    <td>Raw Media</td>
+                    <td>Placeholder</td>
+                    <td>Full video release, storage plan, and access workflow.</td>
+                  </tr>
+                  <tr>
+                    <td>Features</td>
+                    <td>Placeholder</td>
+                    <td>Pre-extracted public features for reproducible benchmarking.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="download-cards">
+              <article class="content-card">
+                <h3>Planned distribution</h3>
+                <ul class="feature-list">
+                  <li>Script-based download entrypoint.</li>
+                  <li>Checksum manifests for large assets.</li>
+                  <li>Partial download support for annotations and benchmark subsets.</li>
+                  <li>Mirror or storage policy to be added at release time.</li>
+                </ul>
+              </article>
+              <article id="placeholders" class="content-card">
+                <h3>Release placeholders</h3>
+                <ul class="feature-list">
+                  <li>Paper link: coming soon.</li>
+                  <li>Demo video: replace teaser placeholder with release media.</li>
+                  <li>Leaderboard URL: add after public benchmark launch.</li>
+                  <li>Checksum manifest: add after storage backend is finalized.</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Dataset Structure</p>
+            <h2>Keep the public filesystem predictable.</h2>
+          </div>
+          <div class="code-panel">
+<pre><code>dataset/
+├── TAS/
+├── ASR/
+├── PSR/
+├── PPR/
+├── ATR/
+├── CV/
+├── AF-S/
+└── AF-L/
+
+tasks/
+├── TAS/
+├── ASR/
+├── PSR/
+├── PPR/
+├── ATR/
+├── CV-TA/
+├── CV-SM/
+├── AF-S/
+└── AF-L/</code></pre>
+          </div>
+        </section>
+
+        <section class="section reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Annotation Schema</p>
+            <h2>Expose what is actually novel in the benchmark.</h2>
+          </div>
+          <div class="schema-grid">
+            <article class="schema-card">
+              <h3>Temporal</h3>
+              <p>Segment-level and frame-level annotations support `F1@{10,25,50}`, edit score, and dense evaluation.</p>
+            </article>
+            <article class="schema-card">
+              <h3>Bimanual</h3>
+              <p>Left-hand and right-hand atomic labels isolate asymmetric coordination effects.</p>
+            </article>
+            <article class="schema-card">
+              <h3>State</h3>
+              <p>Assembly-state annotations drive direct `ASR` and indirect `PSR` reasoning pipelines.</p>
+            </article>
+            <article class="schema-card">
+              <h3>Reasoning</h3>
+              <p>Procedure graphs, compliance phases, and anomaly types separate recognition from procedural inference.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="benchmark" class="section reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Benchmark</p>
+            <h2>Benchmark wrappers are organized by task and released progressively.</h2>
+          </div>
+          <div class="benchmark-grid">
+            <article class="content-card">
+              <h3>Released tasks</h3>
+              <ul class="feature-list">
+                <li>`TAS`: `LTContext`, `ASQuery`, `DiffAct`, `FACT`</li>
+                <li>`CV-TA` and `CV-SM`: `I3D`, `VideoMAE v2`, and `MViTv2` frozen encoders with cosine-kNN or linear probes</li>
+                <li>`ASR`: `MS-TCN++`, `VideoMAE v2+Head`, `Gemini 3.1 Pro`</li>
+                <li>`PSR`: `MS-TCN++ -> PSR`, `VideoMAE v2+Head -> PSR`, `STORM-PSR`, `Gemini 3.1 Pro`</li>
+                <li>`PPR`: `LTContext`, `ASQuery`, `DiffAct`, `FACT`</li>
+                <li>`ATR`: `LTContext`, `FACT`</li>
+                <li>`AF-S`: `AVT`, `ScalAnt`, `Qwen3VL-8B`</li>
+              </ul>
+            </article>
+            <article class="content-card">
+              <h3>Metrics</h3>
+              <ul class="feature-list">
+                <li>`TAS`, `PPR`, `ATR`: `F1@{10,25,50}` and edit score.</li>
+                <li>`CV-TA`: retrieval and alignment scores.</li>
+                <li>`CV-SMR` and `CV-SMC`: retrieval and classification metrics.</li>
+                <li>`ASR` and `PSR`: task-specific recognition and reasoning metrics.</li>
+                <li>`AF-S` and `AF-L`: anticipation and forecasting evaluation metrics.</li>
+              </ul>
+            </article>
+            <article class="content-card">
+              <h3>Leaderboard plan</h3>
+              <ul class="feature-list">
+                <li>Public leaderboard URL: placeholder.</li>
+                <li>Submission format specification: placeholder.</li>
+                <li>Evaluation server policy: placeholder.</li>
+                <li>Challenge timeline: placeholder.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section id="starter-code" class="section reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Starter Code</p>
+            <h2>Use the repository as the operational layer behind the site.</h2>
+          </div>
+          <div class="starter-grid">
+            <a class="starter-card" href="https://github.com/Kratos-Wen/IMPACT/tree/main/tasks">
+              <h3>Task Wrappers</h3>
+              <p>Per-task launcher scripts, configs, and method-specific READMEs.</p>
+            </a>
+            <a class="starter-card" href="https://github.com/Kratos-Wen/IMPACT/tree/main/dataset">
+              <h3>Protocol Assets</h3>
+              <p>Official splits, mappings, reasoning metadata, and task annotations.</p>
+            </a>
+            <a class="starter-card" href="https://github.com/Kratos-Wen/IMPACT/tree/main/third_party">
+              <h3>Method Sources</h3>
+              <p>Bundled upstream snapshots and IMPACT-maintained method snapshots with provenance notes.</p>
+            </a>
+          </div>
+        </section>
+
+        <section class="section reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Release Metadata</p>
+            <h2>Keep citation, licensing, and updates visible.</h2>
+          </div>
+          <div class="meta-grid">
+            <article class="content-card">
+              <h3>Citation</h3>
+              <p>Paper and `CITATION.cff` placeholders are reserved for the final public release.</p>
+              <div class="code-panel compact">
+<pre><code>@inproceedings{impact2026,
+  title     = {IMPACT: A Dataset for Multi-Granularity Human Procedural Action Understanding in Industrial Assembly},
+  author    = {TBD},
+  booktitle = {ACM Multimedia},
+  year      = {2026}
+}</code></pre>
+              </div>
+            </article>
+            <article class="content-card">
+              <h3>Licensing</h3>
+              <ul class="feature-list">
+                <li>Repository-authored code: repository root `LICENSE`.</li>
+                <li>Dataset assets and documentation: `LICENSE-DATA`.</li>
+                <li>`third_party/`: per-directory provenance and license notices.</li>
+              </ul>
+            </article>
+            <article class="content-card">
+              <h3>News</h3>
+              <ul class="feature-list">
+                <li>`2026`: benchmark repository released.</li>
+                <li>`2026`: project page published.</li>
+                <li>`2026`: benchmark leaderboard placeholder.</li>
+                <li>`2027`: challenge placeholder.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>IMPACT is a unified platform for industrial procedural understanding under multi-view and partial-observability settings.</p>
+        <a href="https://github.com/Kratos-Wen/IMPACT">GitHub Repository</a>
+      </footer>
+    </div>
+
+    <script src="./assets/app.js"></script>
+  </body>
+</html>
