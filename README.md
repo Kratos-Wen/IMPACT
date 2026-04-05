@@ -4,7 +4,7 @@ Official implementation of "IMPACT: A Dataset for Multi-Granularity Human Proced
 
 IMPACT provides the benchmark codebase for the IMPACT dataset and evaluation suite. The repository is organized first by task and then by method so that each benchmark setting exposes a consistent configuration and execution interface.
 
-The current public release covers the following released benchmark tasks:
+The paper benchmark is organized around the following task families:
 - `TAS`: Temporal Action Segmentation
 - `ASR`: Assembly State Recognition
 - `PSR`: Procedure Step Recognition
@@ -13,8 +13,9 @@ The current public release covers the following released benchmark tasks:
 - `CV-TA`: Cross-View Temporal Alignment
 - `CV-SM`: Cross-View Semantic Matching
 - `AF-S`: Short-term Action Anticipation
+- `AF-L`: Long-horizon Action Forecasting
 
-`AF-L` will be released separately with its dedicated forecasting baselines.
+The current code release provides runnable benchmark wrappers for `TAS`, `ASR`, `PSR`, `PPR`, `ATR`, `CV-TA`, `CV-SM`, and `AF-S`. `AF-L` is reserved in the repository structure and documented, but its runnable baselines are not released yet.
 
 Included in this release:
 - task protocol assets under `dataset/`
@@ -39,7 +40,8 @@ IMPACT/
 │   ├── PPR/
 │   ├── ATR/
 │   ├── CV/
-│   └── AF-S/
+│   ├── AF-S/
+│   └── AF-L/
 ├── tasks/
 │   ├── TAS/
 │   ├── ASR/
@@ -48,7 +50,8 @@ IMPACT/
 │   ├── ATR/
 │   ├── CV-TA/
 │   ├── CV-SM/
-│   └── AF-S/
+│   ├── AF-S/
+│   └── AF-L/
 ├── third_party/
 └── docs/
 ```
@@ -59,8 +62,8 @@ Runtime `logs/` and `outputs/` directories are not shipped in the repository tre
 
 `TAS`
 - reference implementations: `LTContext`, `ASQuery`, `DiffAct`, `FACT`
-- paper protocols: `TAS-S`, `TAS-BL`, `TAS-BR`
-- launcher keys: `CAS`, `FAS_L`, `FAS_R`
+- paper protocols: `TAS-S` and `TAS-B` (`TAS-BL`, `TAS-BR`)
+- public wrappers accept `TAS-S`, `TAS-BL`, and `TAS-BR`
 
 `ASR`
 - reference implementations: `MS-TCN++`, `VideoMAE v2+Head`, `Gemini 3.1 Pro`
@@ -86,13 +89,13 @@ Runtime `logs/` and `outputs/` directories are not shipped in the repository tre
 `CV-TA`
 - reference implementation: `Cosine kNN`
 - paper protocols: `local`, `global`, `exo2ego`
-- public assets: synchronized CAS annotations and split bundles under `dataset/CV/`
+- public assets: synchronized step-level (`TAS-S`) annotations and split bundles under `dataset/CV/`
 - default feature lookup: `features/cv/{videomaev2,i3d,mvitv2}`
 
 `CV-SM`
 - reference implementations: `CV-SMR`, `CV-SMC`
 - paper protocols: `CV-SMR`, `CV-SMC`
-- public assets: synchronized CAS annotations and split bundles under `dataset/CV/`
+- public assets: synchronized step-level (`TAS-S`) annotations and split bundles under `dataset/CV/`
 - default feature lookup: `features/cv/{videomaev2,i3d,mvitv2}`
 
 `AF-S`
@@ -100,7 +103,10 @@ Runtime `logs/` and `outputs/` directories are not shipped in the repository tre
 - paper protocol: `AF-S`
 - current public split assets: `split1`
 - supervised baselines expect external feature roots; `Qwen3VL-8B` expects raw videos
-- `AF-L` is not included in this release
+
+`AF-L`
+- paper baselines: `ScalAnt`, `AntGPT`, `PALM`, `Qwen3VL-8B`
+- repository status: placeholder task directory and documentation are included; runnable baselines are pending release
 
 ## Licensing
 

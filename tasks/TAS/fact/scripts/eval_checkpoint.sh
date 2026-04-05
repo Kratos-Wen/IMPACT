@@ -13,6 +13,31 @@ SAVE_ROOT="${7:-$ROOT_DIR/outputs/tas/fact_eval}"
 
 TASK_MODE="$(echo "$TASK_MODE" | tr '[:lower:]' '[:upper:]')"
 FEATURE_TYPE="$(echo "$FEATURE_TYPE" | tr '[:upper:]' '[:lower:]')"
+
+case "$TASK_MODE" in
+  TAS-S)
+    TASK_MODE="CAS"
+    ;;
+  TAS-BL)
+    TASK_MODE="FAS_L"
+    ;;
+  TAS-BR)
+    TASK_MODE="FAS_R"
+    ;;
+  CAS|FAS_L|FAS_R)
+    ;;
+  TAS-B)
+    echo "Unsupported TASK_MODE: $TASK_MODE"
+    echo "Use TAS-BL or TAS-BR for the bimanual protocols."
+    exit 1
+    ;;
+  *)
+    echo "Unsupported TASK_MODE: $TASK_MODE"
+    echo "Expected one of: TAS-S, TAS-BL, TAS-BR"
+    exit 1
+    ;;
+esac
+
 CFG_SLUG="$(echo "${TASK_MODE}_${FEATURE_TYPE}" | tr '[:upper:]' '[:lower:]')"
 CFG_PATH="$ROOT_DIR/tasks/TAS/fact/configs/${CFG_SLUG}.yaml"
 SAVE_DIR="${SAVE_ROOT%/}/${CFG_SLUG}_split${SPLIT}"

@@ -13,13 +13,14 @@ This directory provides the released IMPACT `TAS` wrapper for `DiffAct`.
 
 ## Common Arguments
 
-- `TASK_MODE`: `CAS`, `FAS_L`, or `FAS_R`
+- `TASK_MODE`: `TAS-S`, `TAS-BL`, or `TAS-BR`
 - `FEATURE_TYPE`: `videomaev2` or `i3d`
 - `GPU_LIST`: four comma-separated GPU ids for split-wise training
 - `RUN_TAG`: run identifier appended to generated configs and logs
 - `IMPACT_ROOT`: dataset override, default `dataset/TAS`
 - `OUTPUT_BASE`: output root for generated configs and result files
 - `LOG_BASE`: log directory override
+- Legacy aliases `CAS`, `FAS_L`, and `FAS_R` remain accepted for backward compatibility
 
 ## Scripts
 
@@ -28,7 +29,7 @@ This directory provides the released IMPACT `TAS` wrapper for `DiffAct`.
 ## Examples
 
 ```bash
-bash tasks/TAS/diffact/scripts/train_splits.sh CAS videomaev2 0,1,2,3 exp_tas_diffact
+bash tasks/TAS/diffact/scripts/train_splits.sh TAS-S videomaev2 0,1,2,3 exp_tas_diffact
 ```
 
 ## Notes

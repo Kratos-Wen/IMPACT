@@ -8,7 +8,7 @@ The public release provides two benchmark variants:
 
 ## Path Convention
 
-- annotations: `dataset/CV/annotations_CAS`
+- step-level (`TAS-S`) annotations: `dataset/CV/annotations_CAS`
 - split bundles: `dataset/CV/splits_CAS`
 - default feature roots: `features/cv/videomaev2`, `features/cv/i3d`, `features/cv/mvitv2`
 - default outputs: `outputs/cv_sm/<method>/<run_tag>`
@@ -19,7 +19,7 @@ The public release provides two benchmark variants:
 - `RUN_TAG`: run identifier used to separate outputs and logs
 - `SPLITS_CSV`: comma-separated split bundle indices, usually `1,2,3,4`
 - `FEATURE_TYPES_CSV`: comma-separated feature families, supported values are `videomaev2`, `i3d`, `mvitv2`
-- `ANNOTATION_ROOT`: override for the CAS annotation root
+- `ANNOTATION_ROOT`: override for the step-level (`TAS-S`) annotation root
 - `SPLIT_DIR`: override for the split bundle directory
 - `FEATURE_BASE_DIR`: base directory that contains one subdirectory per feature family
 - `FEATURE_ROOT`: optional explicit feature directory, mainly for single-backbone runs

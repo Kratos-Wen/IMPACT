@@ -14,7 +14,7 @@ This directory provides the released IMPACT `TAS` wrapper for `LTContext`.
 
 ## Common Arguments
 
-- `TASK_MODE`: `CAS`, `FAS_L`, or `FAS_R`
+- `TASK_MODE`: `TAS-S`, `TAS-BL`, or `TAS-BR`
 - `FEATURE_TYPE`: `videomaev2` or `i3d`
 - `GPU_LIST`: four comma-separated GPU ids for split-wise training
 - `RUN_TAG`: run identifier appended to output folders
@@ -23,6 +23,7 @@ This directory provides the released IMPACT `TAS` wrapper for `LTContext`.
 - `SPLIT`: split id used by checkpoint evaluation
 - `GPU`: CUDA device used by evaluation
 - `CKPT_PATH`: checkpoint path, typically a `.pyth` file
+- Legacy aliases `CAS`, `FAS_L`, and `FAS_R` remain accepted for backward compatibility
 
 ## Scripts
 
@@ -32,11 +33,11 @@ This directory provides the released IMPACT `TAS` wrapper for `LTContext`.
 ## Examples
 
 ```bash
-bash tasks/TAS/ltcontext/scripts/train_splits.sh CAS videomaev2 0,1,2,3 exp_tas_ltcontext
+bash tasks/TAS/ltcontext/scripts/train_splits.sh TAS-S videomaev2 0,1,2,3 exp_tas_ltcontext
 ```
 
 ```bash
-bash tasks/TAS/ltcontext/scripts/eval_checkpoint.sh CAS videomaev2 1 0 /path/to/checkpoint.pyth
+bash tasks/TAS/ltcontext/scripts/eval_checkpoint.sh TAS-S videomaev2 1 0 /path/to/checkpoint.pyth
 ```
 
 ## Notes

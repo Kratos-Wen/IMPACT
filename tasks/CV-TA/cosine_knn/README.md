@@ -4,7 +4,7 @@ This directory provides the released `CV-TA` baseline based on cosine-similarity
 
 ## Path Convention
 
-- annotations: `dataset/CV/annotations_CAS`
+- step-level (`TAS-S`) annotations: `dataset/CV/annotations_CAS`
 - split bundles: `dataset/CV/splits_CAS`
 - default feature base: `features/cv`
 - default outputs: `outputs/cv_ta/cosine_knn/<run_tag>`

@@ -12,6 +12,31 @@ LOG_ROOT="${6:-$ROOT_DIR/logs/tas/asquery_eval}"
 
 TASK_MODE="$(echo "$TASK_MODE" | tr '[:lower:]' '[:upper:]')"
 FEATURE_TYPE="$(echo "$FEATURE_TYPE" | tr '[:upper:]' '[:lower:]')"
+
+case "$TASK_MODE" in
+  TAS-S)
+    TASK_MODE="CAS"
+    ;;
+  TAS-BL)
+    TASK_MODE="FAS_L"
+    ;;
+  TAS-BR)
+    TASK_MODE="FAS_R"
+    ;;
+  CAS|FAS_L|FAS_R)
+    ;;
+  TAS-B)
+    echo "Unsupported TASK_MODE: $TASK_MODE"
+    echo "Use TAS-BL or TAS-BR for the bimanual protocols."
+    exit 1
+    ;;
+  *)
+    echo "Unsupported TASK_MODE: $TASK_MODE"
+    echo "Expected one of: TAS-S, TAS-BL, TAS-BR"
+    exit 1
+    ;;
+esac
+
 CFG_SLUG="$(echo "${TASK_MODE}_${FEATURE_TYPE}" | tr '[:upper:]' '[:lower:]')"
 BASE_CFG="$ROOT_DIR/tasks/TAS/asquery/configs/${CFG_SLUG}.yaml"
 TMP_CFG="$(mktemp "${TMPDIR:-/tmp}/asquery_eval_XXXX.yaml")"

@@ -13,7 +13,7 @@ This directory provides the released IMPACT `TAS` wrapper for `ASQuery`.
 
 ## Common Arguments
 
-- `TASK_MODE`: `CAS`, `FAS_L`, or `FAS_R`
+- `TASK_MODE`: `TAS-S`, `TAS-BL`, or `TAS-BR`
 - `FEATURE_TYPE`: `videomaev2` or `i3d`
 - `GPU_LIST`: four comma-separated GPU ids for split-wise training
 - `RUN_TAG`: run identifier appended to training outputs
@@ -22,6 +22,7 @@ This directory provides the released IMPACT `TAS` wrapper for `ASQuery`.
 - `GPU`: CUDA device used by evaluation
 - `CKPT_PATH`: checkpoint path passed to the upstream evaluator
 - `LOG_BASE` or `LOG_ROOT`: optional log directory override
+- Legacy aliases `CAS`, `FAS_L`, and `FAS_R` remain accepted for backward compatibility
 
 ## Scripts
 
@@ -31,11 +32,11 @@ This directory provides the released IMPACT `TAS` wrapper for `ASQuery`.
 ## Examples
 
 ```bash
-bash tasks/TAS/asquery/scripts/train_splits.sh CAS videomaev2 0,1,2,3 exp_tas_asquery
+bash tasks/TAS/asquery/scripts/train_splits.sh TAS-S videomaev2 0,1,2,3 exp_tas_asquery
 ```
 
 ```bash
-bash tasks/TAS/asquery/scripts/eval_checkpoint.sh CAS videomaev2 1 0 /path/to/checkpoint.pt
+bash tasks/TAS/asquery/scripts/eval_checkpoint.sh TAS-S videomaev2 1 0 /path/to/checkpoint.pt
 ```
 
 ## Notes

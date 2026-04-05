@@ -3,7 +3,7 @@
 This directory stores the released protocol assets for the cross-view benchmarks in IMPACT.
 
 Contents:
-- `annotations_CAS/`: synchronized CAS annotations for `ego`, `front`, `left`, `right`, and `top`
+- `annotations_CAS/`: synchronized step-level (`TAS-S`) annotations for `ego`, `front`, `left`, `right`, and `top`
 - `splits_CAS/`: official split bundles for `train`, `val`, and `test` across splits `S1` to `S4`
 
 Task usage:

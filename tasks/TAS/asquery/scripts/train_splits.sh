@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-TASK_MODE="${1:-CAS}"
+TASK_MODE="${1:-TAS-S}"
 FEATURE_TYPE="${2:-videomaev2}"
 GPU_LIST="${3:-0,1,2,3}"
 RUN_TAG="${4:-$(date +%Y%m%d_%H%M%S)}"
@@ -14,11 +14,25 @@ TASK_MODE="$(echo "$TASK_MODE" | tr '[:lower:]' '[:upper:]')"
 FEATURE_TYPE="$(echo "$FEATURE_TYPE" | tr '[:upper:]' '[:lower:]')"
 
 case "$TASK_MODE" in
+  TAS-S)
+    TASK_MODE="CAS"
+    ;;
+  TAS-BL)
+    TASK_MODE="FAS_L"
+    ;;
+  TAS-BR)
+    TASK_MODE="FAS_R"
+    ;;
   CAS|FAS_L|FAS_R)
+    ;;
+  TAS-B)
+    echo "Unsupported TASK_MODE: $TASK_MODE"
+    echo "Use TAS-BL or TAS-BR for the bimanual protocols."
+    exit 1
     ;;
   *)
     echo "Unsupported TASK_MODE: $TASK_MODE"
-    echo "Expected one of: CAS, FAS_L, FAS_R"
+    echo "Expected one of: TAS-S, TAS-BL, TAS-BR"
     exit 1
     ;;
 esac

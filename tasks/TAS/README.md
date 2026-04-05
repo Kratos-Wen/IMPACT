@@ -11,15 +11,15 @@ This directory contains the IMPACT Temporal Action Segmentation benchmark releas
 
 ## Common Arguments
 
-- `TASK_MODE`: `CAS`, `FAS_L`, or `FAS_R`
+- `TASK_MODE`: `TAS-S`, `TAS-BL`, or `TAS-BR`
 - `FEATURE_TYPE`: `i3d` or `videomaev2`
 - `GPU_LIST`: four comma-separated GPU ids such as `0,1,2,3`
 - `SPLIT`: one of `1`, `2`, `3`, or `4`
 
 Protocol mapping:
-- `CAS` corresponds to `TAS-S`
-- `FAS_L` corresponds to `TAS-BL`
-- `FAS_R` corresponds to `TAS-BR`
+- `TAS-S` is the step-level segmentation task
+- `TAS-B` is the bimanual family, with `TAS-BL` and `TAS-BR` as the released left-hand and right-hand protocols
+- Legacy aliases `CAS`, `FAS_L`, and `FAS_R` remain accepted for backward compatibility
 
 ## Scripts
 
@@ -36,16 +36,16 @@ Protocol mapping:
 ## Examples
 
 ```bash
-bash tasks/TAS/ltcontext/scripts/train_splits.sh CAS videomaev2 0,1,2,3 tas_ltcontext
-bash tasks/TAS/ltcontext/scripts/eval_checkpoint.sh CAS videomaev2 1 0 /path/to/checkpoint.pyth
+bash tasks/TAS/ltcontext/scripts/train_splits.sh TAS-S videomaev2 0,1,2,3 tas_ltcontext
+bash tasks/TAS/ltcontext/scripts/eval_checkpoint.sh TAS-S videomaev2 1 0 /path/to/checkpoint.pyth
 
-bash tasks/TAS/asquery/scripts/train_splits.sh FAS_R videomaev2 0,1,2,3 tas_asquery
-bash tasks/TAS/asquery/scripts/eval_checkpoint.sh FAS_R videomaev2 1 0 /path/to/checkpoint.pt
+bash tasks/TAS/asquery/scripts/train_splits.sh TAS-BR videomaev2 0,1,2,3 tas_asquery
+bash tasks/TAS/asquery/scripts/eval_checkpoint.sh TAS-BR videomaev2 1 0 /path/to/checkpoint.pt
 
-bash tasks/TAS/diffact/scripts/train_splits.sh FAS_L i3d 0,1,2,3 tas_diffact
+bash tasks/TAS/diffact/scripts/train_splits.sh TAS-BL i3d 0,1,2,3 tas_diffact
 
-bash tasks/TAS/fact/scripts/train_splits.sh CAS videomaev2 0,1,2,3 tas_fact
-bash tasks/TAS/fact/scripts/eval_checkpoint.sh CAS videomaev2 1 0 /path/to/network.iter-XXXXX.net
+bash tasks/TAS/fact/scripts/train_splits.sh TAS-S videomaev2 0,1,2,3 tas_fact
+bash tasks/TAS/fact/scripts/eval_checkpoint.sh TAS-S videomaev2 1 0 /path/to/network.iter-XXXXX.net
 ```
 
 ## Notes
