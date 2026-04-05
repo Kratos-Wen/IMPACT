@@ -2,6 +2,8 @@
 
 Official implementation of "IMPACT: A Dataset for Multi-Granularity Human Procedural Action Understanding in Industrial Assembly".
 
+Project page: `https://kratos-wen.github.io/IMPACT/`
+
 IMPACT provides the benchmark codebase for the IMPACT dataset and evaluation suite. The repository is organized first by task and then by method so that each benchmark setting exposes a consistent configuration and execution interface.
 
 The paper benchmark is organized around the following task families:
@@ -122,4 +124,4 @@ If a file or subdirectory provides a more specific license notice, that notice t
 
 ## Project Site
 
-The project-site source lives under `website/`. After GitHub Pages is enabled for this repository, the landing page can be published at `https://kratos-wen.github.io/IMPACT/`.
+The project-site source lives under `website/`. The landing page is published at `https://kratos-wen.github.io/IMPACT/`.
