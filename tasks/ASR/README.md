@@ -23,10 +23,10 @@ Current public protocol:
 
 | Method | Script | Purpose | Usage |
 | --- | --- | --- | --- |
-| `ms_tcn2` | `tasks/ASR/ms_tcn2/scripts/train_split.sh` | train one released split | `bash tasks/ASR/ms_tcn2/scripts/train_split.sh <SPLIT_ID> <FEATURE_DIR> [GPU] [NUM_EPOCHS] [BATCH_SIZE] [LR] [ANNOTATION_DIR] [SPLIT_DIR] [LOG_ROOT]` |
-| `ms_tcn2` | `tasks/ASR/ms_tcn2/scripts/eval_checkpoint.sh` | evaluate one checkpoint | `bash tasks/ASR/ms_tcn2/scripts/eval_checkpoint.sh <SPLIT_ID> <FEATURE_DIR> <CHECKPOINT_NAME> [GPU] [ANNOTATION_DIR] [SPLIT_DIR] [LOG_ROOT]` |
-| `videomae_v2_head` | `tasks/ASR/videomae_v2_head/scripts/train_split.sh` | train one released split | `bash tasks/ASR/videomae_v2_head/scripts/train_split.sh <SPLIT_ID> <FEATURE_DIR> [GPU] [NUM_EPOCHS] [BATCH_SIZE] [LR] [ANNOTATION_DIR] [SPLIT_DIR] [LOG_ROOT]` |
-| `videomae_v2_head` | `tasks/ASR/videomae_v2_head/scripts/eval_checkpoint.sh` | evaluate one checkpoint | `bash tasks/ASR/videomae_v2_head/scripts/eval_checkpoint.sh <SPLIT_ID> <FEATURE_DIR> <CHECKPOINT_NAME> [GPU] [ANNOTATION_DIR] [SPLIT_DIR] [LOG_ROOT]` |
+| `MS-TCN++` | `tasks/ASR/ms_tcn2/scripts/train_split.sh` | train one released split | `bash tasks/ASR/ms_tcn2/scripts/train_split.sh <SPLIT_ID> <FEATURE_DIR> [GPU] [NUM_EPOCHS] [BATCH_SIZE] [LR] [ANNOTATION_DIR] [SPLIT_DIR] [LOG_ROOT]` |
+| `MS-TCN++` | `tasks/ASR/ms_tcn2/scripts/eval_checkpoint.sh` | evaluate one checkpoint | `bash tasks/ASR/ms_tcn2/scripts/eval_checkpoint.sh <SPLIT_ID> <FEATURE_DIR> <CHECKPOINT_NAME> [GPU] [ANNOTATION_DIR] [SPLIT_DIR] [LOG_ROOT]` |
+| `VideoMAE v2+Head` | `tasks/ASR/videomae_v2_head/scripts/train_split.sh` | train one released split | `bash tasks/ASR/videomae_v2_head/scripts/train_split.sh <SPLIT_ID> <FEATURE_DIR> [GPU] [NUM_EPOCHS] [BATCH_SIZE] [LR] [ANNOTATION_DIR] [SPLIT_DIR] [LOG_ROOT]` |
+| `VideoMAE v2+Head` | `tasks/ASR/videomae_v2_head/scripts/eval_checkpoint.sh` | evaluate one checkpoint | `bash tasks/ASR/videomae_v2_head/scripts/eval_checkpoint.sh <SPLIT_ID> <FEATURE_DIR> <CHECKPOINT_NAME> [GPU] [ANNOTATION_DIR] [SPLIT_DIR] [LOG_ROOT]` |
 
 ## Examples
 
@@ -40,6 +40,7 @@ bash tasks/ASR/videomae_v2_head/scripts/eval_checkpoint.sh 1 /path/to/IMPACT_fro
 
 ## Notes
 
+- The released baseline order follows the non-VLM methods described in Sec. 5.1 of the paper.
 - The public release currently targets the front-view protocol only.
 - Evaluation uses `CHECKPOINT_NAME`, not an absolute checkpoint path, because the upstream evaluator resolves checkpoints from its own model directory.
 - Method-local `README.md` files document method-specific defaults.

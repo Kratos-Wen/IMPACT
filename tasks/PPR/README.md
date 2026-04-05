@@ -24,24 +24,24 @@ Protocol mapping:
 
 | Method | Script | Purpose | Usage |
 | --- | --- | --- | --- |
-| `ltcontext` | `tasks/PPR/ltcontext/scripts/train_splits.sh` | train all four splits | `bash tasks/PPR/ltcontext/scripts/train_splits.sh <TASK_MODE> <FEATURE_TYPE> <GPU_LIST> [RUN_TAG] [DATASET_ROOT] [OUTPUT_ROOT] [LOG_ROOT]` |
-| `ltcontext` | `tasks/PPR/ltcontext/scripts/eval_checkpoint.sh` | evaluate one checkpoint on one split | `bash tasks/PPR/ltcontext/scripts/eval_checkpoint.sh <TASK_MODE> <FEATURE_TYPE> <SPLIT> [GPU] <CKPT_PATH> [DATASET_ROOT] [SAVE_ROOT]` |
-| `diffact` | `tasks/PPR/diffact/scripts/train_splits.sh` | train all four splits | `bash tasks/PPR/diffact/scripts/train_splits.sh <TASK_MODE> <FEATURE_TYPE> <GPU_LIST> [RUN_TAG] [DATASET_ROOT] [OUTPUT_ROOT] [LOG_ROOT]` |
-| `asquery` | `tasks/PPR/asquery/scripts/train_splits.sh` | train all four splits | `bash tasks/PPR/asquery/scripts/train_splits.sh <TASK_MODE> <FEATURE_TYPE> <GPU_LIST> [RUN_TAG] [DATASET_ROOT] [LOG_ROOT]` |
-| `asquery` | `tasks/PPR/asquery/scripts/eval_checkpoint.sh` | evaluate one checkpoint on one split | `bash tasks/PPR/asquery/scripts/eval_checkpoint.sh <TASK_MODE> <FEATURE_TYPE> <SPLIT> [GPU] <CKPT_PATH> [LOG_ROOT]` |
-| `fact` | `tasks/PPR/fact/scripts/train_splits.sh` | train all four splits | `bash tasks/PPR/fact/scripts/train_splits.sh <TASK_MODE> <FEATURE_TYPE> <GPU_LIST> [RUN_TAG] [DATASET_ROOT] [LOG_ROOT]` |
-| `fact` | `tasks/PPR/fact/scripts/eval_checkpoint.sh` | evaluate one checkpoint on one split | `bash tasks/PPR/fact/scripts/eval_checkpoint.sh <TASK_MODE> <FEATURE_TYPE> <SPLIT> [GPU] <CKPT_PATH> [DATASET_ROOT] [SAVE_ROOT]` |
+| `ASQuery` | `tasks/PPR/asquery/scripts/train_splits.sh` | train all four splits | `bash tasks/PPR/asquery/scripts/train_splits.sh <TASK_MODE> <FEATURE_TYPE> <GPU_LIST> [RUN_TAG] [DATASET_ROOT] [LOG_ROOT]` |
+| `ASQuery` | `tasks/PPR/asquery/scripts/eval_checkpoint.sh` | evaluate one checkpoint on one split | `bash tasks/PPR/asquery/scripts/eval_checkpoint.sh <TASK_MODE> <FEATURE_TYPE> <SPLIT> [GPU] <CKPT_PATH> [LOG_ROOT]` |
+| `DiffAct` | `tasks/PPR/diffact/scripts/train_splits.sh` | train all four splits | `bash tasks/PPR/diffact/scripts/train_splits.sh <TASK_MODE> <FEATURE_TYPE> <GPU_LIST> [RUN_TAG] [DATASET_ROOT] [OUTPUT_ROOT] [LOG_ROOT]` |
+| `LTContext` | `tasks/PPR/ltcontext/scripts/train_splits.sh` | train all four splits | `bash tasks/PPR/ltcontext/scripts/train_splits.sh <TASK_MODE> <FEATURE_TYPE> <GPU_LIST> [RUN_TAG] [DATASET_ROOT] [OUTPUT_ROOT] [LOG_ROOT]` |
+| `LTContext` | `tasks/PPR/ltcontext/scripts/eval_checkpoint.sh` | evaluate one checkpoint on one split | `bash tasks/PPR/ltcontext/scripts/eval_checkpoint.sh <TASK_MODE> <FEATURE_TYPE> <SPLIT> [GPU] <CKPT_PATH> [DATASET_ROOT] [SAVE_ROOT]` |
+| `FACT` | `tasks/PPR/fact/scripts/train_splits.sh` | train all four splits | `bash tasks/PPR/fact/scripts/train_splits.sh <TASK_MODE> <FEATURE_TYPE> <GPU_LIST> [RUN_TAG] [DATASET_ROOT] [LOG_ROOT]` |
+| `FACT` | `tasks/PPR/fact/scripts/eval_checkpoint.sh` | evaluate one checkpoint on one split | `bash tasks/PPR/fact/scripts/eval_checkpoint.sh <TASK_MODE> <FEATURE_TYPE> <SPLIT> [GPU] <CKPT_PATH> [DATASET_ROOT] [SAVE_ROOT]` |
 
 ## Examples
 
 ```bash
-bash tasks/PPR/ltcontext/scripts/train_splits.sh PPR_L videomaev2 0,1,2,3 ppr_ltcontext
-bash tasks/PPR/ltcontext/scripts/eval_checkpoint.sh PPR_L videomaev2 1 0 /path/to/checkpoint.pyth
+bash tasks/PPR/asquery/scripts/train_splits.sh PPR_L videomaev2 0,1,2,3 ppr_asquery
+bash tasks/PPR/asquery/scripts/eval_checkpoint.sh PPR_L videomaev2 1 0 /path/to/checkpoint.pt
 
 bash tasks/PPR/diffact/scripts/train_splits.sh PPR_R i3d 0,1,2,3 ppr_diffact
 
-bash tasks/PPR/asquery/scripts/train_splits.sh PPR_L videomaev2 0,1,2,3 ppr_asquery
-bash tasks/PPR/asquery/scripts/eval_checkpoint.sh PPR_L videomaev2 1 0 /path/to/checkpoint.pt
+bash tasks/PPR/ltcontext/scripts/train_splits.sh PPR_L videomaev2 0,1,2,3 ppr_ltcontext
+bash tasks/PPR/ltcontext/scripts/eval_checkpoint.sh PPR_L videomaev2 1 0 /path/to/checkpoint.pyth
 
 bash tasks/PPR/fact/scripts/train_splits.sh PPR_R videomaev2 0,1,2,3 ppr_fact
 bash tasks/PPR/fact/scripts/eval_checkpoint.sh PPR_R videomaev2 1 0 /path/to/network.iter-XXXXX.net
@@ -49,5 +49,6 @@ bash tasks/PPR/fact/scripts/eval_checkpoint.sh PPR_R videomaev2 1 0 /path/to/net
 
 ## Notes
 
-- `diffact` is released with the stable training entrypoint only.
+- The method order follows Table 5(b) in the paper for the released non-VLM baselines.
+- `DiffAct` is released with the stable training entrypoint only.
 - Default dataset and runtime paths already match the released repository layout.

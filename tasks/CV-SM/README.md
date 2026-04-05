@@ -28,8 +28,8 @@ The public release provides two benchmark variants:
 
 ## Scripts
 
-- `retrieval/scripts/run_all.sh`: runs `CV-SMR`
-- `classification/scripts/run_all.sh`: runs `CV-SMC`
+- `CV-SMR`: `retrieval/scripts/run_all.sh`
+- `CV-SMC`: `classification/scripts/run_all.sh`
 
 ## Examples
 

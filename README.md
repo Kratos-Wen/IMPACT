@@ -54,7 +54,7 @@ Runtime `logs/` and `outputs/` directories are not shipped in the repository tre
 ## Task Coverage
 
 `TAS`
-- reference implementations: `LTContext`, `DiffAct`, `ASQuery`, `FACT`
+- reference implementations: `LTContext`, `ASQuery`, `DiffAct`, `FACT`
 - paper protocols: `TAS-S`, `TAS-BL`, `TAS-BR`
 - launcher keys: `CAS`, `FAS_L`, `FAS_R`
 
@@ -69,7 +69,7 @@ Runtime `logs/` and `outputs/` directories are not shipped in the repository tre
 - released assets include converted PSR labels and `procedure_info_IMPACT.json`
 
 `PPR`
-- reference implementations: `LTContext`, `DiffAct`, `ASQuery`, `FACT`
+- reference implementations: `ASQuery`, `DiffAct`, `LTContext`, `FACT`
 - paper protocols: `PPR-L`, `PPR-R`
 - launcher keys: `PPR_L`, `PPR_R`
 
@@ -80,13 +80,13 @@ Runtime `logs/` and `outputs/` directories are not shipped in the repository tre
 - `FACT` is released with the stable training entrypoint; the standalone checkpoint scorer is intentionally not exposed for ATR because the bundled helper does not support it
 
 `CV-TA`
-- reference implementation: `cosine_knn`
+- reference implementation: `Cosine kNN`
 - paper protocols: `local`, `global`, `exo2ego`
 - public assets: synchronized CAS annotations and split bundles under `dataset/CV/`
 - default feature lookup: `features/cv/{videomaev2,i3d,mvitv2}`
 
 `CV-SM`
-- reference implementations: `retrieval` (`CV-SMR`), `classification` (`CV-SMC`)
+- reference implementations: `CV-SMR`, `CV-SMC`
 - paper protocols: `CV-SMR`, `CV-SMC`
 - public assets: synchronized CAS annotations and split bundles under `dataset/CV/`
 - default feature lookup: `features/cv/{videomaev2,i3d,mvitv2}`

@@ -27,7 +27,7 @@
 
 ## Scripts
 
-- `cosine_knn/scripts/run_all.sh`: runs the released `CV-TA` baseline for `local`, `global`, and `exo2ego`
+- `Cosine kNN`: `cosine_knn/scripts/run_all.sh` runs the released `CV-TA` baseline for `local`, `global`, and `exo2ego`
 
 ## Examples
 
