@@ -95,9 +95,14 @@ h3 {
 }
 
 .brand {
-  font-size: 1.55rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
+  display: inline-flex;
+  align-items: center;
+}
+
+.brand-logo {
+  display: block;
+  height: 48px;
+  width: auto;
 }
 
 .site-nav {
@@ -265,15 +270,11 @@ h1 {
 .resource-card,
 .table-panel,
 .news-item,
-.info-chip {
+.info-chip,
+.figure-card {
   background: var(--panel);
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
-}
-
-.media-frame {
-  overflow: hidden;
-  border-radius: 26px;
 }
 
 .caption-row {
@@ -348,7 +349,8 @@ h3 {
 .schema-grid,
 .benchmark-grid,
 .resource-grid,
-.news-list {
+.news-list,
+.figure-grid {
   display: grid;
   gap: 16px;
 }
@@ -374,6 +376,15 @@ h3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.figure-grid-collection {
+  grid-template-columns: 1.2fr 1fr 1fr;
+}
+
+.figure-grid-tasks,
+.figure-grid-annotation {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .news-list {
   grid-template-columns: 1fr;
 }
@@ -383,9 +394,36 @@ h3 {
 .task-card,
 .schema-card,
 .resource-card,
-.news-item {
+.news-item,
+.figure-card {
   padding: 22px;
   border-radius: var(--radius);
+}
+
+.figure-card {
+  margin: 0;
+}
+
+.figure-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.figure-card figcaption {
+  margin-top: 12px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.figure-card-wide {
+  grid-column: span 1;
+}
+
+.figure-card-full {
+  margin-bottom: 18px;
 }
 
 .full-span {
@@ -563,12 +601,15 @@ pre {
 @media (max-width: 1080px) {
   .snapshot-grid,
   .schema-grid,
-  .resource-grid {
+  .resource-grid,
+  .figure-grid-collection {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .task-grid,
-  .benchmark-grid {
+  .benchmark-grid,
+  .figure-grid-tasks,
+  .figure-grid-annotation {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -601,7 +642,11 @@ pre {
   .task-grid,
   .schema-grid,
   .benchmark-grid,
-  .resource-grid {
+  .resource-grid,
+  .figure-grid,
+  .figure-grid-collection,
+  .figure-grid-tasks,
+  .figure-grid-annotation {
     grid-template-columns: 1fr;
   }
 
@@ -612,6 +657,10 @@ pre {
 
   .hero-actions {
     justify-content: center;
+  }
+
+  .brand-logo {
+    height: 40px;
   }
 
   .author-line,

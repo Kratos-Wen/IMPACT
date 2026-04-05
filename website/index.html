@@ -14,14 +14,20 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./assets/figures/icon.png" type="image/png" />
     <link rel="stylesheet" href="./assets/styles.css" />
   </head>
   <body>
     <div class="page-shell">
       <header class="site-header">
         <div class="site-header-inner">
-          <a class="brand" href="#top">IMPACT</a>
+          <a class="brand" href="#top" aria-label="IMPACT home">
+            <img
+              class="brand-logo"
+              src="./assets/figures/IMPACT.jpg"
+              alt="IMPACT logo"
+            />
+          </a>
           <nav class="site-nav" aria-label="Primary">
             <a href="#overview">Overview</a>
             <a href="#tasks">Tasks</a>
@@ -85,18 +91,44 @@
         </section>
 
         <section class="media-section reveal">
-          <div class="media-frame">
-            <img
-              src="./assets/teaser-placeholder.svg"
-              alt="Placeholder teaser visualization for the IMPACT dataset website."
-            />
+          <div class="section-head">
+            <h2>Data Collection and Protocol</h2>
+            <p>
+              IMPACT is built on a synchronized multi-view acquisition setup,
+              standardized manual workflow, and task-aware data curation.
+            </p>
           </div>
-          <div class="caption-row">
-            <span class="tag">Placeholder teaser</span>
-            <span class="caption-text">
-              Replace with a synchronized multi-view montage, timeline labels,
-              and representative error cases.
-            </span>
+          <div class="figure-grid figure-grid-collection">
+            <figure class="figure-card figure-card-wide">
+              <img
+                src="./assets/figures/work_station.svg"
+                alt="IMPACT data acquisition workstation."
+              />
+              <figcaption>
+                Multi-view workstation used to capture synchronized ego and
+                exocentric assembly observations.
+              </figcaption>
+            </figure>
+            <figure class="figure-card">
+              <img
+                src="./assets/figures/Manual_Book.svg"
+                alt="Manual book showing standardized installation and dismantling order."
+              />
+              <figcaption>
+                Manual book defining standardized installation and dismantling
+                order.
+              </figcaption>
+            </figure>
+            <figure class="figure-card">
+              <img
+                src="./assets/figures/Data_acquisition.svg"
+                alt="Data acquisition pipeline for the IMPACT dataset."
+              />
+              <figcaption>
+                Acquisition pipeline covering synchronization, calibration, and
+                multi-view capture.
+              </figcaption>
+            </figure>
           </div>
         </section>
 
@@ -159,6 +191,16 @@
               changing the structure.
             </p>
           </div>
+          <figure class="figure-card figure-card-full">
+            <img
+              src="./assets/figures/Dataset_statistic.svg"
+              alt="Dataset statistics summary for the IMPACT benchmark."
+            />
+            <figcaption>
+              Dataset statistics across temporal understanding, cross-view
+              understanding, forecasting, and state-reasoning annotations.
+            </figcaption>
+          </figure>
           <div class="snapshot-grid">
             <article class="snapshot-card">
               <span class="snapshot-label">Granularity</span>
@@ -200,37 +242,39 @@
           <div class="section-head">
             <h2>Supported Tasks</h2>
             <p>
-              The benchmark is organized as five task groups covering temporal
-              understanding, cross-view understanding, forecasting, procedural
-              reasoning, and error understanding.
+              The benchmark is organized as four task groups. The released task
+              taxonomy below matches the figures used in the paper.
             </p>
           </div>
-          <div class="task-grid">
-            <article class="task-card">
-              <h3>Temporal Understanding</h3>
-              <p class="task-subtitle">TAS-S · TAS-BL · TAS-BR</p>
-              <p>Dense step-level and bimanual temporal labeling for action segmentation.</p>
-            </article>
-            <article class="task-card">
-              <h3>Cross-view Understanding</h3>
-              <p class="task-subtitle">CV-TA · CV-SMR · CV-SMC</p>
-              <p>Temporal alignment and semantic matching across synchronized views.</p>
-            </article>
-            <article class="task-card">
-              <h3>Action Forecasting</h3>
-              <p class="task-subtitle">AF-S · AF-L</p>
-              <p>Short-term anticipation is released now. Long-horizon forecasting is reserved.</p>
-            </article>
-            <article class="task-card">
-              <h3>State &amp; Procedure Reasoning</h3>
-              <p class="task-subtitle">ASR · PSR</p>
-              <p>Assembly-state recognition and graph-constrained procedure step reasoning.</p>
-            </article>
-            <article class="task-card">
-              <h3>Error Understanding</h3>
-              <p class="task-subtitle">PPR-L · PPR-R · ATR-L · ATR-R</p>
-              <p>Compliance-phase and anomaly-type recognition for failure analysis.</p>
-            </article>
+          <div class="figure-grid figure-grid-tasks">
+            <figure class="figure-card">
+              <img
+                src="./assets/figures/Task_temporal_understanding.svg"
+                alt="Temporal understanding task family: TAS-S, TAS-BL, and TAS-BR."
+              />
+              <figcaption>Temporal understanding covering `TAS-S`, `TAS-BL`, and `TAS-BR`.</figcaption>
+            </figure>
+            <figure class="figure-card">
+              <img
+                src="./assets/figures/Task_cross_view_understanding.svg"
+                alt="Cross-view understanding task family: CV-TA, CV-SMR, and CV-SMC."
+              />
+              <figcaption>Cross-view understanding covering `CV-TA`, `CV-SMR`, and `CV-SMC`.</figcaption>
+            </figure>
+            <figure class="figure-card">
+              <img
+                src="./assets/figures/Task_action_forecasting.svg"
+                alt="Action forecasting task family: AF-S and AF-L."
+              />
+              <figcaption>Action forecasting covering short-term anticipation and long-horizon forecasting.</figcaption>
+            </figure>
+            <figure class="figure-card">
+              <img
+                src="./assets/figures/Task_state_reasoning.svg"
+                alt="State and reasoning task family: PSR, ASR, PPR, and ATR."
+              />
+              <figcaption>State and reasoning covering `ASR`, `PSR`, `PPR`, and `ATR`.</figcaption>
+            </figure>
           </div>
         </section>
 
@@ -314,6 +358,28 @@
               IMPACT is strongest when the label space is communicated clearly
               and compactly.
             </p>
+          </div>
+          <div class="figure-grid figure-grid-annotation">
+            <figure class="figure-card">
+              <img
+                src="./assets/figures/annotation_demo.svg"
+                alt="Annotation demo for the IMPACT dataset."
+              />
+              <figcaption>
+                Annotation examples showing how multi-view procedure labels are
+                exposed to the benchmark tasks.
+              </figcaption>
+            </figure>
+            <figure class="figure-card">
+              <img
+                src="./assets/figures/Data_annotation.svg"
+                alt="Data annotation workflow for the IMPACT dataset."
+              />
+              <figcaption>
+                Annotation pipeline covering temporal synchronization,
+                task-specific labeling, and multi-stage validation.
+              </figcaption>
+            </figure>
           </div>
           <div class="schema-grid">
             <article class="schema-card">
