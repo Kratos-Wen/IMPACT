@@ -383,7 +383,7 @@ h3 {
 }
 
 .figure-stage-wide {
-  width: min(calc(100vw - 32px), 1380px);
+  width: min(calc(100vw - 24px), 1560px);
   margin-left: 50%;
   transform: translateX(-50%);
 }
@@ -399,18 +399,12 @@ h3 {
 .resource-card,
 .news-item,
 .figure-card {
-  padding: 22px;
+  padding: 16px;
   border-radius: var(--radius);
 }
 
 .figure-card {
   margin: 0;
-}
-
-.figure-title {
-  margin: 0 0 14px;
-  font-size: 1.2rem;
-  line-height: 1.15;
 }
 
 .figure-card img {
