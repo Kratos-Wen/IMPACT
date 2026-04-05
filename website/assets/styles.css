@@ -382,6 +382,12 @@ h3 {
   grid-template-columns: 1fr;
 }
 
+.figure-stage-wide {
+  width: min(calc(100vw - 32px), 1380px);
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
 .news-list {
   grid-template-columns: 1fr;
 }
@@ -401,18 +407,18 @@ h3 {
   margin: 0;
 }
 
+.figure-title {
+  margin: 0 0 14px;
+  font-size: 1.2rem;
+  line-height: 1.15;
+}
+
 .figure-card img {
   width: 100%;
   height: auto;
   display: block;
   border-radius: 12px;
   background: #ffffff;
-}
-
-.figure-card figcaption {
-  margin-top: 12px;
-  color: var(--muted);
-  line-height: 1.7;
 }
 
 .figure-card-full {
@@ -651,6 +657,12 @@ pre {
 
   .brand-logo {
     height: 40px;
+  }
+
+  .figure-stage-wide {
+    width: 100%;
+    margin-left: 0;
+    transform: none;
   }
 
   .author-line,
