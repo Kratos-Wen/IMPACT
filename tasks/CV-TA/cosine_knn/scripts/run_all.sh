@@ -8,7 +8,7 @@ SPLIT_INDEX="${SPLIT_INDEX:-1}"
 POOLING="${POOLING:-mean}"
 MAX_PARALLEL="${MAX_PARALLEL:-2}"
 EXO_VIEWS_CSV="${EXO_VIEWS_CSV:-front,left,right,top}"
-FEATURE_TYPES_CSV="${FEATURE_TYPES_CSV:-videomaev2,i3d}"
+FEATURE_TYPES_CSV="${FEATURE_TYPES_CSV:-i3d,videomaev2,mvitv2}"
 RUN_TAG="${RUN_TAG:-$(date +%Y%m%d_%H%M%S)}"
 ANNOTATION_ROOT="${ANNOTATION_ROOT:-${ROOT_DIR}/dataset/CV/annotations_CAS}"
 SPLIT_DIR="${SPLIT_DIR:-${ROOT_DIR}/dataset/CV/splits_CAS}"
@@ -56,7 +56,7 @@ launch_job() {
   echo "[launch] ${name}"
   (
     cmd=(
-      "${PYTHON_BIN}" "${ROOT_DIR}/tools/cross_view/cv_ta_retrieval.py"
+      "${PYTHON_BIN}" "${ROOT_DIR}/tasks/CV-TA/cosine_knn/cv_ta_retrieval.py"
       --protocol "${protocol}"
       --split "${SPLIT}"
       --split-index "${SPLIT_INDEX}"

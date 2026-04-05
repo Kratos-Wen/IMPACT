@@ -44,7 +44,6 @@ IMPACT/
 │   ├── ATR/
 │   ├── CV-TA/
 │   └── CV-SM/
-├── tools/
 ├── third_party/
 └── docs/
 ```
@@ -59,13 +58,13 @@ Runtime `logs/` and `outputs/` directories are not shipped in the repository tre
 - launcher keys: `CAS`, `FAS_L`, `FAS_R`
 
 `ASR`
-- reference implementations: `MS-TCN++`, `VideoMAE v2+Head`
+- reference implementations: `MS-TCN++`, `VideoMAE v2+Head`, `Gemini 3.1 Pro`
 - current public split assets: front-view `split1`
-- benchmark wrappers expect an external feature directory and the released `dataset/ASR/` protocol assets
+- benchmark wrappers expect an external feature directory or external raw videos, together with the released `dataset/ASR/` protocol assets
 
 `PSR`
 - indirect pipelines: `MS-TCN++ -> PSR`, `VideoMAE v2+Head -> PSR`
-- direct pipeline: `STORM-PSR`
+- direct pipelines: `STORM-PSR`, `Gemini 3.1 Pro`
 - released assets include converted PSR labels and `procedure_info_IMPACT.json`
 
 `PPR`

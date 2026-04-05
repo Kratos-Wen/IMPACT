@@ -9,14 +9,14 @@ This directory provides the released `CV-SMR` launcher.
 - default feature base: `features/cv`
 - default outputs: `outputs/cv_sm/retrieval/<run_tag>`
 - default logs: `logs/cv_sm/retrieval/<run_tag>`
-- evaluator: `tools/cross_view/cv_smr_retrieval.py`
+- evaluator: `tasks/CV-SM/retrieval/cv_smr_retrieval.py`
 
 ## Common Arguments
 
 - `RUN_TAG`: run identifier used to separate outputs and logs
 - `SPLIT`: split name passed to the evaluator, usually `test`
 - `SPLITS_CSV`: comma-separated split bundle indices
-- `FEATURE_TYPES_CSV`: comma-separated feature families
+- `FEATURE_TYPES_CSV`: comma-separated feature families, typically `i3d,videomaev2,mvitv2`
 - `QUERY_VIEWS_CSV` and `GALLERY_VIEWS_CSV`: comma-separated view lists
 - `FEATURE_BASE_DIR`: base directory that contains one subdirectory per feature family
 - `FEATURE_ROOT`: optional explicit feature directory for single-backbone runs
@@ -40,3 +40,4 @@ bash tasks/CV-SM/retrieval/scripts/run_all.sh
 ## Notes
 
 - One launcher call emits one JSON file per split and feature family.
+- The released backbone set follows the paper: `i3d`, `videomaev2`, and `mvitv2`.

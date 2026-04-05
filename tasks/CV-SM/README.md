@@ -46,4 +46,5 @@ bash tasks/CV-SM/classification/scripts/run_all.sh
 
 - `CV-SMR` reports retrieval metrics over cross-trial, cross-view semantic matches.
 - `CV-SMC` trains a linear probe on frozen features and reports classification metrics on the held-out split.
+- The released backbone set follows the paper: `i3d`, `videomaev2`, and `mvitv2`.
 - Per the paper, `CV-SMR` and `CV-SMC` report all four splits `S1` to `S4`.

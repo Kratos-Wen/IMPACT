@@ -9,14 +9,14 @@ This directory provides the released `CV-SMC` launcher.
 - default feature base: `features/cv`
 - default outputs: `outputs/cv_sm/classification/<run_tag>`
 - default logs: `logs/cv_sm/classification/<run_tag>`
-- evaluator: `tools/cross_view/cv_smc_classification.py`
+- evaluator: `tasks/CV-SM/classification/cv_smc_classification.py`
 
 ## Common Arguments
 
 - `RUN_TAG`: run identifier used to separate outputs and logs
 - `TRAIN_SPLIT` and `TEST_SPLIT`: split names used by the evaluator
 - `SPLITS_CSV`: comma-separated split bundle indices
-- `FEATURE_TYPES_CSV`: comma-separated feature families
+- `FEATURE_TYPES_CSV`: comma-separated feature families, typically `i3d,videomaev2,mvitv2`
 - `LABEL_MODES_CSV`: comma-separated label spaces such as `coarse,verb,noun,verb_noun`
 - `TRAIN_VIEWS_CSV` and `TEST_VIEWS_CSV`: comma-separated view lists
 - `FEATURE_BASE_DIR`: base directory that contains one subdirectory per feature family
@@ -42,3 +42,4 @@ bash tasks/CV-SM/classification/scripts/run_all.sh
 ## Notes
 
 - One launcher call emits one JSON file per split, feature family, and label space.
+- The released backbone set follows the paper: `i3d`, `videomaev2`, and `mvitv2`.

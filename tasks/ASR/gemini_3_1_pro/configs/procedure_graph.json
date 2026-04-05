@@ -1,0 +1,672 @@
+{
+  "meta": {
+    "num_videos": 85,
+    "min_cooccur_frac": 0.25,
+    "min_support_frac": 0.2,
+    "min_cooccur": 22,
+    "min_support": 17,
+    "min_confidence": 0.9,
+    "event_types": [
+      "install_ok",
+      "recover_ok",
+      "remove_ok"
+    ],
+    "alias_map_used": true,
+    "note": "Edges are robust prerequisites mined from data. Missing edge => flexible ordering."
+  },
+  "nodes": [
+    "adapter_plate__install_ok",
+    "adapter_plate__recover_ok",
+    "adapter_plate__remove_ok",
+    "anti_vibration_handle__recover_ok",
+    "bearing_plate__install_ok",
+    "bearing_plate__recover_ok",
+    "bearing_plate__remove_ok",
+    "bearing_screw_lowright__install_ok",
+    "bearing_screw_lowright__recover_ok",
+    "bearing_screw_lowright__remove_ok",
+    "bearing_screw_topleft__install_ok",
+    "bearing_screw_topleft__recover_ok",
+    "bearing_screw_topleft__remove_ok",
+    "bevel_gear__install_ok",
+    "bevel_gear__recover_ok",
+    "bevel_gear__remove_ok",
+    "drive_shaft__install_ok",
+    "drive_shaft__recover_ok",
+    "drive_shaft__remove_ok",
+    "gearbox_housing__install_ok",
+    "gearbox_housing__recover_ok",
+    "gearbox_housing__remove_ok",
+    "lever__install_ok",
+    "lever__recover_ok",
+    "lever__remove_ok",
+    "nut_M4_bearing_plate_BR__install_ok",
+    "nut_M4_bearing_plate_BR__recover_ok",
+    "nut_M4_bearing_plate_BR__remove_ok",
+    "nut_M4_bearing_plate_TL__install_ok",
+    "nut_M4_bearing_plate_TL__recover_ok",
+    "nut_M4_bearing_plate_TL__remove_ok",
+    "nut_M6__install_ok",
+    "nut_M6__recover_ok",
+    "nut_M6__remove_ok",
+    "screw_adaptor_lowright__install_ok",
+    "screw_adaptor_lowright__recover_ok",
+    "screw_adaptor_lowright__remove_ok",
+    "screw_adaptor_plate_BR__recover_ok",
+    "screw_adaptor_plate_TL__recover_ok",
+    "screw_adaptor_topleft__install_ok",
+    "screw_adaptor_topleft__recover_ok",
+    "screw_adaptor_topleft__remove_ok",
+    "screw_bearing_plate_BR__recover_ok",
+    "screw_bearing_plate_TL__recover_ok",
+    "screw_lever__install_ok",
+    "screw_lever__recover_ok",
+    "screw_lever__remove_ok",
+    "spring__install_ok",
+    "spring__recover_ok",
+    "spring__remove_ok",
+    "washer__install_ok",
+    "washer__recover_ok",
+    "washer__remove_ok"
+  ],
+  "edges": [
+    [
+      "drive_shaft__recover_ok",
+      "screw_adaptor_lowright__recover_ok"
+    ],
+    [
+      "drive_shaft__recover_ok",
+      "nut_M4_bearing_plate_BR__recover_ok"
+    ],
+    [
+      "drive_shaft__recover_ok",
+      "adapter_plate__recover_ok"
+    ],
+    [
+      "drive_shaft__recover_ok",
+      "screw_adaptor_topleft__recover_ok"
+    ],
+    [
+      "drive_shaft__recover_ok",
+      "nut_M4_bearing_plate_TL__recover_ok"
+    ],
+    [
+      "drive_shaft__recover_ok",
+      "bearing_screw_topleft__recover_ok"
+    ],
+    [
+      "drive_shaft__recover_ok",
+      "bearing_plate__recover_ok"
+    ],
+    [
+      "drive_shaft__recover_ok",
+      "bearing_screw_lowright__recover_ok"
+    ],
+    [
+      "drive_shaft__recover_ok",
+      "screw_lever__recover_ok"
+    ],
+    [
+      "drive_shaft__recover_ok",
+      "spring__recover_ok"
+    ],
+    [
+      "drive_shaft__recover_ok",
+      "lever__recover_ok"
+    ],
+    [
+      "drive_shaft__recover_ok",
+      "washer__recover_ok"
+    ],
+    [
+      "drive_shaft__recover_ok",
+      "anti_vibration_handle__recover_ok"
+    ],
+    [
+      "bevel_gear__recover_ok",
+      "screw_adaptor_lowright__recover_ok"
+    ],
+    [
+      "bevel_gear__recover_ok",
+      "nut_M4_bearing_plate_BR__recover_ok"
+    ],
+    [
+      "bevel_gear__recover_ok",
+      "adapter_plate__recover_ok"
+    ],
+    [
+      "bevel_gear__recover_ok",
+      "screw_adaptor_topleft__recover_ok"
+    ],
+    [
+      "bevel_gear__recover_ok",
+      "nut_M4_bearing_plate_TL__recover_ok"
+    ],
+    [
+      "bevel_gear__recover_ok",
+      "bearing_screw_topleft__recover_ok"
+    ],
+    [
+      "bevel_gear__recover_ok",
+      "bearing_plate__recover_ok"
+    ],
+    [
+      "bevel_gear__recover_ok",
+      "bearing_screw_lowright__recover_ok"
+    ],
+    [
+      "bevel_gear__recover_ok",
+      "screw_lever__recover_ok"
+    ],
+    [
+      "bevel_gear__recover_ok",
+      "spring__recover_ok"
+    ],
+    [
+      "bevel_gear__recover_ok",
+      "lever__recover_ok"
+    ],
+    [
+      "bevel_gear__recover_ok",
+      "washer__recover_ok"
+    ],
+    [
+      "bevel_gear__recover_ok",
+      "anti_vibration_handle__recover_ok"
+    ],
+    [
+      "nut_M6__recover_ok",
+      "screw_adaptor_lowright__recover_ok"
+    ],
+    [
+      "nut_M6__recover_ok",
+      "nut_M4_bearing_plate_BR__recover_ok"
+    ],
+    [
+      "nut_M6__recover_ok",
+      "adapter_plate__recover_ok"
+    ],
+    [
+      "nut_M6__recover_ok",
+      "screw_adaptor_topleft__recover_ok"
+    ],
+    [
+      "nut_M6__recover_ok",
+      "nut_M4_bearing_plate_TL__recover_ok"
+    ],
+    [
+      "nut_M6__recover_ok",
+      "bearing_screw_topleft__recover_ok"
+    ],
+    [
+      "nut_M6__recover_ok",
+      "bearing_plate__recover_ok"
+    ],
+    [
+      "nut_M6__recover_ok",
+      "bearing_screw_lowright__recover_ok"
+    ],
+    [
+      "nut_M6__recover_ok",
+      "screw_lever__recover_ok"
+    ],
+    [
+      "nut_M6__recover_ok",
+      "spring__recover_ok"
+    ],
+    [
+      "nut_M6__recover_ok",
+      "lever__recover_ok"
+    ],
+    [
+      "nut_M6__recover_ok",
+      "washer__recover_ok"
+    ],
+    [
+      "nut_M6__recover_ok",
+      "anti_vibration_handle__recover_ok"
+    ],
+    [
+      "screw_adaptor_lowright__recover_ok",
+      "bearing_screw_topleft__recover_ok"
+    ],
+    [
+      "screw_adaptor_lowright__recover_ok",
+      "bearing_plate__recover_ok"
+    ],
+    [
+      "screw_adaptor_lowright__recover_ok",
+      "bearing_screw_lowright__recover_ok"
+    ],
+    [
+      "screw_adaptor_lowright__recover_ok",
+      "screw_lever__recover_ok"
+    ],
+    [
+      "screw_adaptor_lowright__recover_ok",
+      "spring__recover_ok"
+    ],
+    [
+      "screw_adaptor_lowright__recover_ok",
+      "lever__recover_ok"
+    ],
+    [
+      "screw_adaptor_lowright__recover_ok",
+      "washer__recover_ok"
+    ],
+    [
+      "screw_adaptor_lowright__recover_ok",
+      "anti_vibration_handle__recover_ok"
+    ],
+    [
+      "nut_M4_bearing_plate_BR__recover_ok",
+      "bearing_screw_topleft__recover_ok"
+    ],
+    [
+      "nut_M4_bearing_plate_BR__recover_ok",
+      "bearing_plate__recover_ok"
+    ],
+    [
+      "nut_M4_bearing_plate_BR__recover_ok",
+      "bearing_screw_lowright__recover_ok"
+    ],
+    [
+      "nut_M4_bearing_plate_BR__recover_ok",
+      "screw_lever__recover_ok"
+    ],
+    [
+      "nut_M4_bearing_plate_BR__recover_ok",
+      "spring__recover_ok"
+    ],
+    [
+      "nut_M4_bearing_plate_BR__recover_ok",
+      "lever__recover_ok"
+    ],
+    [
+      "nut_M4_bearing_plate_BR__recover_ok",
+      "washer__recover_ok"
+    ],
+    [
+      "nut_M4_bearing_plate_BR__recover_ok",
+      "anti_vibration_handle__recover_ok"
+    ],
+    [
+      "adapter_plate__recover_ok",
+      "bearing_screw_topleft__recover_ok"
+    ],
+    [
+      "adapter_plate__recover_ok",
+      "bearing_plate__recover_ok"
+    ],
+    [
+      "adapter_plate__recover_ok",
+      "bearing_screw_lowright__recover_ok"
+    ],
+    [
+      "adapter_plate__recover_ok",
+      "screw_lever__recover_ok"
+    ],
+    [
+      "adapter_plate__recover_ok",
+      "spring__recover_ok"
+    ],
+    [
+      "adapter_plate__recover_ok",
+      "lever__recover_ok"
+    ],
+    [
+      "adapter_plate__recover_ok",
+      "washer__recover_ok"
+    ],
+    [
+      "adapter_plate__recover_ok",
+      "anti_vibration_handle__recover_ok"
+    ],
+    [
+      "screw_adaptor_topleft__recover_ok",
+      "bearing_screw_topleft__recover_ok"
+    ],
+    [
+      "screw_adaptor_topleft__recover_ok",
+      "bearing_plate__recover_ok"
+    ],
+    [
+      "screw_adaptor_topleft__recover_ok",
+      "bearing_screw_lowright__recover_ok"
+    ],
+    [
+      "screw_adaptor_topleft__recover_ok",
+      "screw_lever__recover_ok"
+    ],
+    [
+      "screw_adaptor_topleft__recover_ok",
+      "spring__recover_ok"
+    ],
+    [
+      "screw_adaptor_topleft__recover_ok",
+      "lever__recover_ok"
+    ],
+    [
+      "screw_adaptor_topleft__recover_ok",
+      "washer__recover_ok"
+    ],
+    [
+      "screw_adaptor_topleft__recover_ok",
+      "anti_vibration_handle__recover_ok"
+    ],
+    [
+      "nut_M4_bearing_plate_TL__recover_ok",
+      "bearing_screw_topleft__recover_ok"
+    ],
+    [
+      "nut_M4_bearing_plate_TL__recover_ok",
+      "bearing_plate__recover_ok"
+    ],
+    [
+      "nut_M4_bearing_plate_TL__recover_ok",
+      "bearing_screw_lowright__recover_ok"
+    ],
+    [
+      "nut_M4_bearing_plate_TL__recover_ok",
+      "screw_lever__recover_ok"
+    ],
+    [
+      "nut_M4_bearing_plate_TL__recover_ok",
+      "spring__recover_ok"
+    ],
+    [
+      "nut_M4_bearing_plate_TL__recover_ok",
+      "lever__recover_ok"
+    ],
+    [
+      "nut_M4_bearing_plate_TL__recover_ok",
+      "washer__recover_ok"
+    ],
+    [
+      "nut_M4_bearing_plate_TL__recover_ok",
+      "anti_vibration_handle__recover_ok"
+    ],
+    [
+      "bearing_screw_topleft__recover_ok",
+      "screw_lever__recover_ok"
+    ],
+    [
+      "bearing_screw_topleft__recover_ok",
+      "spring__recover_ok"
+    ],
+    [
+      "bearing_screw_topleft__recover_ok",
+      "lever__recover_ok"
+    ],
+    [
+      "bearing_screw_topleft__recover_ok",
+      "washer__recover_ok"
+    ],
+    [
+      "bearing_screw_topleft__recover_ok",
+      "anti_vibration_handle__recover_ok"
+    ],
+    [
+      "bearing_plate__recover_ok",
+      "screw_lever__recover_ok"
+    ],
+    [
+      "bearing_plate__recover_ok",
+      "spring__recover_ok"
+    ],
+    [
+      "bearing_plate__recover_ok",
+      "lever__recover_ok"
+    ],
+    [
+      "bearing_plate__recover_ok",
+      "washer__recover_ok"
+    ],
+    [
+      "bearing_plate__recover_ok",
+      "anti_vibration_handle__recover_ok"
+    ],
+    [
+      "bearing_screw_lowright__recover_ok",
+      "screw_lever__recover_ok"
+    ],
+    [
+      "bearing_screw_lowright__recover_ok",
+      "spring__recover_ok"
+    ],
+    [
+      "bearing_screw_lowright__recover_ok",
+      "lever__recover_ok"
+    ],
+    [
+      "bearing_screw_lowright__recover_ok",
+      "washer__recover_ok"
+    ],
+    [
+      "bearing_screw_lowright__recover_ok",
+      "anti_vibration_handle__recover_ok"
+    ],
+    [
+      "screw_lever__recover_ok",
+      "anti_vibration_handle__recover_ok"
+    ],
+    [
+      "spring__recover_ok",
+      "anti_vibration_handle__recover_ok"
+    ],
+    [
+      "lever__recover_ok",
+      "anti_vibration_handle__recover_ok"
+    ],
+    [
+      "washer__recover_ok",
+      "anti_vibration_handle__recover_ok"
+    ],
+    [
+      "gearbox_housing__install_ok",
+      "bearing_screw_topleft__recover_ok"
+    ],
+    [
+      "gearbox_housing__install_ok",
+      "bearing_plate__recover_ok"
+    ],
+    [
+      "gearbox_housing__install_ok",
+      "bearing_screw_lowright__recover_ok"
+    ],
+    [
+      "gearbox_housing__install_ok",
+      "screw_lever__recover_ok"
+    ],
+    [
+      "gearbox_housing__install_ok",
+      "spring__recover_ok"
+    ],
+    [
+      "gearbox_housing__install_ok",
+      "lever__recover_ok"
+    ],
+    [
+      "gearbox_housing__install_ok",
+      "washer__recover_ok"
+    ],
+    [
+      "gearbox_housing__install_ok",
+      "anti_vibration_handle__recover_ok"
+    ]
+  ],
+  "prereq": {
+    "adapter_plate__recover_ok": [
+      "bevel_gear__recover_ok",
+      "drive_shaft__recover_ok",
+      "nut_M6__recover_ok"
+    ],
+    "nut_M4_bearing_plate_BR__install_ok": [],
+    "bearing_screw_topleft__recover_ok": [
+      "adapter_plate__recover_ok",
+      "bevel_gear__recover_ok",
+      "drive_shaft__recover_ok",
+      "gearbox_housing__install_ok",
+      "nut_M4_bearing_plate_BR__recover_ok",
+      "nut_M4_bearing_plate_TL__recover_ok",
+      "nut_M6__recover_ok",
+      "screw_adaptor_lowright__recover_ok",
+      "screw_adaptor_topleft__recover_ok"
+    ],
+    "screw_lever__install_ok": [],
+    "nut_M4_bearing_plate_BR__recover_ok": [
+      "bevel_gear__recover_ok",
+      "drive_shaft__recover_ok",
+      "nut_M6__recover_ok"
+    ],
+    "washer__remove_ok": [],
+    "gearbox_housing__recover_ok": [],
+    "adapter_plate__remove_ok": [],
+    "drive_shaft__remove_ok": [],
+    "bearing_plate__remove_ok": [],
+    "nut_M4_bearing_plate_TL__install_ok": [],
+    "drive_shaft__install_ok": [],
+    "bearing_plate__recover_ok": [
+      "adapter_plate__recover_ok",
+      "bevel_gear__recover_ok",
+      "drive_shaft__recover_ok",
+      "gearbox_housing__install_ok",
+      "nut_M4_bearing_plate_BR__recover_ok",
+      "nut_M4_bearing_plate_TL__recover_ok",
+      "nut_M6__recover_ok",
+      "screw_adaptor_lowright__recover_ok",
+      "screw_adaptor_topleft__recover_ok"
+    ],
+    "spring__remove_ok": [],
+    "nut_M6__install_ok": [],
+    "screw_lever__remove_ok": [],
+    "bevel_gear__remove_ok": [],
+    "lever__remove_ok": [],
+    "washer__install_ok": [],
+    "bearing_screw_topleft__remove_ok": [],
+    "lever__install_ok": [],
+    "screw_adaptor_topleft__recover_ok": [
+      "bevel_gear__recover_ok",
+      "drive_shaft__recover_ok",
+      "nut_M6__recover_ok"
+    ],
+    "screw_adaptor_plate_BR__recover_ok": [],
+    "spring__recover_ok": [
+      "adapter_plate__recover_ok",
+      "bearing_plate__recover_ok",
+      "bearing_screw_lowright__recover_ok",
+      "bearing_screw_topleft__recover_ok",
+      "bevel_gear__recover_ok",
+      "drive_shaft__recover_ok",
+      "gearbox_housing__install_ok",
+      "nut_M4_bearing_plate_BR__recover_ok",
+      "nut_M4_bearing_plate_TL__recover_ok",
+      "nut_M6__recover_ok",
+      "screw_adaptor_lowright__recover_ok",
+      "screw_adaptor_topleft__recover_ok"
+    ],
+    "screw_bearing_plate_TL__recover_ok": [],
+    "bearing_screw_topleft__install_ok": [],
+    "nut_M6__recover_ok": [],
+    "screw_adaptor_plate_TL__recover_ok": [],
+    "washer__recover_ok": [
+      "adapter_plate__recover_ok",
+      "bearing_plate__recover_ok",
+      "bearing_screw_lowright__recover_ok",
+      "bearing_screw_topleft__recover_ok",
+      "bevel_gear__recover_ok",
+      "drive_shaft__recover_ok",
+      "gearbox_housing__install_ok",
+      "nut_M4_bearing_plate_BR__recover_ok",
+      "nut_M4_bearing_plate_TL__recover_ok",
+      "nut_M6__recover_ok",
+      "screw_adaptor_lowright__recover_ok",
+      "screw_adaptor_topleft__recover_ok"
+    ],
+    "drive_shaft__recover_ok": [],
+    "screw_adaptor_lowright__install_ok": [],
+    "nut_M4_bearing_plate_TL__remove_ok": [],
+    "gearbox_housing__install_ok": [],
+    "bevel_gear__recover_ok": [],
+    "bearing_screw_lowright__recover_ok": [
+      "adapter_plate__recover_ok",
+      "bevel_gear__recover_ok",
+      "drive_shaft__recover_ok",
+      "gearbox_housing__install_ok",
+      "nut_M4_bearing_plate_BR__recover_ok",
+      "nut_M4_bearing_plate_TL__recover_ok",
+      "nut_M6__recover_ok",
+      "screw_adaptor_lowright__recover_ok",
+      "screw_adaptor_topleft__recover_ok"
+    ],
+    "gearbox_housing__remove_ok": [],
+    "bearing_screw_lowright__install_ok": [],
+    "screw_adaptor_lowright__recover_ok": [
+      "bevel_gear__recover_ok",
+      "drive_shaft__recover_ok",
+      "nut_M6__recover_ok"
+    ],
+    "screw_adaptor_topleft__remove_ok": [],
+    "nut_M4_bearing_plate_TL__recover_ok": [
+      "bevel_gear__recover_ok",
+      "drive_shaft__recover_ok",
+      "nut_M6__recover_ok"
+    ],
+    "nut_M6__remove_ok": [],
+    "screw_lever__recover_ok": [
+      "adapter_plate__recover_ok",
+      "bearing_plate__recover_ok",
+      "bearing_screw_lowright__recover_ok",
+      "bearing_screw_topleft__recover_ok",
+      "bevel_gear__recover_ok",
+      "drive_shaft__recover_ok",
+      "gearbox_housing__install_ok",
+      "nut_M4_bearing_plate_BR__recover_ok",
+      "nut_M4_bearing_plate_TL__recover_ok",
+      "nut_M6__recover_ok",
+      "screw_adaptor_lowright__recover_ok",
+      "screw_adaptor_topleft__recover_ok"
+    ],
+    "nut_M4_bearing_plate_BR__remove_ok": [],
+    "screw_adaptor_topleft__install_ok": [],
+    "anti_vibration_handle__recover_ok": [
+      "adapter_plate__recover_ok",
+      "bearing_plate__recover_ok",
+      "bearing_screw_lowright__recover_ok",
+      "bearing_screw_topleft__recover_ok",
+      "bevel_gear__recover_ok",
+      "drive_shaft__recover_ok",
+      "gearbox_housing__install_ok",
+      "lever__recover_ok",
+      "nut_M4_bearing_plate_BR__recover_ok",
+      "nut_M4_bearing_plate_TL__recover_ok",
+      "nut_M6__recover_ok",
+      "screw_adaptor_lowright__recover_ok",
+      "screw_adaptor_topleft__recover_ok",
+      "screw_lever__recover_ok",
+      "spring__recover_ok",
+      "washer__recover_ok"
+    ],
+    "adapter_plate__install_ok": [],
+    "spring__install_ok": [],
+    "screw_adaptor_lowright__remove_ok": [],
+    "bearing_plate__install_ok": [],
+    "bearing_screw_lowright__remove_ok": [],
+    "bevel_gear__install_ok": [],
+    "screw_bearing_plate_BR__recover_ok": [],
+    "lever__recover_ok": [
+      "adapter_plate__recover_ok",
+      "bearing_plate__recover_ok",
+      "bearing_screw_lowright__recover_ok",
+      "bearing_screw_topleft__recover_ok",
+      "bevel_gear__recover_ok",
+      "drive_shaft__recover_ok",
+      "gearbox_housing__install_ok",
+      "nut_M4_bearing_plate_BR__recover_ok",
+      "nut_M4_bearing_plate_TL__recover_ok",
+      "nut_M6__recover_ok",
+      "screw_adaptor_lowright__recover_ok",
+      "screw_adaptor_topleft__recover_ok"
+    ]
+  }
+}

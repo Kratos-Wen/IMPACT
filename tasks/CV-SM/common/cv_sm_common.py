@@ -6,10 +6,16 @@ from __future__ import annotations
 import csv
 import json
 import random
+import sys
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Sequence, Set, Tuple
 
 import numpy as np
+
+THIS_DIR = Path(__file__).resolve().parent
+CV_TA_DIR = THIS_DIR.parent.parent / "CV-TA" / "cosine_knn"
+if str(CV_TA_DIR) not in sys.path:
+    sys.path.insert(0, str(CV_TA_DIR))
 
 from cv_ta_retrieval import (
     DEFAULT_ANNOTATION_ROOT,

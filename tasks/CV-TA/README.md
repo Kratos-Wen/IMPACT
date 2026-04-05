@@ -49,4 +49,5 @@ bash tasks/CV-TA/cosine_knn/scripts/run_all.sh
 ## Notes
 
 - The public baseline is a cosine-similarity retrieval evaluator over frozen segment features.
+- The released backbone set follows the paper: `i3d`, `videomaev2`, and `mvitv2`.
 - Per the paper, `local` and `global` are reported on `S1` to `S3`, while `exo2ego` is the `S4` diagnostic.

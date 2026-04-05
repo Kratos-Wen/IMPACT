@@ -4,8 +4,8 @@ Benchmark code is organized first by task and then by method.
 
 Current release:
 - `TAS/`: `LTContext`, `ASQuery`, `DiffAct`, `FACT`
-- `ASR/`: `MS-TCN++`, `VideoMAE v2+Head`
-- `PSR/`: `MS-TCN++ -> PSR`, `VideoMAE v2+Head -> PSR`, `STORM-PSR`
+- `ASR/`: `MS-TCN++`, `VideoMAE v2+Head`, `Gemini 3.1 Pro`
+- `PSR/`: `MS-TCN++ -> PSR`, `VideoMAE v2+Head -> PSR`, `STORM-PSR`, `Gemini 3.1 Pro`
 - `PPR/`: `ASQuery`, `DiffAct`, `LTContext`, `FACT`
 - `ATR/`: `LTContext`, `FACT`
 - `CV-TA/`: `Cosine kNN`

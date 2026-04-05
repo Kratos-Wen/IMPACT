@@ -21,6 +21,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 from collections import Counter
 from pathlib import Path
 from typing import Any, Dict, List, Tuple
@@ -29,6 +30,11 @@ import numpy as np
 import torch
 from torch import nn
 from torch.utils.data import DataLoader, TensorDataset
+
+THIS_DIR = Path(__file__).resolve().parent
+COMMON_DIR = THIS_DIR.parent / "common"
+if str(COMMON_DIR) not in sys.path:
+    sys.path.insert(0, str(COMMON_DIR))
 
 from cv_sm_common import (
     DEFAULT_ANNOTATION_ROOT,

@@ -1,0 +1,14 @@
+{
+  "screw_lever": "screw_lever",
+  "screw_plate_topleft": "screw_adaptor_topleft",
+  "screw_plate_lowright": "screw_adaptor_lowright",
+  "screw_adaptor_plate_TL": "screw_adaptor_topleft",
+  "screw_adaptor_plate_BR": "screw_adaptor_lowright",
+  "screw_bevel_topleft": "bearing_screw_topleft",
+  "screw_bevel_lowright": "bearing_screw_lowright",
+  "screw_bearing_plate_TL": "bearing_screw_topleft",
+  "screw_bearing_plate_BR": "bearing_screw_lowright",
+  "M4_nut_plate_topleft": "nut_M4_bearing_plate_TL",
+  "M4_nut_plate_lowright": "nut_M4_bearing_plate_BR",
+  "M6_nut": "nut_M6"
+}

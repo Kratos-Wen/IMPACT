@@ -6,7 +6,7 @@ PYTHON_BIN="${PYTHON_BIN:-python}"
 TRAIN_SPLIT="${TRAIN_SPLIT:-train}"
 TEST_SPLIT="${TEST_SPLIT:-test}"
 SPLITS_CSV="${SPLITS_CSV:-1,2,3,4}"
-FEATURE_TYPES_CSV="${FEATURE_TYPES_CSV:-i3d,videomaev2}"
+FEATURE_TYPES_CSV="${FEATURE_TYPES_CSV:-i3d,videomaev2,mvitv2}"
 LABEL_MODES_CSV="${LABEL_MODES_CSV:-coarse,verb,noun,verb_noun}"
 TRAIN_VIEWS_CSV="${TRAIN_VIEWS_CSV:-ego,front,left,right,top}"
 TEST_VIEWS_CSV="${TEST_VIEWS_CSV:-ego,front,left,right,top}"
@@ -76,7 +76,7 @@ launch_job() {
   echo "[launch] ${name}"
   (
     cmd=(
-      "${PYTHON_BIN}" "${ROOT_DIR}/tools/cross_view/cv_smc_classification.py"
+      "${PYTHON_BIN}" "${ROOT_DIR}/tasks/CV-SM/classification/cv_smc_classification.py"
       --split-index "${split_index}"
       --train-split "${TRAIN_SPLIT}"
       --test-split "${TEST_SPLIT}"

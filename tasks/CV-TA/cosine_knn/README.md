@@ -9,14 +9,14 @@ This directory provides the released `CV-TA` baseline based on cosine-similarity
 - default feature base: `features/cv`
 - default outputs: `outputs/cv_ta/cosine_knn/<run_tag>`
 - default logs: `logs/cv_ta/cosine_knn/<run_tag>`
-- evaluator: `tools/cross_view/cv_ta_retrieval.py`
+- evaluator: `tasks/CV-TA/cosine_knn/cv_ta_retrieval.py`
 
 ## Common Arguments
 
 - `RUN_TAG`: run identifier used to separate outputs and logs
 - `SPLIT`: split name passed to the evaluator, usually `test`
 - `SPLIT_INDEX`: split bundle index
-- `FEATURE_TYPES_CSV`: comma-separated feature families, typically `videomaev2,i3d`
+- `FEATURE_TYPES_CSV`: comma-separated feature families, typically `i3d,videomaev2,mvitv2`
 - `EXO_VIEWS_CSV`: exocentric views used by `local`, `global`, and `exo2ego`
 - `FEATURE_BASE_DIR`: base directory that contains one subdirectory per feature family
 - `FEATURE_ROOT`: optional explicit feature directory for single-backbone runs
@@ -40,3 +40,4 @@ bash tasks/CV-TA/cosine_knn/scripts/run_all.sh
 ## Notes
 
 - One launcher call emits one JSON file per protocol and feature family.
+- The released backbone set follows the paper: `i3d`, `videomaev2`, and `mvitv2`.

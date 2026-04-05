@@ -44,7 +44,7 @@ from typing import Any, Dict, Iterable, List, Optional, Sequence, Set, Tuple
 import numpy as np
 
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
+REPO_ROOT = Path(__file__).resolve().parents[3]
 DEFAULT_ANNOTATION_ROOT = REPO_ROOT / "dataset" / "CV" / "annotations_CAS"
 DEFAULT_SPLIT_DIR = REPO_ROOT / "dataset" / "CV" / "splits_CAS"
 DEFAULT_FEATURE_ROOTS = {

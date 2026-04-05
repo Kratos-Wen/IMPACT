@@ -5,7 +5,7 @@ ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../../../.." && pwd)"
 PYTHON_BIN="${PYTHON_BIN:-python}"
 SPLIT="${SPLIT:-test}"
 SPLITS_CSV="${SPLITS_CSV:-1,2,3,4}"
-FEATURE_TYPES_CSV="${FEATURE_TYPES_CSV:-i3d,videomaev2}"
+FEATURE_TYPES_CSV="${FEATURE_TYPES_CSV:-i3d,videomaev2,mvitv2}"
 QUERY_VIEWS_CSV="${QUERY_VIEWS_CSV:-ego,front,left,right,top}"
 GALLERY_VIEWS_CSV="${GALLERY_VIEWS_CSV:-ego,front,left,right,top}"
 POOLING="${POOLING:-mean}"
@@ -67,7 +67,7 @@ launch_job() {
   echo "[launch] ${name}"
   (
     cmd=(
-      "${PYTHON_BIN}" "${ROOT_DIR}/tools/cross_view/cv_smr_retrieval.py"
+      "${PYTHON_BIN}" "${ROOT_DIR}/tasks/CV-SM/retrieval/cv_smr_retrieval.py"
       --split "${SPLIT}"
       --split-index "${split_index}"
       --feature-type "${feature_type}"
