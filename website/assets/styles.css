@@ -140,7 +140,9 @@ h3 {
 .info-label,
 .task-subtitle,
 .status,
-.news-date {
+.news-date,
+.author-affiliations,
+.author-note {
   color: var(--muted);
 }
 
@@ -154,15 +156,55 @@ h3 {
 
 h1 {
   margin: 0 auto;
-  max-width: 15.5ch;
-  font-size: clamp(2.5rem, 5vw, 4.6rem);
+  max-width: 24ch;
+  font-size: clamp(2.35rem, 4.4vw, 4.35rem);
   line-height: 0.98;
   letter-spacing: -0.02em;
 }
 
+.author-block {
+  max-width: 980px;
+  margin: 18px auto 0;
+}
+
+.author-line,
+.author-affiliations,
+.author-note {
+  margin: 0;
+  line-height: 1.75;
+}
+
+.author-line {
+  font-size: 1rem;
+}
+
+.author-line + .author-line {
+  margin-top: 2px;
+}
+
+.author-affiliations {
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+.author-note {
+  margin-top: 6px;
+  font-size: 0.94rem;
+}
+
+.author-note a {
+  color: var(--accent-deep);
+  font-weight: 700;
+}
+
+.author-block sup {
+  font-size: 0.68em;
+  vertical-align: super;
+}
+
 .hero-subtitle {
   max-width: 780px;
-  margin: 18px auto 0;
+  margin: 20px auto 0;
   font-size: 1.08rem;
   line-height: 1.7;
 }
@@ -336,6 +378,10 @@ h3 {
 .news-item {
   padding: 22px;
   border-radius: var(--radius);
+}
+
+.full-span {
+  grid-column: 1 / -1;
 }
 
 .panel ul,
@@ -558,5 +604,11 @@ pre {
 
   .hero-actions {
     justify-content: center;
+  }
+
+  .author-line,
+  .author-affiliations,
+  .author-note {
+    font-size: 0.94rem;
   }
 }
