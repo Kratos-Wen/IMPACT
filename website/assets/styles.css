@@ -355,6 +355,10 @@ h3 {
   gap: 16px;
 }
 
+.video-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .two-column-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -377,15 +381,17 @@ h3 {
 }
 
 .figure-grid-collection,
-.figure-grid-tasks,
 .figure-grid-annotation {
   grid-template-columns: 1fr;
 }
 
-.figure-stage-wide {
-  width: min(calc(100vw - 24px), 1560px);
-  margin-left: 50%;
-  transform: translateX(-50%);
+.figure-grid-tasks {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.paired-figure-grid {
+  grid-template-columns: minmax(0, 1.55fr) minmax(0, 0.9fr);
+  align-items: stretch;
 }
 
 .news-list {
@@ -428,15 +434,37 @@ h3 {
 }
 
 .figure-card-statistics {
+  max-width: 1000px;
+  margin: 0 auto 18px;
   padding-inline: 24px;
 }
 
 .figure-card-statistics img {
-  max-width: min(100%, 1460px);
+  width: 100%;
+  max-width: 100%;
 }
 
 .figure-card-objects img {
-  max-width: min(100%, 1480px);
+  width: 100%;
+  max-width: 100%;
+}
+
+.figure-card-paired,
+.figure-card-workstation {
+  height: 100%;
+}
+
+.figure-card-paired img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.figure-card-workstation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 .figure-card-video-placeholder {
@@ -662,6 +690,7 @@ pre {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .video-grid,
   .task-grid,
   .benchmark-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -692,6 +721,7 @@ pre {
 
   .info-strip,
   .two-column-grid,
+  .video-grid,
   .snapshot-grid,
   .task-grid,
   .schema-grid,
@@ -700,7 +730,8 @@ pre {
   .figure-grid,
   .figure-grid-collection,
   .figure-grid-tasks,
-  .figure-grid-annotation {
+  .figure-grid-annotation,
+  .paired-figure-grid {
     grid-template-columns: 1fr;
   }
 
@@ -715,12 +746,6 @@ pre {
 
   .brand-logo {
     height: 40px;
-  }
-
-  .figure-stage-wide {
-    width: 100%;
-    margin-left: 0;
-    transform: none;
   }
 
   .figure-card-statistics {
