@@ -6,7 +6,7 @@
     <title>IMPACT | Industrial Procedural Understanding Benchmark</title>
     <meta
       name="description"
-      content="IMPACT is a multi-view industrial assembly benchmark for temporal understanding, cross-view understanding, forecasting, procedural reasoning, and error analysis."
+      content="IMPACT is a synchronized five-view RGB-D benchmark for industrial procedural understanding under partial observability, multi-route execution, and anomaly-recovery."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -74,13 +74,15 @@
             </p>
           </div>
           <p class="hero-subtitle">
-            A task-driven benchmark platform for industrial procedural
-            understanding under multi-view observations, partial observability,
-            and procedural complexity.
+            A synchronized five-view RGB-D benchmark built around real assembly
+            and disassembly of a commercial angle grinder, unifying temporal
+            understanding, cross-view understanding, action forecasting, and
+            state &amp; reasoning under realistic industrial conditions.
           </p>
           <p class="hero-meta">
-            Paper link, author list, and teaser video are reserved for the final
-            public release.
+            The current public release provides benchmark protocol assets,
+            evaluation code, and method wrappers. Paper link, teaser video, and
+            media download endpoints will be finalized for the full release.
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="#paper">Paper</a>
@@ -92,10 +94,12 @@
 
         <section class="media-section reveal">
           <div class="section-head">
-            <h2>Data Collection and Protocol</h2>
+            <h2>Assembly Task and Recording Setup</h2>
             <p>
-              IMPACT is built on a synchronized multi-view acquisition setup,
-              standardized manual workflow, and task-aware data curation.
+              The benchmark centers on real assembly and disassembly of a
+              commercial angle grinder with 12 components and 4 tool types,
+              captured with synchronized ego-exo RGB-D views plus gaze, audio,
+              and cognitive metadata.
             </p>
           </div>
           <div class="figure-grid figure-grid-collection">
@@ -134,20 +138,20 @@
 
         <section class="info-strip reveal">
           <article class="info-chip">
+            <span class="info-label">Trials</span>
+            <strong>112 recordings</strong>
+          </article>
+          <article class="info-chip">
+            <span class="info-label">Participants</span>
+            <strong>13 subjects</strong>
+          </article>
+          <article class="info-chip">
+            <span class="info-label">Duration</span>
+            <strong>39.5 hours</strong>
+          </article>
+          <article class="info-chip">
             <span class="info-label">Views</span>
-            <strong>Ego + 4 exocentric cameras</strong>
-          </article>
-          <article class="info-chip">
-            <span class="info-label">Task Tracks</span>
-            <strong>9 benchmark tracks</strong>
-          </article>
-          <article class="info-chip">
-            <span class="info-label">Current Release</span>
-            <strong>Protocol assets + wrappers</strong>
-          </article>
-          <article class="info-chip">
-            <span class="info-label">Scale</span>
-            <strong>TBD at final release</strong>
+            <strong>1 ego + 4 exo RGB-D</strong>
           </article>
         </section>
 
@@ -155,28 +159,29 @@
           <div class="section-head">
             <h2>Why IMPACT</h2>
             <p>
-              Existing activity datasets rarely expose the procedural structure,
-              bimanual coordination, and recovery behavior needed for industrial
-              assembly understanding.
+              Real industrial assistants must reason over viewpoint shift,
+              partial observability, non-linear execution, and corrective
+              behavior at the same time. IMPACT is designed around this full
+              conjunction rather than around a single isolated task.
             </p>
           </div>
           <div class="two-column-grid">
             <article class="panel">
-              <h3>Limitations of prior datasets</h3>
+              <h3>Deployment conditions that matter</h3>
               <ul>
-                <li>Weak procedural structure and limited recovery modeling.</li>
-                <li>Insufficient support for bimanual reasoning under partial observability.</li>
-                <li>Few benchmarks separate perception, reasoning, and forecasting errors.</li>
-                <li>Limited industrial realism for assembly-centric evaluation.</li>
+                <li>Hands, tools, and object geometry create view-specific unobservability.</li>
+                <li>Assembly follows a partial-order prerequisite graph rather than a fixed linear script.</li>
+                <li>Anomalies and recovery are part of normal execution, not rare edge cases.</li>
+                <li>Industrial evaluation needs to separate perceptual failure from procedural failure.</li>
               </ul>
             </article>
             <article class="panel panel-accent">
-              <h3>What IMPACT contributes</h3>
+              <h3>What IMPACT makes measurable</h3>
               <ul>
-                <li>Step-level and hand-specific atomic labels in one benchmark.</li>
-                <li>Cross-view temporal alignment and semantic matching.</li>
-                <li>Forecasting, state recognition, procedure reasoning, and anomaly analysis.</li>
-                <li>Task organization that isolates architectural tradeoffs cleanly.</li>
+                <li>A synchronized five-view RGB-D benchmark built on real power-tool assembly and disassembly.</li>
+                <li>A multi-granularity annotation hierarchy linking actions, steps, states, phases, and anomalies.</li>
+                <li>A unified benchmark suite where all task families share the same recordings and conditions.</li>
+                <li>Baseline comparisons that expose observability, reasoning, and forecasting gaps under deployment-oriented complexity.</li>
               </ul>
             </article>
           </div>
@@ -186,9 +191,9 @@
           <div class="section-head">
             <h2>Dataset Snapshot</h2>
             <p>
-              The public repository already reflects the benchmark taxonomy and
-              release boundaries. Final scale numbers can be filled in without
-              changing the structure.
+              IMPACT comprises 112 trials from 13 participants, totaling 39.5
+              hours across two angle grinder models, with synchronized ego-exo
+              RGB-D capture, gaze, audio, and cognitive metadata.
             </p>
           </div>
           <figure class="figure-card figure-card-full">
@@ -203,36 +208,35 @@
           </figure>
           <div class="snapshot-grid">
             <article class="snapshot-card">
-              <span class="snapshot-label">Granularity</span>
-              <h3>Step-level + bimanual atomic</h3>
+              <span class="snapshot-label">Assembly object</span>
+              <h3>Two angle grinder configurations</h3>
               <p>
-                <code>TAS-S</code> captures procedure steps, while
-                <code>TAS-BL</code> and <code>TAS-BR</code> expose hand-specific
-                atomic actions.
+                The dataset spans two commercial angle grinder models, providing
+                a natural cross-configuration generalization axis.
               </p>
             </article>
             <article class="snapshot-card">
-              <span class="snapshot-label">Cross-view scope</span>
-              <h3>Synchronized multi-view video</h3>
+              <span class="snapshot-label">Execution structure</span>
+              <h3>Multi-route procedural execution</h3>
               <p>
-                Designed for alignment, semantic matching, and robustness under
-                partial observability.
+                Valid trajectories are governed by a partial-order prerequisite
+                graph instead of a single rigid sequence.
               </p>
             </article>
             <article class="snapshot-card">
-              <span class="snapshot-label">Reasoning assets</span>
-              <h3>States, phases, graphs, anomalies</h3>
+              <span class="snapshot-label">Supervision</span>
+              <h3>Anomaly-recovery and compliance aware</h3>
               <p>
-                Procedure metadata supports state recognition, step reasoning,
-                compliance analysis, and anomaly diagnosis.
+                The dataset includes explicit anomaly-recovery supervision,
+                compliance phases, and a six-category anomaly taxonomy.
               </p>
             </article>
             <article class="snapshot-card">
-              <span class="snapshot-label">Release status</span>
-              <h3>Benchmark-first release</h3>
+              <span class="snapshot-label">Human metadata</span>
+              <h3>Cognitive load at trial level</h3>
               <p>
-                Current release focuses on protocol assets, task wrappers, and
-                method snapshots rather than shipping raw media in-repo.
+                Each trial is paired with NASA-TLX cognitive load measurement,
+                connecting observable execution to human workload.
               </p>
             </article>
           </div>
@@ -242,8 +246,9 @@
           <div class="section-head">
             <h2>Supported Tasks</h2>
             <p>
-              The benchmark is organized as four task groups. The released task
-              taxonomy below matches the figures used in the paper.
+              IMPACT is organized into four benchmark families: temporal
+              understanding, cross-view understanding, action forecasting, and
+              state &amp; reasoning. All are instantiated on shared recordings.
             </p>
           </div>
           <div class="figure-grid figure-grid-tasks">
@@ -266,14 +271,14 @@
                 src="./assets/figures/Task_action_forecasting.svg"
                 alt="Action forecasting task family: AF-S and AF-L."
               />
-              <figcaption>Action forecasting covering short-term anticipation and long-horizon forecasting.</figcaption>
+              <figcaption>Action forecasting covering `AF-S` and `AF-L` under multiple valid future paths.</figcaption>
             </figure>
             <figure class="figure-card">
               <img
                 src="./assets/figures/Task_state_reasoning.svg"
                 alt="State and reasoning task family: PSR, ASR, PPR, and ATR."
               />
-              <figcaption>State and reasoning covering `ASR`, `PSR`, `PPR`, and `ATR`.</figcaption>
+              <figcaption>State and reasoning covering `ASR`, `PSR`, `PPR-L/R`, and `ATR-L/R`.</figcaption>
             </figure>
           </div>
         </section>
@@ -306,9 +311,10 @@
           <div class="section-head">
             <h2>Download</h2>
             <p>
-              The site should make release boundaries obvious. Available assets
-              are explicit, and missing release items remain marked as
-              placeholders.
+              The repository currently exposes the benchmark layer: official
+              protocol assets, evaluation scripts, and released baseline
+              wrappers. Media and large artifacts remain separated from the
+              lightweight code release.
             </p>
           </div>
           <div class="table-panel">
@@ -339,12 +345,12 @@
                 <tr>
                   <td>Raw Media</td>
                   <td><span class="status">Placeholder</span></td>
-                  <td>Full video release and access workflow.</td>
+                  <td>Full RGB-D video release and access workflow.</td>
                 </tr>
                 <tr>
                   <td>Pre-extracted Features</td>
                   <td><span class="status">Placeholder</span></td>
-                  <td>Storage backend and checksum policy to be added later.</td>
+                  <td>Backbone-specific public features and checksum policy to be added later.</td>
                 </tr>
               </tbody>
             </table>
@@ -355,8 +361,9 @@
           <div class="section-head">
             <h2>Annotation Schema</h2>
             <p>
-              IMPACT is strongest when the label space is communicated clearly
-              and compactly.
+              The annotation hierarchy is designed so that each level addresses
+              a distinct reasoning requirement: interaction dynamics, procedural
+              structure, compliance, and physical state evolution.
             </p>
           </div>
           <div class="figure-grid figure-grid-annotation">
@@ -366,8 +373,8 @@
                 alt="Annotation demo for the IMPACT dataset."
               />
               <figcaption>
-                Annotation examples showing how multi-view procedure labels are
-                exposed to the benchmark tasks.
+                Multi-granularity annotation examples spanning steps, bimanual
+                actions, states, and compliance phases.
               </figcaption>
             </figure>
             <figure class="figure-card">
@@ -376,27 +383,27 @@
                 alt="Data annotation workflow for the IMPACT dataset."
               />
               <figcaption>
-                Annotation pipeline covering temporal synchronization,
-                task-specific labeling, and multi-stage validation.
+                Annotation workflow including expert labeling, view-specific
+                refinement, task-specific passes, and multi-stage validation.
               </figcaption>
             </figure>
           </div>
           <div class="schema-grid">
             <article class="schema-card">
-              <h3>Temporal labels</h3>
-              <p>Frame-level and segment-level labels support dense sequence evaluation.</p>
+              <h3>Fine-grained actions</h3>
+              <p>137 valid hand-specific action classes capture coordinated bimanual interaction.</p>
             </article>
             <article class="schema-card">
-              <h3>Bimanual labels</h3>
-              <p>Left-hand and right-hand atomic labels isolate asymmetric coordination.</p>
+              <h3>Procedural structure</h3>
+              <p>26 coarse steps and 51 completion events connect segmentation to graph-based reasoning.</p>
             </article>
             <article class="schema-card">
-              <h3>State labels</h3>
-              <p>Assembly-state annotations enable direct recognition and indirect reasoning pipelines.</p>
+              <h3>Assembly states</h3>
+              <p>17 component instances use ternary state supervision for direct ASR and indirect PSR.</p>
             </article>
             <article class="schema-card">
-              <h3>Error labels</h3>
-              <p>Phases and anomaly types support compliance analysis and failure diagnosis.</p>
+              <h3>Compliance and anomalies</h3>
+              <p>Normal, anomaly, and recovery phases are paired with six non-exclusive anomaly types.</p>
             </article>
           </div>
         </section>
@@ -405,9 +412,9 @@
           <div class="section-head">
             <h2>Benchmark</h2>
             <p>
-              The benchmark layer is already organized by task and method in the
-              repository. The site summarizes what is runnable now and what is
-              reserved for later release.
+              Baselines are organized to span complementary architectural
+              inductive biases, making it possible to diagnose which design
+              choices matter under industrial procedural complexity.
             </p>
           </div>
           <div class="benchmark-grid">
@@ -425,10 +432,12 @@
             <article class="panel">
               <h3>Metrics</h3>
               <ul>
-                <li><code>F1@{10,25,50}</code> and edit score for dense temporal tasks.</li>
-                <li>Retrieval and matching metrics for cross-view tasks.</li>
-                <li>Task-specific metrics for state recognition and step reasoning.</li>
-                <li>Anticipation and forecasting metrics for <code>AF-S</code> and <code>AF-L</code>.</li>
+                <li><code>TAS</code>, <code>PPR</code>, <code>ATR</code>: Accuracy, Edit, and <code>F1@{10,25,50}</code>.</li>
+                <li><code>CV-TA</code>: <code>Recall@{1,5}</code>, Median Rank, and Exo→Ego coverage.</li>
+                <li><code>CV-SMR</code> / <code>CV-SMC</code>: retrieval and classification metrics at verb, noun, and verb–noun levels.</li>
+                <li><code>AF-S</code>: mean Top-5 Recall; <code>AF-L</code>: <code>ED@5</code> and <code>AUED</code>.</li>
+                <li><code>ASR</code>: Macro-F1, Transition F1, and Final-State Accuracy.</li>
+                <li><code>PSR</code>: Step Completion F1, Detection Delay, and POS.</li>
               </ul>
             </article>
             <article class="panel panel-placeholder">
@@ -442,8 +451,9 @@
           <div class="section-head">
             <h2>Resources</h2>
             <p>
-              The website is the presentation layer. The repository remains the
-              operational layer for reproducible benchmarking.
+              The project page is the presentation layer. The repository remains
+              the operational layer for reproducible benchmarking, protocol
+              inspection, and baseline execution.
             </p>
           </div>
           <div class="resource-grid">
@@ -473,7 +483,7 @@
           <div class="two-column-grid">
             <article class="panel">
               <h3>Paper &amp; Citation</h3>
-              <p>Paper PDF, project-page paper button, and final author metadata are pending public release.</p>
+              <p>Paper PDF and camera-ready citation links will be attached here when the public release is finalized.</p>
               <pre><code>@inproceedings{impact2026,
   title     = {IMPACT: A Dataset for Multi-Granularity Human Procedural Action Understanding in Industrial Assembly},
   author    = {TBD},
