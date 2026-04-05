@@ -28,13 +28,7 @@ This release includes:
 - IMPACT-specific benchmark wrappers under `tasks/`
 - method source snapshots under `third_party/`
 - project-site source under `website/`
-
-This release does not include:
-- raw videos
-- extracted features
-- pretrained checkpoints
-- runtime logs and intermediate outputs
-- experiment-specific helper scripts
+- release bundles for raw media, feature packs, pretrained checkpoints, and supplementary artifacts via Google Drive
 
 ## Repository Layout
 
@@ -90,7 +84,7 @@ Runtime `logs/` and `outputs/` directories are not shipped in the repository tre
 - reference implementations: `AVT`, `ScalAnt`, `Qwen3VL-8B`
 - paper protocol: `AF-S`
 - current public split assets: `split1`
-- supervised baselines expect external feature roots; `Qwen3VL-8B` expects raw videos
+- supervised baselines use released feature packs; `Qwen3VL-8B` uses the released raw-video bundle
 
 `AF-L`
 - paper baselines: `ScalAnt`, `AntGPT`, `PALM`, `Qwen3VL-8B`
@@ -104,7 +98,7 @@ Runtime `logs/` and `outputs/` directories are not shipped in the repository tre
 `ASR`
 - reference implementations: `MS-TCN++`, `VideoMAE v2+Head`, `Gemini 3.1 Pro`
 - current public split assets: front-view `split1`
-- benchmark wrappers expect an external feature directory or external raw videos, together with the released `dataset/ASR/` protocol assets
+- benchmark wrappers use the released `dataset/ASR/` protocol assets together with feature packs or raw-video bundles distributed through the release
 
 `PPR`
 - reference implementations: `ASQuery`, `DiffAct`, `LTContext`, `FACT`

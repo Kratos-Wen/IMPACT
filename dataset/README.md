@@ -24,11 +24,7 @@ Current protocol scope:
 - `AF-L/` currently documents the pending long-horizon release only
 - `PSR/` and `ASR/` currently release the front-view protocol assets used by the benchmark wrappers in `tasks/PSR/` and `tasks/ASR/`
 - `PPR/` and `ATR/` reuse the same task families as `TAS`, but expose task-specific mappings, splits, and labels
-
-The repository does not include:
-- raw videos
-- extracted features
-- model predictions or checkpoints
+- raw media, feature packs, checkpoints, and supplementary release bundles are distributed through Google Drive alongside the repository assets
 
 Task defaults used by the public scripts:
 - `tasks/TAS/` uses `dataset/TAS/`
