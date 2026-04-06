@@ -236,6 +236,13 @@ h1 {
   margin-top: 28px;
 }
 
+.section-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0 0 18px;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -260,6 +267,14 @@ h1 {
   border-color: rgba(201, 106, 43, 0.3);
   background: linear-gradient(180deg, #d97836 0%, #c96a2b 100%);
   color: #fff8ef;
+}
+
+.button-muted {
+  color: var(--muted);
+  background: linear-gradient(180deg, #fbfbfa 0%, #f5f5f2 100%);
+  border-color: var(--line);
+  box-shadow: none;
+  cursor: default;
 }
 
 .media-frame,

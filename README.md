@@ -5,6 +5,8 @@ Official repository for "IMPACT: A Dataset for Multi-Granularity Human Procedura
 <p align="center">
   <a href="https://kratos-wen.github.io/IMPACT/"><strong>Project Page</strong></a>
   ·
+  <a href="https://drive.google.com/drive/folders/1P7vBnxSVH9g_lQc5n0c0WA47QAGEhE_U?usp=sharing"><strong>Data Release</strong></a>
+  ·
   <a href="https://github.com/Kratos-Wen/IMPACT/tree/main/tasks"><strong>Benchmark Tasks</strong></a>
   ·
   <a href="https://github.com/Kratos-Wen/IMPACT/tree/main/dataset"><strong>Protocol Assets</strong></a>
@@ -12,6 +14,8 @@ Official repository for "IMPACT: A Dataset for Multi-Granularity Human Procedura
 
 > [!IMPORTANT]
 > Start with the [IMPACT Project Page](https://kratos-wen.github.io/IMPACT/) for the dataset overview, visual examples, benchmark coverage, and release status.
+>
+> Dataset release bundles are available via [Google Drive](https://drive.google.com/drive/folders/1P7vBnxSVH9g_lQc5n0c0WA47QAGEhE_U?usp=sharing). A Hugging Face mirror will be added in a later update.
 
 This repository hosts the benchmark codebase, protocol assets, method snapshots, and website source for IMPACT. The release is organized first by task and then by method so that each benchmark setting exposes a consistent configuration and execution interface.
 

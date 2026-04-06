@@ -2,6 +2,8 @@
 
 This directory stores lightweight benchmark assets that are required to reproduce the IMPACT evaluation protocol.
 
+Release bundles for raw media, feature packs, checkpoints, and supplementary artifacts are available via [Google Drive](https://drive.google.com/drive/folders/1P7vBnxSVH9g_lQc5n0c0WA47QAGEhE_U?usp=sharing). A Hugging Face mirror is reserved for a later update.
+
 Included task assets:
 - `TAS/`: mappings, official splits, and frame-level labels for `TAS-S` and `TAS-B` (`TAS-BL`, `TAS-BR`)
 - `CV/`: synchronized step-level (`TAS-S`) annotations and official split bundles for `CV-TA`, `CV-SMR`, and `CV-SMC`
