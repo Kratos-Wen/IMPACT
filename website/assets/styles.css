@@ -372,7 +372,7 @@ h3 {
 
 .video-grid {
   grid-template-columns: 1fr;
-  max-width: 760px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
