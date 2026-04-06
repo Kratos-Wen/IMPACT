@@ -92,13 +92,19 @@
 
         <section class="media-section reveal">
           <div class="figure-grid video-grid">
-            <figure class="figure-card figure-card-video-placeholder">
-              <div class="media-placeholder" aria-label="Dataset video modalities placeholder">
-                <div class="media-placeholder-copy">
-                  <strong>Dataset Video Modalities</strong>
-                  <span>MP4 placeholder</span>
-                </div>
-              </div>
+            <figure class="figure-card figure-card-video">
+              <video
+                class="media-video"
+                autoplay
+                muted
+                loop
+                playsinline
+                controls
+                preload="metadata"
+                aria-label="Dataset video modalities demo"
+              >
+                <source src="./assets/videos/recording_demo.mp4" type="video/mp4" />
+              </video>
             </figure>
             <figure class="figure-card figure-card-video-placeholder">
               <div class="media-placeholder" aria-label="Annotation visualization placeholder">

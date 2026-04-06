@@ -371,7 +371,7 @@ h3 {
 }
 
 .video-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
 }
 
 .two-column-grid {
@@ -484,6 +484,18 @@ h3 {
 
 .figure-card-video-placeholder {
   padding: 18px;
+}
+
+.figure-card-video {
+  padding: 16px;
+}
+
+.media-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  background: #0f1110;
 }
 
 .media-placeholder {
