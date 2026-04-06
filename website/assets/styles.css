@@ -243,10 +243,10 @@ h1 {
   margin: 0 0 18px;
 }
 
-.download-channel-grid {
+.download-strip {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
+  gap: 12px;
   margin: 0 0 18px;
 }
 
@@ -284,13 +284,26 @@ h1 {
   cursor: default;
 }
 
-.download-card {
-  display: block;
+.download-pill {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-height: 104px;
+  padding: 16px 18px;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(31, 35, 32, 0.04);
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
 }
 
-.download-card-label {
+.download-pill:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 26px rgba(31, 35, 32, 0.07);
+}
+
+.download-pill-label {
   display: inline-block;
-  margin-bottom: 10px;
   color: var(--accent-deep);
   font-size: 0.82rem;
   text-transform: uppercase;
@@ -298,22 +311,27 @@ h1 {
   font-weight: 800;
 }
 
-.download-card h3 {
-  margin-bottom: 10px;
+.download-pill strong {
+  font-family: "Newsreader", serif;
+  font-size: 1.4rem;
+  line-height: 1.05;
+  font-weight: 700;
 }
 
-.download-card p {
-  margin: 0;
-  line-height: 1.7;
+.download-pill-meta {
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.55;
 }
 
-.download-card-primary {
+.download-pill-primary {
   border-color: rgba(201, 106, 43, 0.26);
   background: linear-gradient(180deg, #fffaf6 0%, #ffffff 100%);
 }
 
-.download-card-muted {
+.download-pill-muted {
   background: linear-gradient(180deg, #fbfbfa 0%, #f7f7f5 100%);
+  box-shadow: none;
 }
 
 .media-frame,
@@ -738,7 +756,7 @@ pre {
 }
 
 @media (max-width: 1080px) {
-  .download-channel-grid,
+  .download-strip,
   .snapshot-grid,
   .schema-grid,
   .resource-grid {
@@ -775,7 +793,7 @@ pre {
   }
 
   .info-strip,
-  .download-channel-grid,
+  .download-strip,
   .two-column-grid,
   .video-grid,
   .snapshot-grid,
