@@ -372,6 +372,8 @@ h3 {
 
 .video-grid {
   grid-template-columns: 1fr;
+  max-width: 760px;
+  margin: 0 auto;
 }
 
 .two-column-grid {
@@ -496,6 +498,7 @@ h3 {
   display: block;
   border-radius: 16px;
   background: #0f1110;
+  pointer-events: none;
 }
 
 .media-placeholder {
