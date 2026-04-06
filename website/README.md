@@ -7,7 +7,8 @@ Publishing target:
 
 Current scope:
 - single-page landing page for dataset promotion
-- placeholder cards for paper, teaser video, and leaderboard assets that are not public yet
+- embedded overview and annotation videos, release links, and benchmark overview
+- placeholder sections for paper metadata and leaderboard information that are not public yet
 - static assets only; no build step is required
 
 Local preview:

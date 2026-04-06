@@ -10,10 +10,12 @@ Task usage:
 - `tasks/CV-TA/` uses these assets for `local`, `global`, and `exo2ego` retrieval protocols
 - `tasks/CV-SM/` uses the same assets for `CV-SMR` and `CV-SMC`
 
-Not included:
-- raw videos
-- extracted features
-- model checkpoints
+Stored outside this directory:
+- raw videos are distributed through the Google Drive release bundle
+- extracted features are distributed through the Google Drive release bundle
+- model checkpoints are distributed through the Google Drive release bundle
+
+This subdirectory stores only the lightweight protocol assets required by the public cross-view launchers.
 
 Default feature convention used by the public launchers:
 - `FEATURE_BASE_DIR=features/cv`
