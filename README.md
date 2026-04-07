@@ -7,6 +7,8 @@ Official repository for "IMPACT: A Dataset for Multi-Granularity Human Procedura
   ·
   <a href="https://drive.google.com/drive/folders/1P7vBnxSVH9g_lQc5n0c0WA47QAGEhE_U?usp=sharing"><strong>Data Release</strong></a>
   ·
+  <a href="https://huggingface.co/datasets/KratosWen/IMPACT"><strong>HF Mirror</strong></a>
+  ·
   <a href="https://github.com/Kratos-Wen/IMPACT/tree/main/tasks"><strong>Benchmark Tasks</strong></a>
   ·
   <a href="https://github.com/Kratos-Wen/IMPACT/tree/main/dataset"><strong>Protocol Assets</strong></a>
@@ -15,7 +17,9 @@ Official repository for "IMPACT: A Dataset for Multi-Granularity Human Procedura
 > [!IMPORTANT]
 > Start with the [IMPACT Project Page](https://kratos-wen.github.io/IMPACT/) for the dataset overview, visual examples, benchmark coverage, and release status.
 >
-> Dataset release bundles are available via [Google Drive](https://drive.google.com/drive/folders/1P7vBnxSVH9g_lQc5n0c0WA47QAGEhE_U?usp=sharing), including the full annotation bundle, multi-view RGB and depth archives, ego audio, released feature packs, and a quick-start sample subset. A Hugging Face mirror will be added in a later update.
+> Dataset release bundles are available via [Google Drive](https://drive.google.com/drive/folders/1P7vBnxSVH9g_lQc5n0c0WA47QAGEhE_U?usp=sharing), including the full annotation bundle, multi-view RGB and depth archives, ego audio, released feature packs, and a quick-start sample subset.
+>
+> A public Hugging Face mirror is available at [KratosWen/IMPACT](https://huggingface.co/datasets/KratosWen/IMPACT). The dataset card, annotation bundle, and ego-audio bundle are already live there; the larger RGB, depth, feature, and sample bundles are syncing.
 
 This repository hosts the benchmark codebase, protocol assets, method snapshots, and website source for IMPACT. The release is organized first by task and then by method so that each benchmark setting exposes a consistent configuration and execution interface.
 

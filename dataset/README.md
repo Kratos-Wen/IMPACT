@@ -2,7 +2,9 @@
 
 This directory stores lightweight benchmark assets that are required to reproduce the IMPACT evaluation protocol.
 
-Release bundles for annotations, RGB media, depth streams, ego audio, feature packs, and a quick-start sample subset are available via [Google Drive](https://drive.google.com/drive/folders/1P7vBnxSVH9g_lQc5n0c0WA47QAGEhE_U?usp=sharing). A Hugging Face mirror is reserved for a later update.
+Release bundles for annotations, RGB media, depth streams, ego audio, feature packs, and a quick-start sample subset are available via [Google Drive](https://drive.google.com/drive/folders/1P7vBnxSVH9g_lQc5n0c0WA47QAGEhE_U?usp=sharing).
+
+A public Hugging Face mirror is available at [KratosWen/IMPACT](https://huggingface.co/datasets/KratosWen/IMPACT). The dataset card, annotation bundle, and ego-audio bundle are already live there; the larger RGB, depth, feature, and sample bundles are syncing.
 
 External release bundles:
 - `annotations_v1.zip`: official annotation release bundle
