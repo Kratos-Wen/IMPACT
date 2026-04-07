@@ -60,4 +60,4 @@ sample/
 - The repository tree stores lightweight protocol assets under `dataset/`; the larger Google Drive bundles are distributed separately.
 - The description above reflects the current public Google Drive release layout.
 - A public Hugging Face mirror is available at `https://huggingface.co/datasets/KratosWen/IMPACT`.
-- The dataset card, annotation bundle, and ego-audio bundle are already live on the Hugging Face mirror; larger RGB, depth, feature, and sample bundles are syncing.
+- The Hugging Face mirror follows the public IMPACT release layout.
