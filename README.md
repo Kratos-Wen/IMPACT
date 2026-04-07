@@ -15,7 +15,7 @@ Official repository for "IMPACT: A Dataset for Multi-Granularity Human Procedura
 > [!IMPORTANT]
 > Start with the [IMPACT Project Page](https://kratos-wen.github.io/IMPACT/) for the dataset overview, visual examples, benchmark coverage, and release status.
 >
-> Dataset release bundles are available via [Google Drive](https://drive.google.com/drive/folders/1P7vBnxSVH9g_lQc5n0c0WA47QAGEhE_U?usp=sharing). A Hugging Face mirror will be added in a later update.
+> Dataset release bundles are available via [Google Drive](https://drive.google.com/drive/folders/1P7vBnxSVH9g_lQc5n0c0WA47QAGEhE_U?usp=sharing), including the full annotation bundle, multi-view RGB and depth archives, ego audio, released feature packs, and a quick-start sample subset. A Hugging Face mirror will be added in a later update.
 
 This repository hosts the benchmark codebase, protocol assets, method snapshots, and website source for IMPACT. The release is organized first by task and then by method so that each benchmark setting exposes a consistent configuration and execution interface.
 
@@ -32,7 +32,20 @@ This release includes:
 - IMPACT-specific benchmark wrappers under `tasks/`
 - method source snapshots under `third_party/`
 - project-site source under `website/`
-- release bundles for raw media, feature packs, pretrained checkpoints, and supplementary artifacts via Google Drive
+- release bundles for annotations, RGB media, depth streams, ego audio, feature packs, and a quick-start sample subset via Google Drive
+
+## Data Release Layout
+
+The public Google Drive release is organized into the following bundles. For the bundle-level layout and naming conventions, see [docs/DATA_RELEASE.md](docs/DATA_RELEASE.md).
+
+| Bundle | Approx. size | Contents |
+| --- | ---: | --- |
+| `annotations_v1.zip` | `5.4M` | official annotation release bundle |
+| `videos/videos_{ego,front,left,right,top}.zip` | `132G` | five-view RGB video archives |
+| `depth/depth_{front,left,right,top}.zip` | `46G` | exocentric depth archives |
+| `audio/audio_ego.zip` | `200M` | egocentric audio bundle |
+| `features/features_{I3D,MViTv2,VideoMAEv2}.zip` | `71G` | released backbone feature bundles |
+| `sample/` | `3.5G` | quick-start subset with 3 executions, multi-view media, features, and task annotations |
 
 ## Repository Layout
 

@@ -251,9 +251,9 @@
           <div class="section-head">
             <h2>Download</h2>
             <p>
-              The release is split across the repository and Google Drive
-              bundles, covering benchmark code, protocol assets, media, and
-              supporting artifacts.
+              The public release combines repository-hosted protocol assets with
+              Google Drive bundles for annotations, multi-view media, released
+              feature packs, and a quick-start sample subset.
             </p>
           </div>
           <div class="section-actions" aria-label="Release channels">
@@ -291,24 +291,34 @@
                   <td>Task wrappers, evaluation scripts, and released baselines.</td>
                 </tr>
                 <tr>
-                  <td>Primary Distribution</td>
+                  <td>Full Annotation Bundle</td>
                   <td><span class="status status-live">Google Drive</span></td>
-                  <td><a href="https://drive.google.com/drive/folders/1P7vBnxSVH9g_lQc5n0c0WA47QAGEhE_U?usp=sharing">Official release folder</a> for media, features, checkpoints, and supplementary bundles.</td>
+                  <td><a href="https://drive.google.com/drive/folders/1P7vBnxSVH9g_lQc5n0c0WA47QAGEhE_U?usp=sharing">Official release folder</a> containing <code>annotations_v1.zip</code>.</td>
                 </tr>
                 <tr>
-                  <td>Raw Media</td>
+                  <td>RGB Videos</td>
                   <td><span class="status status-live">Google Drive</span></td>
-                  <td>Full RGB-D media bundles distributed alongside the release.</td>
+                  <td>Five-view RGB archives: <code>videos_ego</code>, <code>videos_front</code>, <code>videos_left</code>, <code>videos_right</code>, and <code>videos_top</code>.</td>
+                </tr>
+                <tr>
+                  <td>Depth Streams</td>
+                  <td><span class="status status-live">Google Drive</span></td>
+                  <td>Exocentric depth archives: <code>depth_front</code>, <code>depth_left</code>, <code>depth_right</code>, and <code>depth_top</code>.</td>
+                </tr>
+                <tr>
+                  <td>Ego Audio</td>
+                  <td><span class="status status-live">Google Drive</span></td>
+                  <td><code>audio_ego.zip</code> for the egocentric audio stream.</td>
                 </tr>
                 <tr>
                   <td>Pre-extracted Features</td>
                   <td><span class="status status-live">Google Drive</span></td>
-                  <td>Feature packs for supported backbones distributed alongside the release.</td>
+                  <td>Released feature bundles for <code>I3D</code>, <code>MViTv2</code>, and <code>VideoMAEv2</code>.</td>
                 </tr>
                 <tr>
-                  <td>Checkpoints</td>
+                  <td>Sample Pack</td>
                   <td><span class="status status-live">Google Drive</span></td>
-                  <td>Pretrained checkpoints and supplementary release bundles.</td>
+                  <td>Quick-start subset with 3 executions, multi-view media, released features, and task annotations for download verification and review.</td>
                 </tr>
                 <tr>
                   <td>Hugging Face Mirror</td>
