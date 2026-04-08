@@ -145,9 +145,3 @@ Future steps:
 | Batch size | `32` | `32` | `4` | `-` | `1` |
 | Epochs | `50` | `50` | `10` | `-` | `-` |
 | Exemplars | `-` | `-` | `-` | `4 (MMR)` | `-` |
-
-## Release Scope
-
-- This repository currently releases the `AF-L` task documentation only.
-- Runnable `AF-L` wrappers and training code are not included in the present code drop.
-- The documentation is provided so the repository matches the paper taxonomy and records the reported baseline protocol faithfully.

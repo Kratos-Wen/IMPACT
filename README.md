@@ -29,7 +29,7 @@ The paper benchmark is organized around the following task families:
 - Action Forecasting: `AF-S`, `AF-L`
 - State & Reasoning: `PSR`, `ASR`, `PPR`, `ATR`
 
-The current code release provides runnable benchmark wrappers for `TAS`, `CV-TA`, `CV-SM`, `AF-S`, `PSR`, `ASR`, `PPR`, and `ATR`. `AF-L` is documented in the repository, including its reported baseline protocol, but its runnable baselines are not released yet.
+The current code release provides runnable benchmark wrappers for `TAS`, `CV-TA`, `CV-SM`, `AF-S`, `PSR`, `ASR`, `PPR`, and `ATR`, and documents `AF-L` with its task protocol and reported baseline design.
 
 This release includes:
 - task protocol assets under `dataset/`
@@ -109,7 +109,7 @@ Runtime `logs/` and `outputs/` directories are not shipped in the repository tre
 
 `AF-L`
 - paper baselines: `ScalAnt`, `AntGPT`, `PALM`, `Qwen3VL-8B`
-- repository status: task documentation and baseline notes are included; runnable baselines are pending release
+- repository materials: task documentation and baseline notes
 
 `PSR`
 - indirect pipelines: `MS-TCN++ -> PSR`, `VideoMAE v2+Head -> PSR`

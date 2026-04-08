@@ -12,7 +12,6 @@ This directory documents the IMPACT `AF-L` benchmark and its reported baseline s
 ## Status
 
 - The current public repository documents the `AF-L` benchmark and baseline design.
-- Runnable `AF-L` training and evaluation wrappers are not included in the current code release.
 
 ## Baseline Families
 

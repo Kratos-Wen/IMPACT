@@ -44,5 +44,5 @@ bash tasks/AF-S/qwen3_vl_8b/scripts/run_eval.sh /path/to/videos ego test 0 afs_q
 ## Notes
 
 - Method order follows the `AF-S` baseline description in Sec. 4.3 of the paper.
-- `AF-L` is reserved separately under `tasks/AF-L/`, but its runnable baselines are not released yet.
+- `AF-L` is documented separately under `tasks/AF-L/`.
 - Method-local `README.md` files provide method-specific execution notes and the shared source snapshot is summarized in `tasks/AF-S/UPSTREAM_DIFF.md`.
