@@ -17,6 +17,7 @@ This document summarizes the current Google Drive release layout for IMPACT.
 | `depth/depth_right.zip` | part of `46G` | right-view depth streams |
 | `depth/depth_top.zip` | part of `46G` | top-view depth streams |
 | `audio/audio_ego.zip` | `200M` | egocentric audio bundle |
+| `eye_tracking/eye_tracking_ego.zip` | `252M` | egocentric eye-tracking TSV bundle |
 | `features/features_I3D.zip` | part of `71G` | released I3D feature bundle |
 | `features/features_MViTv2.zip` | part of `71G` | released MViTv2 feature bundle |
 | `features/features_VideoMAEv2.zip` | part of `71G` | released VideoMAEv2 feature bundle |
@@ -29,6 +30,7 @@ The sample subset currently contains:
 - 15 RGB video files
 - 12 depth files
 - 3 ego-audio files
+- 3 ego eye-tracking files
 - 45 feature files
 - task-specific annotation folders covering `TAS-S`, `TAS-B`, `ASR`, `PSR`, `PPR`, and `ATR`
 
@@ -50,6 +52,7 @@ sample/
 │   └── TAS-S/
 ├── audio/ego/
 ├── depth/{front,left,right,top}/
+├── eye_tracking/ego/
 ├── features/{I3D,MViTv2,VideoMAEv2}/
 ├── metadata/
 └── videos/{ego,front,left,right,top}/

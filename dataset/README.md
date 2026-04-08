@@ -2,7 +2,7 @@
 
 This directory stores lightweight benchmark assets that are required to reproduce the IMPACT evaluation protocol.
 
-Release bundles for annotations, RGB media, depth streams, ego audio, feature packs, and a quick-start sample subset are available via [Google Drive](https://drive.google.com/drive/folders/1P7vBnxSVH9g_lQc5n0c0WA47QAGEhE_U?usp=sharing).
+Release bundles for annotations, RGB media, depth streams, ego audio, ego eye-tracking traces, feature packs, and a quick-start sample subset are available via [Google Drive](https://drive.google.com/drive/folders/1P7vBnxSVH9g_lQc5n0c0WA47QAGEhE_U?usp=sharing).
 
 A public Hugging Face mirror is available at [KratosWen/IMPACT](https://huggingface.co/datasets/KratosWen/IMPACT), mirroring the public IMPACT release bundles.
 
@@ -11,8 +11,9 @@ External release bundles:
 - `videos/videos_{ego,front,left,right,top}.zip`: five-view RGB archives
 - `depth/depth_{front,left,right,top}.zip`: exocentric depth archives
 - `audio/audio_ego.zip`: egocentric audio bundle
+- `eye_tracking/eye_tracking_ego.zip`: egocentric eye-tracking TSV bundle
 - `features/features_{I3D,MViTv2,VideoMAEv2}.zip`: released feature bundles
-- `sample/`: quick-start subset with 3 executions, multi-view media, features, and task annotations
+- `sample/`: quick-start subset with 3 executions, multi-view media, eye-tracking traces, features, and task annotations
 
 For the bundle-level layout used by the public Google Drive release, see [docs/DATA_RELEASE.md](../docs/DATA_RELEASE.md).
 
@@ -38,7 +39,7 @@ Current protocol scope:
 - `AF-L/` currently documents the pending long-horizon release only
 - `PSR/` and `ASR/` currently release the front-view protocol assets used by the benchmark wrappers in `tasks/PSR/` and `tasks/ASR/`
 - `PPR/` and `ATR/` reuse the same task families as `TAS`, but expose task-specific mappings, splits, and labels
-- raw media, depth streams, ego audio, feature bundles, and the quick-start sample are distributed through Google Drive alongside the repository assets
+- raw media, depth streams, ego audio, eye-tracking traces, feature bundles, and the quick-start sample are distributed through Google Drive alongside the repository assets
 
 Task defaults used by the public scripts:
 - `tasks/TAS/` uses `dataset/TAS/`
