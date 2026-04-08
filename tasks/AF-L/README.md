@@ -24,7 +24,7 @@ This directory documents the IMPACT `AF-L` benchmark and its reported baseline s
 
 ## Included Documentation
 
-- [BASELINES.md](/hkfs/work/workspace/scratch/jv8319-HAS/IMPACT_open_source/tasks/AF-L/BASELINES.md): detailed baseline descriptions, protocol notes, and hyperparameter summary.
+- [BASELINES.md](./BASELINES.md): detailed baseline descriptions, protocol notes, and hyperparameter summary.
 
 ## Notes
 
