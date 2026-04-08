@@ -12,7 +12,7 @@ $ pip install -r storm-psr/temporal_stream/requirements.txt
 ## Usage
 In this folder, there are two stages to train the model. First, train the temporal encoder. Second, end-to-end train the sptai and temporal encoder. 
 ### Train the temporal encoder
-The temporal encoder learn the temporal context of the frame-level embeddings in the videos. So to train the tempoarl encoder, we need the embeddings of the video dataset, this can be generate by the pre-trained spatial encoder that trained in the `STORM-PSR/temporal_stream/pretrained_spaital` [folder](../pretrained_spatial). The following command can be used to train the spatial model (default hyperparameters can be found in our paper):
+The temporal encoder learn the temporal context of the frame-level embeddings in the videos. So to train the tempoarl encoder, we need the embeddings of the video dataset, this can be generate by the pre-trained spatial encoder that trained in the upstream `STORM-PSR/temporal_stream/pretrained_spatial` folder. That folder is not bundled in this IMPACT release snapshot. The following command can be used to train the spatial model (default hyperparameters can be found in our paper):
 ```
 python train.py --data_dir DATA_DIR\
                 --psr_label_path PSR_LABEL_PATH\
@@ -95,7 +95,7 @@ We can run the test on:
 * The whole temporal stream:  by specificiying `--dtype = video` and give the path to video dataset of the video: `--csv_dir = {path to video dataset}`.
 
 ### Job script
-To automated the training pipeline, we provided the shell script to automated the training and testing process. Please refer to [STORM-PSR/temporal_stream/train_spatial_temporal/job_script/interactive](./job_script/interactive/). Indicating the path of the config file used to train the model by calling
+To automated the training pipeline, the original upstream repository provides `job_script/interactive/` helpers. That directory is not bundled in this IMPACT release snapshot. The upstream training pipeline is invoked as:
 ```
 sh job_script/interactive/train_temporal_enc_industreal.sh
 sh job_script/interactive/fine_tune_temporal_Stream_industreal.sh

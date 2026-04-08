@@ -109,7 +109,7 @@ Runtime `logs/` and `outputs/` directories are not shipped in the repository tre
 
 `AF-L`
 - paper baselines: `ScalAnt`, `AntGPT`, `PALM`, `Qwen3VL-8B`
-- repository status: placeholder task directory and documentation are included; runnable baselines are pending release
+- repository status: task documentation and baseline notes are included; runnable baselines are pending release
 
 `PSR`
 - indirect pipelines: `MS-TCN++ -> PSR`, `VideoMAE v2+Head -> PSR`
