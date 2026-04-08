@@ -29,7 +29,7 @@ The paper benchmark is organized around the following task families:
 - Action Forecasting: `AF-S`, `AF-L`
 - State & Reasoning: `PSR`, `ASR`, `PPR`, `ATR`
 
-The current code release provides runnable benchmark wrappers for `TAS`, `CV-TA`, `CV-SM`, `AF-S`, `PSR`, `ASR`, `PPR`, and `ATR`. `AF-L` is reserved in the repository structure and documented, but its runnable baselines are not released yet.
+The current code release provides runnable benchmark wrappers for `TAS`, `CV-TA`, `CV-SM`, `AF-S`, `PSR`, `ASR`, `PPR`, and `ATR`. `AF-L` is documented in the repository, including its reported baseline protocol, but its runnable baselines are not released yet.
 
 This release includes:
 - task protocol assets under `dataset/`
